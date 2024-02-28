@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c53yjrxmhmgh"
-path="res://.godot/imported/icon_label.png-99848d5fd4ebcd9249e54731c0c8adb7.ctex"
+path="res://.godot/imported/icon_label.png-3923bd1131990c8869923c838ffdb9ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Modules/Jump/icon_label.png"
-dest_files=["res://.godot/imported/icon_label.png-99848d5fd4ebcd9249e54731c0c8adb7.ctex"]
+source_file="res://addons/dialogic/Modules/Jump/icon_label.png"
+dest_files=["res://.godot/imported/icon_label.png-3923bd1131990c8869923c838ffdb9ae.ctex"]
 
 [params]
 

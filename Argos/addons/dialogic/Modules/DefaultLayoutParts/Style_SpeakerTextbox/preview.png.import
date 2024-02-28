@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmlqow4is4acg"
-path="res://.godot/imported/preview.png-0d7accbaad48e96d63ca91978d65b4f6.ctex"
+path="res://.godot/imported/preview.png-fffb64b5a80dfa536274e4a967369cfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Modules/DefaultLayoutParts/Style_SpeakerTextbox/preview.png"
-dest_files=["res://.godot/imported/preview.png-0d7accbaad48e96d63ca91978d65b4f6.ctex"]
+source_file="res://addons/dialogic/Modules/DefaultLayoutParts/Style_SpeakerTextbox/preview.png"
+dest_files=["res://.godot/imported/preview.png-fffb64b5a80dfa536274e4a967369cfc.ctex"]
 
 [params]
 

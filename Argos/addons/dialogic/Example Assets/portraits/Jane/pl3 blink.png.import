@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://khlo6wd16qcd"
-path="res://.godot/imported/pl3 blink.png-d4565438c51384ae8382941868b90d44.ctex"
+path="res://.godot/imported/pl3 blink.png-bc002e72d459c371c5ebb5d3d237500e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Example Assets/portraits/Jane/pl3 blink.png"
-dest_files=["res://.godot/imported/pl3 blink.png-d4565438c51384ae8382941868b90d44.ctex"]
+source_file="res://addons/dialogic/Example Assets/portraits/Jane/pl3 blink.png"
+dest_files=["res://.godot/imported/pl3 blink.png-bc002e72d459c371c5ebb5d3d237500e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu3631ymfqxi3"
-path="res://.godot/imported/neutral.png-b3e92cf258f5b05a32d8253c83b3217e.ctex"
+path="res://.godot/imported/neutral.png-b67f36561d5798f6bdf0e487c71053f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Example Assets/portraits/Princess/neutral.png"
-dest_files=["res://.godot/imported/neutral.png-b3e92cf258f5b05a32d8253c83b3217e.ctex"]
+source_file="res://addons/dialogic/Example Assets/portraits/Princess/neutral.png"
+dest_files=["res://.godot/imported/neutral.png-b67f36561d5798f6bdf0e487c71053f7.ctex"]
 
 [params]
 

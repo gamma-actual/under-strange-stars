@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dnboblpkf0fqi"
-path="res://.godot/imported/typing3.wav-de21993392a2388b0abb2d313001eb76.sample"
+path="res://.godot/imported/typing3.wav-083712282583242958aaa68128694f95.sample"
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Example Assets/sound-effects/typing3.wav"
-dest_files=["res://.godot/imported/typing3.wav-de21993392a2388b0abb2d313001eb76.sample"]
+source_file="res://addons/dialogic/Example Assets/sound-effects/typing3.wav"
+dest_files=["res://.godot/imported/typing3.wav-083712282583242958aaa68128694f95.sample"]
 
 [params]
 

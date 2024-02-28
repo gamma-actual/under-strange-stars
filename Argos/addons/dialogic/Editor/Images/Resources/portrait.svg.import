@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfi7fhfc4dbc3"
-path="res://.godot/imported/portrait.svg-f02b98fda7edab437f66610bb0712122.ctex"
+path="res://.godot/imported/portrait.svg-7d29c7cfe3e086d65dce33c3d66c48cd.ctex"
 metadata={
 "has_editor_variant": true,
 "vram_texture": false
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Editor/Images/Resources/portrait.svg"
-dest_files=["res://.godot/imported/portrait.svg-f02b98fda7edab437f66610bb0712122.ctex"]
+source_file="res://addons/dialogic/Editor/Images/Resources/portrait.svg"
+dest_files=["res://.godot/imported/portrait.svg-7d29c7cfe3e086d65dce33c3d66c48cd.ctex"]
 
 [params]
 

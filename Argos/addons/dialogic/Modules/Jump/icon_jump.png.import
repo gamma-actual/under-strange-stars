@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceqkajv8edisg"
-path="res://.godot/imported/icon_jump.png-54ed4ed80e4480b52dbba5409402d220.ctex"
+path="res://.godot/imported/icon_jump.png-50f6cdd715fcbdbed16b43c5beb6b851.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic-main/addons/dialogic/Modules/Jump/icon_jump.png"
-dest_files=["res://.godot/imported/icon_jump.png-54ed4ed80e4480b52dbba5409402d220.ctex"]
+source_file="res://addons/dialogic/Modules/Jump/icon_jump.png"
+dest_files=["res://.godot/imported/icon_jump.png-50f6cdd715fcbdbed16b43c5beb6b851.ctex"]
 
 [params]
 
