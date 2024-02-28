@@ -17,16 +17,17 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Engineer="*res://Global/NPC/Engineer.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
 directories/dch_directory={
-"sadbastion_kalee": "res://sadbastion_kalee.dch",
+"chesa": "res://chesa.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"chesa intro": "res://chesa intro.dtl",
 "timeline": "res://timeline.dtl"
 }
 glossary/default_case_sensitive=true
@@ -61,7 +62,7 @@ project/assembly_name="Argos"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 
