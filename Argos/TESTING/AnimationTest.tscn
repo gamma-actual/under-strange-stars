@@ -1,0 +1,182 @@
+[gd_scene load_steps=23 format=3 uid="uid://dnnqa6bfi6vtm"]
+
+[ext_resource type="Texture2D" uid="uid://dsrlpb8d47uxa" path="res://UI/UIanimations/Vortex/1.png" id="1_5uafk"]
+[ext_resource type="Texture2D" uid="uid://0nugvtlg8ame" path="res://UI/UIanimations/Vortex/2.png" id="2_xnwg2"]
+[ext_resource type="Texture2D" uid="uid://dkox6mkxo6rj3" path="res://UI/UIanimations/Vortex/3.png" id="3_loq3f"]
+[ext_resource type="Texture2D" uid="uid://qnjfl8so37wb" path="res://UI/UIanimations/Vortex/4.png" id="4_fwsue"]
+[ext_resource type="Texture2D" uid="uid://bprmqe5sgmfp2" path="res://UI/UIanimations/Vortex/5.png" id="5_aowio"]
+[ext_resource type="Texture2D" uid="uid://b6df0l23yal48" path="res://UI/UIanimations/Vortex/6.png" id="6_idjh0"]
+[ext_resource type="Texture2D" uid="uid://bwmyjdgfyx580" path="res://UI/UIanimations/Vortex/7.png" id="7_6dp0p"]
+[ext_resource type="Texture2D" uid="uid://ddi0vu3w4yesi" path="res://UI/UIanimations/Vortex/8.png" id="8_xma24"]
+[ext_resource type="Texture2D" uid="uid://dfjca1hgcuoob" path="res://UI/UIanimations/Vortex/9.png" id="9_f4qud"]
+[ext_resource type="Texture2D" uid="uid://bfklfg2u1jtk2" path="res://UI/UIanimations/Vortex/10.png" id="10_eg3cd"]
+[ext_resource type="Texture2D" uid="uid://dkjolpus2unqv" path="res://UI/UIanimations/Vortex/11.png" id="11_a45wi"]
+[ext_resource type="Texture2D" uid="uid://bmhsfik8bcnjb" path="res://UI/UIanimations/Vortex/12.png" id="12_wsp3x"]
+[ext_resource type="Texture2D" uid="uid://cv5rlcg2qfxmq" path="res://UI/UIanimations/Vortex/13.png" id="13_ms8al"]
+[ext_resource type="Texture2D" uid="uid://dwfse40yytvsu" path="res://UI/UIanimations/Vortex/14.png" id="14_to8br"]
+[ext_resource type="Texture2D" uid="uid://desutkricn56v" path="res://UI/UIanimations/Vortex/15.png" id="15_rprbr"]
+[ext_resource type="Texture2D" uid="uid://da8ne3i7fgg35" path="res://UI/UIanimations/Vortex/16.png" id="16_b8sg7"]
+[ext_resource type="Texture2D" uid="uid://b11jxk7v42eq5" path="res://UI/UIanimations/Vortex/17.png" id="17_tdd0h"]
+
+[sub_resource type="GDScript" id="GDScript_sf5g4"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vs6ev"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5uafk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xnwg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_loq3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fwsue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_aowio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_idjh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6dp0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xma24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f4qud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_eg3cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_a45wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wsp3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ms8al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_to8br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rprbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b8sg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tdd0h")
+}],
+"loop": false,
+"name": &"RustForward",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_vh4re"]
+resource_name = "new_animation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2534l"]
+_data = {
+"new_animation": SubResource("Animation_vh4re")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ct2lg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5uafk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xnwg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_loq3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fwsue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_aowio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_idjh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6dp0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xma24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f4qud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_eg3cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_a45wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wsp3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ms8al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_to8br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rprbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b8sg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tdd0h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(648, 338)
+script = SubResource("GDScript_sf5g4")
+
+[node name="RustUI" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(567, 287)
+sprite_frames = SubResource("SpriteFrames_vs6ev")
+animation = &"RustForward"
+autoplay = "RustForward"
+frame = 8
+frame_progress = 0.332459
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2534l")
+}
+
+[node name="Test2" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 2)
+sprite_frames = SubResource("SpriteFrames_ct2lg")
+autoplay = "default"

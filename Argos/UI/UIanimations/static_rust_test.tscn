@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c832w0nm6w3wv"]
+
+[ext_resource type="Script" path="res://UI/UIanimations/StaticRustTest.gd" id="1_p15dv"]
+[ext_resource type="Texture2D" uid="uid://dac76w3oeam6j" path="res://UI/UIanimations/3LayerVortex/StaticRust 1.png" id="2_ihob3"]
+[ext_resource type="Texture2D" uid="uid://bsk2llwll8qwo" path="res://UI/UIanimations/3LayerVortex/StaticRust 2.png" id="3_eioyg"]
+[ext_resource type="Texture2D" uid="uid://ggl8i775tc43" path="res://UI/UIanimations/3LayerVortex/StaticRust 3.png" id="4_st1nd"]
+
+[node name="StaticRustTest" type="Node2D"]
+position = Vector2(641, 364)
+script = ExtResource("1_p15dv")
+
+[node name="StaticRust1" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 2
+texture = ExtResource("2_ihob3")
+
+[node name="StaticRust2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 2
+texture = ExtResource("3_eioyg")
+
+[node name="StaticRust3" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 2
+texture = ExtResource("4_st1nd")

@@ -1,0 +1,3 @@
+EventTemplate
+GDScript
+Resource
