@@ -1,3 +1,3 @@
-EventTemplate
+PackedScene
 GDScript
 Resource

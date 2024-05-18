@@ -1,0 +1,202 @@
+[gd_scene load_steps=3 format=3 uid="uid://bildqwetta28f"]
+
+[ext_resource type="Script" path="res://ShipNodes.gd" id="1_6o0q0"]
+[ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://sprite_test_1.png" id="2_7qpy5"]
+
+[node name="ShipAnimation" type="Node2D"]
+position = Vector2(598, 335)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_6o0q0")
+
+[node name="one" type="Node2D" parent="."]
+
+[node name="one" type="TextureButton" parent="one"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -46.6667
+offset_right = 48.0
+offset_bottom = 49.3333
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="two" type="Node2D" parent="."]
+
+[node name="two" type="TextureButton" parent="two"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="three" type="Node2D" parent="."]
+
+[node name="three" type="TextureButton" parent="three"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -24.0
+offset_right = 25.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="four" type="Node2D" parent="."]
+
+[node name="four" type="TextureButton" parent="four"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -24.0
+offset_right = 128.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.58127
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="five" type="Node2D" parent="."]
+
+[node name="five" type="TextureButton" parent="five"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -112.0
+offset_right = 80.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.439823
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="six" type="Node2D" parent="."]
+
+[node name="six" type="TextureButton" parent="six"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 96.0
+offset_right = 24.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -3.16428
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="seven" type="Node2D" parent="."]
+
+[node name="seven" type="TextureButton" parent="seven"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 112.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.10836
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="eight" type="Node2D" parent="."]
+
+[node name="eight" type="TextureButton" parent="eight"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 56.0
+offset_right = -72.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -2.02109
+pivot_offset = Vector2(23, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="nine" type="Node2D" parent="."]
+
+[node name="nine" type="TextureButton" parent="nine"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -32.0
+offset_right = -80.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.40674
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ten" type="Node2D" parent="."]
+
+[node name="ten" type="TextureButton" parent="ten"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -112.0
+offset_right = -32.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.350811
+pivot_offset = Vector2(24, 24)
+texture_normal = ExtResource("2_7qpy5")
+ignore_texture_size = true
+stretch_mode = 0

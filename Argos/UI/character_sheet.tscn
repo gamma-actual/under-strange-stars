@@ -1,34 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://bi5wm16t03p4u"]
+[gd_scene load_steps=3 format=3 uid="uid://bi5wm16t03p4u"]
 
+[ext_resource type="Script" path="res://UI/character_sheet.gd" id="1_gscus"]
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://sprite_test_1.png" id="1_xavr8"]
 
-[node name="Character Sheet" type="PanelContainer"]
-offset_left = 258.0
-offset_top = 122.0
-offset_right = 1004.0
-offset_bottom = 582.0
+[node name="Character Sheet" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 204.0
+offset_top = 104.0
+offset_right = 950.0
+offset_bottom = 564.0
+script = ExtResource("1_gscus")
+move_speed = 80.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+offset_right = 746.0
+offset_bottom = 460.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="HBoxContainer/MarginContainer/PanelContainer"]
+[node name="TextureButton" type="TextureButton" parent="PanelContainer/HBoxContainer/MarginContainer/PanelContainer"]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 texture_normal = ExtResource("1_xavr8")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 20
@@ -36,90 +46,122 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer2"]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/MarginContainer2"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer2/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Name" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 text = "Chesa"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="RelationsBar" type="ProgressBar" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-value = 50.0
+max_value = 5.0
+step = 1.0
+value = 1.0
 
-[node name="HSeparator" type="HSeparator" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="LoveButton" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "<3"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="BigBlurb" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_vertical = 1
 text = "Blurbo about Chesa"
 
-[node name="Label2" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="Perks" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Perks
 "
 
-[node name="GridContainer" type="GridContainer" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 size_flags_vertical = 3
 columns = 4
 
-[node name="Button" type="Button" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "perk1"
 
-[node name="Label" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 text = "perk1 Blurbo"
 
-[node name="Button2" type="Button" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "perk 2"
 
-[node name="Label2" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 text = "perk 2 Blurbo"
 
-[node name="Button3" type="Button" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Button3" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "perk3"
 
-[node name="Label3" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Label3" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 text = "perk3 Blurbo"
 
-[node name="Button4" type="Button" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Button4" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "perk4"
 
-[node name="Label4" type="Label" parent="HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Label4" type="Label" parent="PanelContainer/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
 text = "perk4 Blurbo"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 726.0
+offset_right = 744.0
+offset_bottom = 31.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "X"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 171.0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Make Chesa Love me"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

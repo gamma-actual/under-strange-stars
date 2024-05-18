@@ -1,6 +1,14 @@
+<<<<<<< Updated upstream
 res://timeline.dtl
 res://sadbastion_kalee.dch
 res://TESTING/UI TESTS (2).tscn
 res://chesa.dch
 res://ship_map.tscn
 res://chesa intro.dtl
+=======
+res://ship_map.tscn
+res://ship_animation.tscn
+res://UI/badge_ui.tscn
+res://UI/character_menu.tscn
+res://UI/character_sheet.tscn
+>>>>>>> Stashed changes

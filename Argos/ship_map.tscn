@@ -8,14 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://bptpfid73xeyy" path="res://UI/UIanimations/Vertical Menu/splotch_test_4.png" id="6_2m4a5"]
 [ext_resource type="PackedScene" uid="uid://c832w0nm6w3wv" path="res://UI/UIanimations/static_rust_test.tscn" id="7_83ppd"]
 [ext_resource type="PackedScene" uid="uid://det7ovoh6c42h" path="res://UI/badge_ui.tscn" id="8_1fx46"]
-[ext_resource type="PackedScene" uid="uid://befgtb1fc8w7k" path="res://UI/ship_pop_up.tscn" id="9_lrk18"]
+[ext_resource type="PackedScene" uid="uid://bildqwetta28f" path="res://ship_animation.tscn" id="9_neiro"]
 
 [node name="ShipMap" type="Node2D"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-visible = false
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(631, 380)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_egdde")
@@ -182,14 +179,10 @@ offset_bottom = 19.0
 text = "UH OH its an event"
 
 [node name="BadgeUI" parent="CanvasLayer2" instance=ExtResource("8_1fx46")]
-offset_right = 151.0
-offset_bottom = 116.0
-scale = Vector2(1.76, 1.72)
+offset_right = 0.0
+offset_bottom = 0.0
 
-[node name="ShipPopUp" parent="." instance=ExtResource("9_lrk18")]
-offset_left = 502.0
-offset_top = 515.0
-offset_right = 768.0
-offset_bottom = 598.0
+[node name="ShipAnimation" parent="." instance=ExtResource("9_neiro")]
+position = Vector2(457, 428)
 
 [connection signal="pressed" from="CanvasLayer2/StaticRustTest/Button" to="CanvasLayer2/StaticRustTest" method="_on_button_pressed"]
