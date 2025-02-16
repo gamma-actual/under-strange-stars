@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmuygx64b1uiw"]
+
+[ext_resource type="Script" path="res://MovingStars.gd" id="1_yjy63"]
+[ext_resource type="Texture2D" uid="uid://cp62l46lxylei" path="res://Main Menu/start screen mockup 2_005.png" id="2_eapt2"]
+
+[sub_resource type="Animation" id="Animation_ytpn3"]
+resource_name = "MovingStars"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StartScreenMockup2005:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.5, 1.5), Vector2(0.01, 0.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StartScreenMockup2007:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 2), Vector2(0.01, 0.01)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StartScreenMockup2007:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jd7e8"]
+_data = {
+"MovingStars": SubResource("Animation_ytpn3")
+}
+
+[node name="MovingStars" type="Node2D"]
+script = ExtResource("1_yjy63")
+
+[node name="StartScreenMockup2005" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.588235)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_eapt2")
+
+[node name="StartScreenMockup2006" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.278431)
+rotation = -0.811578
+texture = ExtResource("2_eapt2")
+
+[node name="StartScreenMockup2007" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 0.4)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eapt2")
+flip_h = true
+
+[node name="StartScreenMockup2008" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.219608)
+rotation = 0.708604
+texture = ExtResource("2_eapt2")
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_jd7e8")
+}

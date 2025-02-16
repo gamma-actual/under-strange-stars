@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://tuu6r0m3otrj"
+path="res://.godot/imported/ship assets final 3.5 bitmap.png-ed9753ad56dc949f70c0f197e51ba0a0.res"
+
+[deps]
+
+source_file="res://SHIP ASSETS/ship assets final 3.5 bitmap.png"
+dest_files=["res://.godot/imported/ship assets final 3.5 bitmap.png-ed9753ad56dc949f70c0f197e51ba0a0.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

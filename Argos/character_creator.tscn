@@ -1,0 +1,294 @@
+[gd_scene load_steps=4 format=3 uid="uid://noahpbuqtybl"]
+
+[ext_resource type="Script" path="res://CharacterCreator.gd" id="1_qcdru"]
+[ext_resource type="Script" path="res://PlayerPortrait.gd" id="2_vjtv5"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_ipgkk"]
+
+[node name="CharacterCreator" type="Node2D"]
+position = Vector2(2, -1)
+script = ExtResource("1_qcdru")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Body" type="Button" parent="Node2D"]
+offset_left = 507.0
+offset_top = 35.0
+offset_right = 554.0
+offset_bottom = 66.0
+text = "Body
+"
+
+[node name="Button" type="Button" parent="Node2D/Body"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="Button2" type="Button" parent="Node2D/Body"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="PlayerPortrait" type="Node2D" parent="."]
+position = Vector2(926, 252)
+script = ExtResource("2_vjtv5")
+
+[node name="Skin" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Skin" type="Button" parent="PlayerPortrait/Skin"]
+offset_left = -419.0
+offset_top = -186.0
+offset_right = -372.0
+offset_bottom = -155.0
+text = "Skin
+"
+
+[node name="Skindown" type="Button" parent="PlayerPortrait/Skin/Skin"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="SkinUp" type="Button" parent="PlayerPortrait/Skin/Skin"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Clothing" type="Sprite2D" parent="PlayerPortrait"]
+texture = SubResource("ImageTexture_ipgkk")
+
+[node name="Clothing" type="Button" parent="PlayerPortrait/Clothing"]
+offset_left = -419.0
+offset_top = -155.0
+offset_right = -346.0
+offset_bottom = -124.0
+text = "Clothing
+"
+
+[node name="ClothingUp" type="Button" parent="PlayerPortrait/Clothing/Clothing"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="ClothingDown" type="Button" parent="PlayerPortrait/Clothing/Clothing"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Head" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Head" type="Button" parent="PlayerPortrait/Head"]
+offset_left = -419.0
+offset_top = -93.0
+offset_right = -332.0
+offset_bottom = -62.0
+text = "Head
+"
+
+[node name="HeadDown" type="Button" parent="PlayerPortrait/Head/Head"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="HeadUp" type="Button" parent="PlayerPortrait/Head/Head"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Hair" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Hair" type="Button" parent="PlayerPortrait/Hair"]
+offset_left = -419.0
+offset_top = -62.0
+offset_right = -337.0
+offset_bottom = -31.0
+text = "Hair
+"
+
+[node name="HairDown" type="Button" parent="PlayerPortrait/Hair/Hair"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="HairUp" type="Button" parent="PlayerPortrait/Hair/Hair"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Beard" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Beard" type="Button" parent="PlayerPortrait/Beard"]
+offset_left = -419.0
+offset_top = -31.0
+offset_right = -332.0
+text = "Facial hair"
+
+[node name="BeardDown" type="Button" parent="PlayerPortrait/Beard/Beard"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="BeardUp" type="Button" parent="PlayerPortrait/Beard/Beard"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Nose" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Nose" type="Button" parent="PlayerPortrait/Nose"]
+offset_left = -419.0
+offset_right = -332.0
+offset_bottom = 31.0
+text = "Nose"
+
+[node name="NoseDown" type="Button" parent="PlayerPortrait/Nose/Nose"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="NoseUP" type="Button" parent="PlayerPortrait/Nose/Nose"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Mouth" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Mouth" type="Button" parent="PlayerPortrait/Mouth"]
+offset_left = -419.0
+offset_top = 31.0
+offset_right = -332.0
+offset_bottom = 62.0
+text = "Mouth
+"
+
+[node name="MouthDown" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="MouthUp" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Eyes" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Eyes" type="Button" parent="PlayerPortrait/Eyes"]
+offset_left = -419.0
+offset_top = 62.0
+offset_right = -332.0
+offset_bottom = 93.0
+text = "Eyes"
+
+[node name="EyesDown" type="Button" parent="PlayerPortrait/Eyes/Eyes"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="EyesUp" type="Button" parent="PlayerPortrait/Eyes/Eyes"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Brows" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Eyebrows" type="Button" parent="PlayerPortrait/Brows"]
+offset_left = -419.0
+offset_top = 93.0
+offset_right = -332.0
+offset_bottom = 124.0
+text = "Eyebrows"
+
+[node name="BrowsUp" type="Button" parent="PlayerPortrait/Brows/Eyebrows"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="BrowsDown" type="Button" parent="PlayerPortrait/Brows/Eyebrows"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Glasses" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Accesory" type="Button" parent="PlayerPortrait/Glasses"]
+offset_left = -419.0
+offset_top = -124.0
+offset_right = -337.0
+offset_bottom = -93.0
+text = "Accesoriy
+"
+
+[node name="AccessoryDown" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="AccessoryUp" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[connection signal="pressed" from="PlayerPortrait/Skin/Skin/Skindown" to="PlayerPortrait" method="_on_skindown_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Skin/Skin/SkinUp" to="PlayerPortrait" method="_on_skin_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Clothing/Clothing/ClothingUp" to="PlayerPortrait" method="_on_clothing_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Clothing/Clothing/ClothingDown" to="PlayerPortrait" method="_on_clothing_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Head/Head/HeadDown" to="PlayerPortrait" method="_on_head_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Head/Head/HeadUp" to="PlayerPortrait" method="_on_head_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairDown" to="PlayerPortrait" method="_on_hair_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairUp" to="PlayerPortrait" method="_on_hair_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardDown" to="PlayerPortrait" method="_on_beard_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardUp" to="PlayerPortrait" method="_on_beard_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseDown" to="PlayerPortrait" method="_on_nose_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseUP" to="PlayerPortrait" method="_on_nose_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Mouth/Mouth/MouthDown" to="PlayerPortrait" method="_on_mouth_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Mouth/Mouth/MouthUp" to="PlayerPortrait" method="_on_mouth_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Eyes/Eyes/EyesDown" to="PlayerPortrait" method="_on_eyes_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Eyes/Eyes/EyesUp" to="PlayerPortrait" method="_on_eyes_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsUp" to="PlayerPortrait" method="_on_brows_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsDown" to="PlayerPortrait" method="_on_brows_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryDown" to="PlayerPortrait" method="_on_glasses_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryUp" to="PlayerPortrait" method="_on_glasses_up_pressed"]

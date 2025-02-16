@@ -1,202 +1,201 @@
-[gd_scene load_steps=3 format=3 uid="uid://bildqwetta28f"]
+[gd_scene load_steps=37 format=3 uid="uid://bildqwetta28f"]
 
 [ext_resource type="Script" path="res://ShipNodes.gd" id="1_6o0q0"]
-[ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://sprite_test_1.png" id="2_7qpy5"]
+[ext_resource type="Texture2D" uid="uid://c6n0qj871gqp0" path="res://SHIP ASSETS/ship assets final 4.1.png" id="2_da2a5"]
+[ext_resource type="Texture2D" uid="uid://7mgjnaeru8o" path="res://SHIP ASSETS/ship assets final 4.2.png" id="3_iy0wb"]
+[ext_resource type="Texture2D" uid="uid://x03ud8amxiqd" path="res://SHIP ASSETS/ship assets final 4.2 highlighted.png" id="4_dv1ti"]
+[ext_resource type="BitMap" uid="uid://dlpunss5ne1nu" path="res://SHIP ASSETS/ship assets final 4.2 bitmap.png" id="5_qp6x8"]
+[ext_resource type="Texture2D" uid="uid://0mmi7tgpqdk1" path="res://SHIP ASSETS/ship assets final 3.1.png" id="6_56es0"]
+[ext_resource type="Texture2D" uid="uid://chysdsdgulgi1" path="res://SHIP ASSETS/ship assets final 3.2.png" id="7_dmy18"]
+[ext_resource type="Texture2D" uid="uid://dqbo14144pmmk" path="res://SHIP ASSETS/ship assets final 3.2 highlighted.png" id="8_ff51c"]
+[ext_resource type="BitMap" uid="uid://cu0it4uuxp17t" path="res://SHIP ASSETS/ship assets final 3.2 bitmap.png" id="9_q4jpg"]
+[ext_resource type="Texture2D" uid="uid://cnod42777acjv" path="res://SHIP ASSETS/ship assets final 3.3.png" id="10_baj7y"]
+[ext_resource type="Texture2D" uid="uid://bix3oecvlfy8u" path="res://SHIP ASSETS/ship assets final 3.3 highlighted.png" id="11_6nume"]
+[ext_resource type="BitMap" uid="uid://fwvb5h53vcwh" path="res://SHIP ASSETS/ship assets final 3.3 bitmap.png" id="12_1e5fq"]
+[ext_resource type="Texture2D" uid="uid://dtklaa0qldg4e" path="res://SHIP ASSETS/ship assets final 2.png" id="12_n3gab"]
+[ext_resource type="Texture2D" uid="uid://b1m0kydxjtbn4" path="res://SHIP ASSETS/ship_assets_final_3.4.png" id="13_3btpr"]
+[ext_resource type="Texture2D" uid="uid://blsnwtstwi60n" path="res://SHIP ASSETS/ship assets final 2 highlighted.png" id="13_hc0m2"]
+[ext_resource type="Texture2D" uid="uid://xxo47hi8hun3" path="res://SHIP ASSETS/ship assets final 1.png" id="13_y5rcv"]
+[ext_resource type="Texture2D" uid="uid://bnr0a50xq365" path="res://SHIP ASSETS/ship_assets_final_3.4_highlighted.png" id="14_0x7mu"]
+[ext_resource type="Texture2D" uid="uid://dykx0gtq6himk" path="res://SHIP ASSETS/ship assets final 1 highlighted.png" id="14_ogsqi"]
+[ext_resource type="BitMap" uid="uid://c1dn17iwsmrm1" path="res://SHIP ASSETS/ship assets final 3.4 bitmap.png" id="15_jrxyj"]
+[ext_resource type="BitMap" uid="uid://6fgamygnw5k8" path="res://SHIP ASSETS/ship assets final 1 bitmap.png" id="16_31eiq"]
+[ext_resource type="Texture2D" uid="uid://c6h2j2vxs6wco" path="res://SHIP ASSETS/ship assets final 3.5.png" id="16_wbsue"]
+[ext_resource type="Texture2D" uid="uid://olfg5i1wh1a4" path="res://SHIP ASSETS/ship assets final 3.5 highlighted.png" id="17_tei01"]
+[ext_resource type="BitMap" uid="uid://tuu6r0m3otrj" path="res://SHIP ASSETS/ship assets final 3.5 bitmap.png" id="18_egad7"]
+[ext_resource type="Texture2D" uid="uid://r4bwxe1wtrv7" path="res://SHIP ASSETS/ship assets final 3.6.png" id="19_qa6ua"]
+[ext_resource type="Texture2D" uid="uid://carnoihdcakd4" path="res://SHIP ASSETS/ship assets final 3.6 highlighted.png" id="20_mvqs2"]
+[ext_resource type="BitMap" uid="uid://csuxtv3kewx2y" path="res://SHIP ASSETS/ship assets final 3.6 bitmap.png" id="21_02ten"]
+[ext_resource type="Texture2D" uid="uid://jc3jfq4oj340" path="res://SHIP ASSETS/ship assets final 3.7.png" id="22_vheh7"]
+[ext_resource type="Texture2D" uid="uid://du27hgxcnc570" path="res://SHIP ASSETS/ship assets final 3.7 highlighted.png" id="23_5617n"]
+[ext_resource type="BitMap" uid="uid://ce8q3h6ee3xhp" path="res://SHIP ASSETS/ship assets final 3.7 bitmap.png" id="24_2bg4b"]
+[ext_resource type="Texture2D" uid="uid://ctyekgxaxkeue" path="res://SHIP ASSETS/ship assets final 3.8.png" id="25_1tjnd"]
+[ext_resource type="Texture2D" uid="uid://dncls1yqna6bd" path="res://SHIP ASSETS/ship assets final 3.8 highlighted.png" id="26_do2eu"]
+[ext_resource type="BitMap" uid="uid://4kcerpohiynd" path="res://SHIP ASSETS/ship assets final 3.8 bitmap.png" id="27_pay6l"]
+[ext_resource type="BitMap" uid="uid://bkewbmwbcx6lr" path="res://SHIP ASSETS/ship assets final 2 bitmap.png" id="30_32lmo"]
+
+[sub_resource type="Theme" id="Theme_rusws"]
+
+[sub_resource type="Animation" id="Animation_simbf"]
+resource_name = "Ship Jump"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("three:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.64, 0.64), Vector2(0.65, 0.65)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("four:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 2.9, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.31, 1.31), Vector2(1.3, 1.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("two:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.31, 1.31), Vector2(1.3, 1.3)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jftwc"]
+_data = {
+"Ship Jump": SubResource("Animation_simbf")
+}
 
 [node name="ShipAnimation" type="Node2D"]
-position = Vector2(598, 335)
-scale = Vector2(1.5, 1.5)
 script = ExtResource("1_6o0q0")
 
-[node name="one" type="Node2D" parent="."]
+[node name="four" type="Sprite2D" parent="."]
 
-[node name="one" type="TextureButton" parent="one"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -48.0
-offset_top = -46.6667
-offset_right = 48.0
-offset_bottom = 49.3333
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton" type="TextureButton" parent="four"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("2_da2a5")
 
-[node name="two" type="Node2D" parent="."]
+[node name="TextureButton2" type="TextureButton" parent="four"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("3_iy0wb")
+texture_hover = ExtResource("4_dv1ti")
+texture_click_mask = ExtResource("5_qp6x8")
 
-[node name="two" type="TextureButton" parent="two"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -32.0
-offset_top = -32.0
-offset_right = 32.0
-offset_bottom = 32.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="three" type="Sprite2D" parent="."]
 
-[node name="three" type="Node2D" parent="."]
+[node name="TextureButton" type="Sprite2D" parent="three"]
+texture = ExtResource("6_56es0")
 
-[node name="three" type="TextureButton" parent="three"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -23.0
-offset_top = -24.0
-offset_right = 25.0
-offset_bottom = 24.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton2" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("7_dmy18")
+texture_hover = ExtResource("8_ff51c")
+texture_click_mask = ExtResource("9_q4jpg")
 
-[node name="four" type="Node2D" parent="."]
+[node name="TextureButton3" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("10_baj7y")
+texture_hover = ExtResource("11_6nume")
+texture_click_mask = ExtResource("12_1e5fq")
 
-[node name="four" type="TextureButton" parent="four"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 80.0
-offset_top = -24.0
-offset_right = 128.0
-offset_bottom = 24.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = 1.58127
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton4" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("13_3btpr")
+texture_hover = ExtResource("14_0x7mu")
+texture_click_mask = ExtResource("15_jrxyj")
 
-[node name="five" type="Node2D" parent="."]
+[node name="TextureButton5" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("16_wbsue")
+texture_hover = ExtResource("17_tei01")
+texture_click_mask = ExtResource("18_egad7")
 
-[node name="five" type="TextureButton" parent="five"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 32.0
-offset_top = -112.0
-offset_right = 80.0
-offset_bottom = -64.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = 0.439823
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton6" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("19_qa6ua")
+texture_hover = ExtResource("20_mvqs2")
+texture_click_mask = ExtResource("21_02ten")
 
-[node name="six" type="Node2D" parent="."]
+[node name="TextureButton7" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("22_vheh7")
+texture_hover = ExtResource("23_5617n")
+texture_click_mask = ExtResource("24_2bg4b")
 
-[node name="six" type="TextureButton" parent="six"]
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -24.0
-offset_top = 96.0
-offset_right = 24.0
-offset_bottom = 144.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = -3.16428
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton8" type="TextureButton" parent="three"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("25_1tjnd")
+texture_hover = ExtResource("26_do2eu")
+texture_click_mask = ExtResource("27_pay6l")
 
-[node name="seven" type="Node2D" parent="."]
+[node name="two" type="Sprite2D" parent="."]
 
-[node name="seven" type="TextureButton" parent="seven"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 64.0
-offset_top = 64.0
-offset_right = 112.0
-offset_bottom = 112.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = 2.10836
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton" type="TextureButton" parent="two"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+texture_normal = ExtResource("12_n3gab")
+texture_hover = ExtResource("13_hc0m2")
+texture_click_mask = ExtResource("30_32lmo")
 
-[node name="eight" type="Node2D" parent="."]
+[node name="one" type="Sprite2D" parent="."]
 
-[node name="eight" type="TextureButton" parent="eight"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -120.0
-offset_top = 56.0
-offset_right = -72.0
-offset_bottom = 104.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = -2.02109
-pivot_offset = Vector2(23, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="TextureButton" type="TextureButton" parent="one"]
+offset_left = -640.0
+offset_top = -640.0
+offset_right = 640.0
+offset_bottom = 640.0
+theme = SubResource("Theme_rusws")
+texture_normal = ExtResource("13_y5rcv")
+texture_hover = ExtResource("14_ogsqi")
+texture_click_mask = ExtResource("16_31eiq")
 
-[node name="nine" type="Node2D" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_jftwc")
+}
 
-[node name="nine" type="TextureButton" parent="nine"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = -32.0
-offset_right = -80.0
-offset_bottom = 16.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = -1.40674
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="ten" type="Node2D" parent="."]
-
-[node name="ten" type="TextureButton" parent="ten"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = -112.0
-offset_right = -32.0
-offset_bottom = -64.0
-grow_horizontal = 2
-grow_vertical = 2
-rotation = -0.350811
-pivot_offset = Vector2(24, 24)
-texture_normal = ExtResource("2_7qpy5")
-ignore_texture_size = true
-stretch_mode = 0
+[connection signal="mouse_entered" from="one/TextureButton" to="." method="_on_texture_button_mouse_entered"]

@@ -1,93 +1,322 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6t6xwtl3nqo1"]
+[gd_scene load_steps=28 format=3 uid="uid://c6t6xwtl3nqo1"]
 
 [ext_resource type="Script" path="res://UI/character_menu.gd" id="1_xi724"]
+[ext_resource type="Texture2D" uid="uid://6prtkhndhs3p" path="res://UI/Panels/character_panel_chesa_unselected.png" id="2_0cw0b"]
+[ext_resource type="Texture2D" uid="uid://dhua1unj408wr" path="res://UI/relationship panels ui mockup 1.png" id="2_rjyb7"]
+[ext_resource type="Texture2D" uid="uid://fmlpcd4jks0i" path="res://UI/relationship panels ui mockup 2.png" id="3_vf665"]
+[ext_resource type="Texture2D" uid="uid://dw75nljf4lpgw" path="res://UI/Panels/character_pane_chesa_selected.png" id="3_xc46m"]
+[ext_resource type="Texture2D" uid="uid://c2bdeuhupwobi" path="res://UI/relationship panels ui mockup 3.png" id="4_pnfw2"]
+[ext_resource type="FontFile" uid="uid://27nf3pwrkfgx" path="res://Abel-Regular.ttf" id="4_u6wd3"]
+[ext_resource type="Texture2D" uid="uid://2sf72yf5w7mn" path="res://UI/Panels/character_panel_seb_unselected.png" id="5_snsgi"]
+[ext_resource type="Texture2D" uid="uid://dixr8wh8p5rxc" path="res://UI/Panels/character_panel_seb_selected.png" id="6_1r8aq"]
+[ext_resource type="Texture2D" uid="uid://b3f8vpn5k4hra" path="res://UI/Panels/character_panel_cordie_unselected.png" id="7_jrndw"]
+[ext_resource type="Texture2D" uid="uid://iky5ulgo367p" path="res://UI/Panels/character_panel_cordie_selected.png" id="8_6uy68"]
+[ext_resource type="Texture2D" uid="uid://c8sh34fgxnwbd" path="res://UI/Panels/character_panel_giulia_unselected.png" id="9_3cdkq"]
+[ext_resource type="Texture2D" uid="uid://b751j4aop77w0" path="res://UI/Panels/character_panel_giulia_selected.png" id="10_m51nm"]
+[ext_resource type="Texture2D" uid="uid://8c5tbdwa22l4" path="res://UI/Panels/character_panel_deven_unselected.png" id="11_qdmyw"]
+[ext_resource type="Texture2D" uid="uid://clpu55xg6e4yf" path="res://UI/Panels/character_panel_deven_selected.png" id="12_yoewf"]
+[ext_resource type="Texture2D" uid="uid://kaf3kbq7rigl" path="res://UI/Panels/character_panel_abby_unselected.png" id="13_8ycne"]
+[ext_resource type="Texture2D" uid="uid://bjho0lrn5todt" path="res://UI/Panels/character_panel_abby_selected.png" id="14_v341y"]
+[ext_resource type="Texture2D" uid="uid://ct4wciw06xg7l" path="res://UI/Panels/character_panel_flor_unselected.png" id="15_de0nw"]
+[ext_resource type="Texture2D" uid="uid://ttkf1arohx1c" path="res://UI/Panels/character_panel_flor_selected.png" id="16_dt415"]
+[ext_resource type="Texture2D" uid="uid://i3paiumagmrq" path="res://UI/Panels/character_panel_makoa_unselected.png" id="17_7ctun"]
+[ext_resource type="Texture2D" uid="uid://qhykoq77ve6k" path="res://UI/Panels/character_panel_makoa_selected.png" id="18_o228t"]
+[ext_resource type="Texture2D" uid="uid://drgk4n45w232t" path="res://UI/Panels/character_panel_mateo_unselected.png" id="19_pei6r"]
+[ext_resource type="Texture2D" uid="uid://boan16wc70kti" path="res://UI/Panels/character_panel_mateo_selected.png" id="20_8s2qj"]
+[ext_resource type="Texture2D" uid="uid://dsix7t75q0hbx" path="res://UI/Panels/character_panel_mateo_ejected.png" id="21_r76ki"]
+[ext_resource type="Texture2D" uid="uid://47fi2gv34wo1" path="res://UI/Panels/character_panel_ai_unselected.png" id="22_c7exe"]
+[ext_resource type="Texture2D" uid="uid://ciunfrvrcy6ue" path="res://UI/Panels/character_panel_ai_selected.png" id="23_82k25"]
+[ext_resource type="Texture2D" uid="uid://dhryo0f2hf7e8" path="res://UI/Panels/character_panel_ai_ejected.png" id="24_52o41"]
 
 [node name="Character Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 36.0
-offset_top = 74.0
-offset_right = 1236.0
-offset_bottom = 654.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 script = ExtResource("1_xi724")
 move_speed = 80.0
+breathing_rate = 0.1
 
-[node name="Panel" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 1.16207
-anchor_bottom = 1.16207
-offset_top = -674.0
-offset_right = 1200.0
-offset_bottom = -74.0
-metadata/_edit_use_anchors_ = true
+[node name="Panel" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 110
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 110
+
+[node name="UIPanel1" type="Sprite2D" parent="Panel"]
+modulate = Color(1, 1, 1, 0.666667)
+position = Vector2(975.142, 525)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("2_rjyb7")
+
+[node name="UIPanel2" type="Sprite2D" parent="Panel"]
+modulate = Color(1, 1, 1, 0.588235)
+position = Vector2(972.144, 534)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("3_vf665")
+
+[node name="UIPanel3" type="Sprite2D" parent="Panel"]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(973.144, 523)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("4_pnfw2")
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel"]
 layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 80
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 80
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 50
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 2
+theme_override_constants/separation = 4
 
-[node name="Engineer" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Officer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Engineer"
+texture_normal = ExtResource("15_de0nw")
+texture_pressed = ExtResource("15_de0nw")
+texture_hover = ExtResource("16_dt415")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Scientist" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Officer"]
+visible = false
+layout_mode = 0
+offset_left = -7.06419
+offset_top = 655.0
+offset_right = 172.936
+offset_bottom = 748.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Flor"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Cook" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Stientist"
+texture_normal = ExtResource("17_7ctun")
+texture_pressed = ExtResource("17_7ctun")
+texture_hover = ExtResource("18_o228t")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Scout" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Cook"]
+visible = false
+layout_mode = 0
+offset_left = -4.22157
+offset_top = 659.0
+offset_right = 174.778
+offset_bottom = 752.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Mak"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Scientist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Scout"
+texture_normal = ExtResource("5_snsgi")
+texture_pressed = ExtResource("5_snsgi")
+texture_hover = ExtResource("6_1r8aq")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Security" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scientist"]
+visible = false
+layout_mode = 0
+offset_left = -4.37631
+offset_top = 657.0
+offset_right = 175.624
+offset_bottom = 750.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Seb"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Scout" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Mommy"
+texture_normal = ExtResource("7_jrndw")
+texture_pressed = ExtResource("7_jrndw")
+texture_hover = ExtResource("8_6uy68")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Doctor" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scout"]
+visible = false
+layout_mode = 0
+offset_left = -8.52838
+offset_top = 659.0
+offset_right = 169.472
+offset_bottom = 752.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Cordie"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Security" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Doctor"
+texture_normal = ExtResource("9_3cdkq")
+texture_pressed = ExtResource("9_3cdkq")
+texture_hover = ExtResource("10_m51nm")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Colonist" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Security"]
+visible = false
+layout_mode = 0
+offset_left = -15.677
+offset_top = 660.0
+offset_right = 164.323
+offset_bottom = 753.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Jules"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Doctor" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Colonist"
+texture_normal = ExtResource("11_qdmyw")
+texture_pressed = ExtResource("11_qdmyw")
+texture_hover = ExtResource("12_yoewf")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Officer" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Doctor"]
+visible = false
+layout_mode = 0
+offset_left = -6.83968
+offset_top = 660.0
+offset_right = 173.161
+offset_bottom = 753.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Devan"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Colonist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Officer"
+texture_normal = ExtResource("13_8ycne")
+texture_pressed = ExtResource("13_8ycne")
+texture_hover = ExtResource("14_v341y")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Cook" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Colonist"]
+visible = false
+layout_mode = 0
+offset_left = -6.99531
+offset_top = 658.0
+offset_right = 172.004
+offset_bottom = 751.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Abby"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Engineer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Cook"
+texture_normal = ExtResource("2_0cw0b")
+texture_pressed = ExtResource("2_0cw0b")
+texture_hover = ExtResource("3_xc46m")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Rogue" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Engineer"]
+visible = false
+layout_mode = 0
+offset_left = -9.14827
+offset_top = 660.0
+offset_right = 169.851
+offset_bottom = 753.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Chesa"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Rogue" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Rogue"
+disabled = true
+texture_normal = ExtResource("19_pei6r")
+texture_pressed = ExtResource("19_pei6r")
+texture_hover = ExtResource("20_8s2qj")
+texture_disabled = ExtResource("21_r76ki")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="AI" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Rogue"]
+visible = false
+layout_mode = 0
+offset_left = -7.30571
+offset_top = 661.0
+offset_right = 172.695
+offset_bottom = 754.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Matteo"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="AI" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "AI"
+disabled = true
+texture_normal = ExtResource("22_c7exe")
+texture_pressed = ExtResource("22_c7exe")
+texture_hover = ExtResource("23_82k25")
+texture_disabled = ExtResource("24_52o41")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Button" type="Button" parent="Panel"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "X"
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/AI"]
+visible = false
+layout_mode = 0
+offset_left = -11.457
+offset_top = 664.0
+offset_right = 168.543
+offset_bottom = 757.0
+theme_override_fonts/font = ExtResource("4_u6wd3")
+theme_override_font_sizes/font_size = 60
+text = "Isan"
+horizontal_alignment = 1
+vertical_alignment = 2
 
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Officer" to="." method="_on_officer_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Officer" to="." method="_on_officer_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Cook" to="." method="_on_cook_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Cook" to="." method="_on_cook_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Scientist" to="." method="_on_scientist_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Scientist" to="." method="_on_scientist_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Scout" to="." method="_on_scout_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Scout" to="." method="_on_scout_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Security" to="." method="_on_security_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Security" to="." method="_on_security_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Doctor" to="." method="_on_doctor_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Doctor" to="." method="_on_doctor_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Colonist" to="." method="_on_colonist_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Colonist" to="." method="_on_colonist_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Engineer" to="." method="_on_engineer_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Engineer" to="." method="_on_engineer_mouse_exited"]
 [connection signal="pressed" from="Panel/MarginContainer/HBoxContainer/Engineer" to="." method="_on_engineer_pressed"]
-[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/Rogue" to="." method="_on_rogue_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/Rogue" to="." method="_on_rogue_mouse_exited"]
+[connection signal="mouse_entered" from="Panel/MarginContainer/HBoxContainer/AI" to="." method="_on_ai_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/MarginContainer/HBoxContainer/AI" to="." method="_on_ai_mouse_exited"]

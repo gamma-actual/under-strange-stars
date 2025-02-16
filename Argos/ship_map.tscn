@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c624p7x76kmy4"]
+[gd_scene load_steps=16 format=3 uid="uid://c624p7x76kmy4"]
 
 [ext_resource type="Texture2D" uid="uid://lklvuunmw808" path="res://ui_test_5.png" id="1_egdde"]
 [ext_resource type="Script" path="res://UI/UIanimations/Vertical Menu/VerticalMenu.gd" id="2_cfsly"]
@@ -9,18 +9,25 @@
 [ext_resource type="PackedScene" uid="uid://c832w0nm6w3wv" path="res://UI/UIanimations/static_rust_test.tscn" id="7_83ppd"]
 [ext_resource type="PackedScene" uid="uid://det7ovoh6c42h" path="res://UI/badge_ui.tscn" id="8_1fx46"]
 [ext_resource type="PackedScene" uid="uid://bildqwetta28f" path="res://ship_animation.tscn" id="9_neiro"]
+[ext_resource type="Texture2D" uid="uid://bjbcllltjwnpw" path="res://Main Menu/start screen mockup 2_001.png" id="10_v82kw"]
+[ext_resource type="Texture2D" uid="uid://cfih2nyfr40hc" path="res://Main Menu/start screen mockup 2_002.png" id="11_4tlk1"]
+[ext_resource type="Texture2D" uid="uid://uj6mkiypwktn" path="res://Main Menu/start screen mockup 2_003.png" id="12_8h8pc"]
+[ext_resource type="Texture2D" uid="uid://n804x54sevpn" path="res://Main Menu/start screen mockup 2_004.png" id="13_4f6lu"]
+[ext_resource type="PackedScene" uid="uid://bmuygx64b1uiw" path="res://moving_stars.tscn" id="15_3waku"]
+[ext_resource type="Texture2D" uid="uid://dx2fj0i4k0b0g" path="res://Main Menu/start screen mockup 2_006.png" id="15_fusrg"]
 
 [node name="ShipMap" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(631, 380)
-scale = Vector2(0.3, 0.3)
+visible = false
+position = Vector2(962, 559)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_egdde")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="UIVert" type="Node2D" parent="CanvasLayer2"]
-position = Vector2(1074, 345)
+position = Vector2(1674, 502)
 script = ExtResource("2_cfsly")
 
 [node name="SplotchTest1" type="Sprite2D" parent="CanvasLayer2/UIVert"]
@@ -42,10 +49,10 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_2m4a5")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer2"]
-offset_left = 952.0
-offset_top = 79.0
-offset_right = 1217.0
-offset_bottom = 623.0
+offset_left = 1552.0
+offset_top = 229.0
+offset_right = 1817.0
+offset_bottom = 773.0
 
 [node name="MapBox" type="MarginContainer" parent="CanvasLayer2/PanelContainer"]
 layout_mode = 2
@@ -169,7 +176,7 @@ text = "Shuttle Bay
 "
 
 [node name="StaticRustTest" parent="CanvasLayer2" instance=ExtResource("7_83ppd")]
-position = Vector2(502, 334)
+position = Vector2(457, 428)
 
 [node name="Button" type="Button" parent="CanvasLayer2/StaticRustTest"]
 offset_left = -80.0
@@ -179,10 +186,46 @@ offset_bottom = 19.0
 text = "UH OH its an event"
 
 [node name="BadgeUI" parent="CanvasLayer2" instance=ExtResource("8_1fx46")]
+offset_top = 15.0
 offset_right = 0.0
-offset_bottom = 0.0
+offset_bottom = 15.0
+
+[node name="StartScreenMockup2001" type="Sprite2D" parent="."]
+modulate = Color(0.862745, 0.862745, 0.862745, 1)
+position = Vector2(-30, -11)
+scale = Vector2(0.49, 0.4)
+texture = ExtResource("10_v82kw")
+centered = false
+
+[node name="StartScreenMockup2004" type="Sprite2D" parent="."]
+position = Vector2(-30, -11)
+scale = Vector2(0.49, 0.4)
+texture = ExtResource("13_4f6lu")
+centered = false
+
+[node name="StartScreenMockup2003" type="Sprite2D" parent="."]
+position = Vector2(-30, -11)
+scale = Vector2(0.49, 0.4)
+texture = ExtResource("12_8h8pc")
+centered = false
+
+[node name="StartScreenMockup2002" type="Sprite2D" parent="."]
+position = Vector2(-30, -11)
+scale = Vector2(0.49, 0.4)
+texture = ExtResource("11_4tlk1")
+centered = false
+
+[node name="StartScreenMockup2006" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(3706, 678)
+texture = ExtResource("15_fusrg")
+centered = false
+flip_h = true
+
+[node name="MovingStars" parent="." instance=ExtResource("15_3waku")]
+position = Vector2(884, 955)
 
 [node name="ShipAnimation" parent="." instance=ExtResource("9_neiro")]
-position = Vector2(457, 428)
+position = Vector2(757, 565)
 
 [connection signal="pressed" from="CanvasLayer2/StaticRustTest/Button" to="CanvasLayer2/StaticRustTest" method="_on_button_pressed"]

@@ -1,14 +1,15 @@
-<<<<<<< Updated upstream
-res://timeline.dtl
-res://sadbastion_kalee.dch
-res://TESTING/UI TESTS (2).tscn
-res://chesa.dch
+res://character_creator.tscn
+res://Argosdialg.tres
+res://UI/character_menu.gd
+res://PlayerPortrait.gd
+res://outline.gdshader
 res://ship_map.tscn
-res://chesa intro.dtl
-=======
-res://ship_map.tscn
-res://ship_animation.tscn
 res://UI/badge_ui.tscn
 res://UI/character_menu.tscn
 res://UI/character_sheet.tscn
->>>>>>> Stashed changes
+res://Main Menu/MainMenu.tscn
+res://UI/TESTdialogue.tscn
+res://ship_lounge.tscn
+res://moving_stars.tscn
+res://ship_animation.tscn
+res://CharacterCreator.gd

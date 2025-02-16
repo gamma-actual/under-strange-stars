@@ -219,4 +219,3 @@ func _apply_export_overrides() -> void:
 	type_sounds.pitch_variance = typing_sounds_pitch_variance
 	type_sounds.volume_variance = typing_sounds_volume_variance
 	type_sounds.ignore_characters = typing_sounds_ignore_characters
-

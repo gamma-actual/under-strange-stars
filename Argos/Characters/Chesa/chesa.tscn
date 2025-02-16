@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7thlta2etwru"]
+
+[ext_resource type="Texture2D" uid="uid://bk040j2jhdscy" path="res://Characters/Chesa/chesa_neutral.png" id="1_y2gy2"]
+
+[node name="Chesa" type="Node"]
+
+[node name="ChesaNeutral" type="Sprite2D" parent="."]
+position = Vector2(1026, 616)
+texture = ExtResource("1_y2gy2")

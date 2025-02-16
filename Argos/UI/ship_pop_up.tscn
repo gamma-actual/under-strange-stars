@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://befgtb1fc8w7k"]
 
-[ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://sprite_test_1.png" id="1_i4fik"]
+[ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="1_i4fik"]
+
 
 [node name="ShipPopUp" type="PanelContainer"]
 offset_left = 61.0

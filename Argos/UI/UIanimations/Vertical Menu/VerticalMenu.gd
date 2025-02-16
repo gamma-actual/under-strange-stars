@@ -18,8 +18,7 @@ func breathe(node, breathing_rate):
 		directions[node.name] = -1 
 	elif node.scale <= minimum_size:
 		directions[node.name] = 1
-	node.scale += Vector2((breathing_rate * directions[node.name]) , (breathing_rate * directions[node.name])) # use the direction from the dictionary
-# Called when the node enters the scene tree for the first time.
+	node.scale += Vector2((breathing_rate * directions[node.name]) , (breathing_rate * directions[node.name]))
 func _ready():
 	splotch1.scale = start_size
 	splotch2.scale = start_size

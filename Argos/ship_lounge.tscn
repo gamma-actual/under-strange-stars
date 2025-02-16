@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://bwq8fva2grv3y"]
+
+[ext_resource type="Script" path="res://ShipLounge.gd" id="1_at6gd"]
+[ext_resource type="Texture2D" uid="uid://bk040j2jhdscy" path="res://Characters/Chesa/chesa_neutral.png" id="2_ov5nl"]
+[ext_resource type="Texture2D" uid="uid://ccv4sqvyd6q8u" path="res://cordie_neutral.png" id="3_qvrqn"]
+[ext_resource type="Texture2D" uid="uid://5tsfdn3ufepr" path="res://deven_neutral.png" id="4_ws0yk"]
+[ext_resource type="Texture2D" uid="uid://3rk28s0medf2" path="res://flor_neutral.png" id="5_8n2q2"]
+[ext_resource type="Texture2D" uid="uid://bon3wbq52on8m" path="res://giulia_neutral.png" id="6_046o7"]
+[ext_resource type="Texture2D" uid="uid://cw6o6mhx1t3ik" path="res://makoa_neutral.png" id="7_cjn1y"]
+[ext_resource type="Texture2D" uid="uid://disb2lcb1ti5l" path="res://mateo_neutral.png" id="8_yhu1l"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bmhya"]
+
+[sub_resource type="Animation" id="Animation_lu3m6"]
+resource_name = "Chesa"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sx4wa"]
+_data = {
+"Chesa": SubResource("Animation_lu3m6")
+}
+
+[node name="ShipLounge" type="Node2D"]
+script = ExtResource("1_at6gd")
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 117.0
+offset_right = 634.0
+offset_bottom = 1442.0
+icon = SubResource("CompressedTexture2D_bmhya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("")
+libraries = {
+"": SubResource("AnimationLibrary_sx4wa")
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+scale = Vector2(0.5, 0.5)
+
+[node name="ChesaNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(2398, 1070)
+texture = ExtResource("2_ov5nl")
+
+[node name="CordieNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(924, 1144)
+texture = ExtResource("3_qvrqn")
+
+[node name="DevenNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(1396, 1130)
+texture = ExtResource("4_ws0yk")
+
+[node name="FlorNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(1876, 1102)
+texture = ExtResource("5_8n2q2")
+
+[node name="GiuliaNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(2948, 1158)
+texture = ExtResource("6_046o7")
+
+[node name="MakoaNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(498, 1132)
+texture = ExtResource("7_cjn1y")
+
+[node name="MateoNeutral" type="Sprite2D" parent="Node2D"]
+position = Vector2(3424, 1142)
+texture = ExtResource("8_yhu1l")
