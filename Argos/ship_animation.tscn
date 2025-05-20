@@ -1,6 +1,6 @@
 [gd_scene load_steps=37 format=3 uid="uid://bildqwetta28f"]
 
-[ext_resource type="Script" path="res://ShipNodes.gd" id="1_6o0q0"]
+[ext_resource type="Script" uid="uid://bxhh8nokv6mry" path="res://ShipNodes.gd" id="1_6o0q0"]
 [ext_resource type="Texture2D" uid="uid://c6n0qj871gqp0" path="res://SHIP ASSETS/ship assets final 4.1.png" id="2_da2a5"]
 [ext_resource type="Texture2D" uid="uid://7mgjnaeru8o" path="res://SHIP ASSETS/ship assets final 4.2.png" id="3_iy0wb"]
 [ext_resource type="Texture2D" uid="uid://x03ud8amxiqd" path="res://SHIP ASSETS/ship assets final 4.2 highlighted.png" id="4_dv1ti"]
@@ -78,7 +78,7 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jftwc"]
 _data = {
-"Ship Jump": SubResource("Animation_simbf")
+&"Ship Jump": SubResource("Animation_simbf")
 }
 
 [node name="ShipAnimation" type="Node2D"]
@@ -195,7 +195,7 @@ texture_click_mask = ExtResource("16_31eiq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_jftwc")
+&"": SubResource("AnimationLibrary_jftwc")
 }
 
 [connection signal="mouse_entered" from="one/TextureButton" to="." method="_on_texture_button_mouse_entered"]

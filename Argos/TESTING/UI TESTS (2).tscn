@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://befgtb1fc8w7k" path="res://UI/ship_pop_up.tscn" id="2_fpnwo"]
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="3_ji7nd"]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="BadgeUI" parent="." instance=ExtResource("1_rpw0v")]

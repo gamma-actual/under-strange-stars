@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Argos"
-run/main_scene="res://ship_map.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+run/main_scene="uid://c624p7x76kmy4"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -22,17 +22,10 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={
-"Chesa": "res://Chesa.dch",
-"chesa": "res://chesa.dch",
-"unit_test_character": "res://Tests/Resources/unit_test_character.dch"
-}
-directories/dtl_directory={
-"chesa intro": "res://chesa intro.dtl",
-"timeline": "res://timeline.dtl"
-}
+directories/dch_directory={}
+directories/dtl_directory={}
 glossary/default_case_sensitive=true
-layout/style_list=["res://Argosdialg.tres"]
+layout/style_list=["res://Argosdialg.tres", ""]
 layout/default_style="res://Argosdialg.tres"
 variables={}
 text/letter_speed=0.01
@@ -60,6 +53,11 @@ window/size/viewport_height=1080
 [dotnet]
 
 project/assembly_name="Argos"
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
 
 [editor_plugins]
 

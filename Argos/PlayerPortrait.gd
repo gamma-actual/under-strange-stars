@@ -1,13 +1,28 @@
 extends Node2D
-var body = []
-#var clothing1 = "res://Character_Portrait_Assets/body_01_egghead.png"
-#var clothing2 = "res://Character_Portrait_Assets/body_01_miner.png"
-#var clothing3 = "res://Character_Portrait_Assets/body_01_overseer.png"
-#var clothing4 = "res://Character_Portrait_Assets/body_01_starchild.png"
-var clothes = ["res://Character_Portrait_Assets/Clothes/body_01_starchild.png" , "res://Character_Portrait_Assets/Clothes/body_01_overseer.png" , "res://Character_Portrait_Assets/Clothes/body_01_egghead.png" , "res://Character_Portrait_Assets/Clothes/body_01_miner.png"]
+
+
+var clothesone = ["res://Character_Portrait_Assets/Clothes_01/body_01_egghead.png", "res://Character_Portrait_Assets/Clothes_01/body_01_miner.png", "res://Character_Portrait_Assets/Clothes_01/body_01_overseer.png", "res://Character_Portrait_Assets/Clothes_01/body_01_starchild.png"]
+var clothestwo = ["res://Character_Portrait_Assets/Clothes_02/body_02_egghead.png", "res://Character_Portrait_Assets/Clothes_02/body_02_miner.png", "res://Character_Portrait_Assets/Clothes_02/body_02_overseer.png", "res://Character_Portrait_Assets/Clothes_02/body_02_starchild.png"]
+var clothesthree = ["res://Character_Portrait_Assets/Clothes_03/body_03_egghead.png", "res://Character_Portrait_Assets/Clothes_03/body_03_miner.png", "res://Character_Portrait_Assets/Clothes_03/body_03_overseer.png", "res://Character_Portrait_Assets/Clothes_03/body_03_starchild.png"]
+var clothesfour = ["res://Character_Portrait_Assets/Clothes_04/body_04_egghead.png", "res://Character_Portrait_Assets/Clothes_04/body_04_miner.png", "res://Character_Portrait_Assets/Clothes_04/body_04_overseer.png", "res://Character_Portrait_Assets/Clothes_04/body_04_starchild.png"]
+var clothesfive = ["res://Character_Portrait_Assets/Clothes_05/body_05_egghead.png", "res://Character_Portrait_Assets/Clothes_05/body_05_miner.png", "res://Character_Portrait_Assets/Clothes_05/body_05_overseer.png", "res://Character_Portrait_Assets/Clothes_05/body_05_starchild.png"]
+var clothessix = ["res://Character_Portrait_Assets/Clothes_06/body_06_egghead.png", "res://Character_Portrait_Assets/Clothes_06/body_06_miner.png", "res://Character_Portrait_Assets/Clothes_06/body_06_overseer.png", "res://Character_Portrait_Assets/Clothes_06/body_06_starchild.png"]
 var clothingindex = 0
-var skin = ["res://Character_Portrait_Assets/Skin/skin_01_color_1.png" , "res://Character_Portrait_Assets/Skin/skin_01_color_2.png" , "res://Character_Portrait_Assets/Skin/skin_01_color_3.png" , "res://Character_Portrait_Assets/Skin/skin_01_color_4.png" , "res://Character_Portrait_Assets/Skin/skin_01_color_5.png"]
+
+var bodytype = [clothesone , clothestwo , clothesthree , clothesfour , clothesfive , clothessix]
+var clothes = bodytype
+var bodyindex = 0
+
+var skinone = ["res://Character_Portrait_Assets/Skin_01/skin_01_color_1.png", "res://Character_Portrait_Assets/Skin_01/skin_01_color_2.png", "res://Character_Portrait_Assets/Skin_01/skin_01_color_3.png", "res://Character_Portrait_Assets/Skin_01/skin_01_color_4.png", "res://Character_Portrait_Assets/Skin_01/skin_01_color_5.png"]
+var skintwo = ["res://Character_Portrait_Assets/Skin_02/skin_02_color_1.png", "res://Character_Portrait_Assets/Skin_02/skin_02_color_2.png", "res://Character_Portrait_Assets/Skin_02/skin_02_color_3.png", "res://Character_Portrait_Assets/Skin_02/skin_02_color_4.png", "res://Character_Portrait_Assets/Skin_02/skin_02_color_5.png"]
+var skinthree = ["res://Character_Portrait_Assets/Skin_03/skin_03_color_1.png", "res://Character_Portrait_Assets/Skin_03/skin_03_color_2.png", "res://Character_Portrait_Assets/Skin_03/skin_03_color_3.png", "res://Character_Portrait_Assets/Skin_03/skin_03_color_4.png", "res://Character_Portrait_Assets/Skin_03/skin_03_color_5.png"]
+var skinfour = ["res://Character_Portrait_Assets/Skin_04/skin_04_color_1.png", "res://Character_Portrait_Assets/Skin_04/skin_04_color_2.png", "res://Character_Portrait_Assets/Skin_04/skin_04_color_3.png", "res://Character_Portrait_Assets/Skin_04/skin_04_color_4.png", "res://Character_Portrait_Assets/Skin_04/skin_04_color_5.png"]
+var skinfive = ["res://Character_Portrait_Assets/Skin_05/skin_05_color_1.png", "res://Character_Portrait_Assets/Skin_05/skin_05_color_2.png", "res://Character_Portrait_Assets/Skin_05/skin_05_color_3.png", "res://Character_Portrait_Assets/Skin_05/skin_05_color_4.png", "res://Character_Portrait_Assets/Skin_05/skin_05_color_5.png"]
+var skinsix = ["res://Character_Portrait_Assets/Skin_06/skin_06_color_1.png", "res://Character_Portrait_Assets/Skin_06/skin_06_color_2.png", "res://Character_Portrait_Assets/Skin_06/skin_06_color_3.png", "res://Character_Portrait_Assets/Skin_06/skin_06_color_4.png", "res://Character_Portrait_Assets/Skin_06/skin_06_color_5.png"]
+var skintype = [skinone , skintwo , skinthree , skinfour , skinfive , skinsix]
+var skin = skintype
 var skinindex = 0
+
 var glasses = ["res://Character_Portrait_Assets/Accesories/accessories 0.png" , "res://Character_Portrait_Assets/Accesories/accessories 1.png", "res://Character_Portrait_Assets/Accesories/accessories 2.png"]
 var glassesindex = 0
 var head = ["res://Character_Portrait_Assets/Head/head 1.png" , "res://Character_Portrait_Assets/Head/head 2.png" , "res://Character_Portrait_Assets/Head/head 3.png" , "res://Character_Portrait_Assets/Head/head 4.png" , "res://Character_Portrait_Assets/Head/head 5.png"]
@@ -28,8 +43,8 @@ var browindex = 0
 
 func idkbro():
 	$Glasses.texture = load(glasses[glassesindex])
-	$Clothing.texture = load(clothes[clothingindex])
-	$Skin.texture = load(skin[skinindex])
+	$Clothing.texture = load(bodytype[bodyindex][clothingindex])
+	$Skin.texture = load(skintype[bodyindex][skinindex])
 	$Head.texture = load(head[headindex])
 	$Hair.texture = load(hair[hairindex])
 	$Beard.texture = load(beard[beardindex])
@@ -37,7 +52,18 @@ func idkbro():
 	$Mouth.texture = load(mouth[mouthindex])
 	$Eyes.texture = load(eyes[eyesindex])
 	$Brows.texture = load(brow[browindex])
-
+func bodyup():
+	bodyindex = (bodyindex + 1) % bodytype.size()
+	clothes = bodytype[bodyindex]
+	skin = skintype[bodyindex]
+	$Skin.texture = load (skintype[bodyindex][skinindex])
+	$Clothing.texture = load(bodytype[bodyindex][clothingindex])
+func bodydown():
+	bodyindex = (bodyindex - 1) % bodytype.size()
+	clothes = bodytype[bodyindex]
+	skin = skintype[bodyindex]
+	$Skin.texture = load (skintype[bodyindex][skinindex])
+	$Clothing.texture = load(bodytype[bodyindex][clothingindex])
 func glassesup():
 	glassesindex = (glassesindex + 1) % glasses.size()
 	$Glasses.texture = load(glasses[glassesindex])
@@ -200,3 +226,9 @@ func _on_glasses_down_pressed() -> void:
 
 func _on_glasses_up_pressed() -> void:
 	glassesup()
+
+func _on_bodydown_pressed() -> void:
+	bodydown()
+
+func _on_bodyup_pressed() -> void:
+	bodyup()

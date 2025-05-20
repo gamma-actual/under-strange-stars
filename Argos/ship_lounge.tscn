@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bwq8fva2grv3y"]
 
-[ext_resource type="Script" path="res://ShipLounge.gd" id="1_at6gd"]
+[ext_resource type="Script" uid="uid://b7cebvlmkx8ic" path="res://ShipLounge.gd" id="1_at6gd"]
 [ext_resource type="Texture2D" uid="uid://bk040j2jhdscy" path="res://Characters/Chesa/chesa_neutral.png" id="2_ov5nl"]
 [ext_resource type="Texture2D" uid="uid://ccv4sqvyd6q8u" path="res://cordie_neutral.png" id="3_qvrqn"]
 [ext_resource type="Texture2D" uid="uid://5tsfdn3ufepr" path="res://deven_neutral.png" id="4_ws0yk"]
@@ -28,7 +28,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sx4wa"]
 _data = {
-"Chesa": SubResource("Animation_lu3m6")
+&"Chesa": SubResource("Animation_lu3m6")
 }
 
 [node name="ShipLounge" type="Node2D"]
@@ -44,7 +44,7 @@ icon = SubResource("CompressedTexture2D_bmhya")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("")
 libraries = {
-"": SubResource("AnimationLibrary_sx4wa")
+&"": SubResource("AnimationLibrary_sx4wa")
 }
 
 [node name="Node2D" type="Node2D" parent="."]

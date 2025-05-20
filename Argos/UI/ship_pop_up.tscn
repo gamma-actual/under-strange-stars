@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="1_i4fik"]
 
-
 [node name="ShipPopUp" type="PanelContainer"]
 offset_left = 61.0
 offset_top = 39.0

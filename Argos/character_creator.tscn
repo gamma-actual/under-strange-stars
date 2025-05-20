@@ -1,17 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://noahpbuqtybl"]
 
-[ext_resource type="Script" path="res://CharacterCreator.gd" id="1_qcdru"]
-[ext_resource type="Script" path="res://PlayerPortrait.gd" id="2_vjtv5"]
+[ext_resource type="Script" uid="uid://v2sone0mxp7h" path="res://CharacterCreator.gd" id="1_qcdru"]
+[ext_resource type="Script" uid="uid://c6m8sdx6odjvg" path="res://PlayerPortrait.gd" id="2_vjtv5"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_ipgkk"]
 
 [node name="CharacterCreator" type="Node2D"]
-position = Vector2(2, -1)
 script = ExtResource("1_qcdru")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="PlayerPortrait" type="Node2D" parent="."]
+position = Vector2(926, 252)
+script = ExtResource("2_vjtv5")
 
-[node name="Body" type="Button" parent="Node2D"]
+[node name="Body" type="Node2D" parent="PlayerPortrait"]
+position = Vector2(-926, -252)
+
+[node name="Body" type="Button" parent="PlayerPortrait/Body"]
 offset_left = 507.0
 offset_top = 35.0
 offset_right = 554.0
@@ -19,23 +23,19 @@ offset_bottom = 66.0
 text = "Body
 "
 
-[node name="Button" type="Button" parent="Node2D/Body"]
+[node name="Bodydown" type="Button" parent="PlayerPortrait/Body/Body"]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="Button2" type="Button" parent="Node2D/Body"]
+[node name="Bodyup" type="Button" parent="PlayerPortrait/Body/Body"]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
-
-[node name="PlayerPortrait" type="Node2D" parent="."]
-position = Vector2(926, 252)
-script = ExtResource("2_vjtv5")
 
 [node name="Skin" type="Sprite2D" parent="PlayerPortrait"]
 
@@ -272,6 +272,8 @@ offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
+[connection signal="pressed" from="PlayerPortrait/Body/Body/Bodydown" to="PlayerPortrait" method="_on_bodydown_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Body/Body/Bodyup" to="PlayerPortrait" method="_on_bodyup_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Skin/Skin/Skindown" to="PlayerPortrait" method="_on_skindown_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Skin/Skin/SkinUp" to="PlayerPortrait" method="_on_skin_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Clothing/Clothing/ClothingUp" to="PlayerPortrait" method="_on_clothing_up_pressed"]

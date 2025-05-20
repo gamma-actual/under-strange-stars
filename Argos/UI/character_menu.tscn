@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://c6t6xwtl3nqo1"]
 
-[ext_resource type="Script" path="res://UI/character_menu.gd" id="1_xi724"]
+[ext_resource type="Script" uid="uid://csyakv1gg5u8w" path="res://UI/character_menu.gd" id="1_xi724"]
 [ext_resource type="Texture2D" uid="uid://6prtkhndhs3p" path="res://UI/Panels/character_panel_chesa_unselected.png" id="2_0cw0b"]
 [ext_resource type="Texture2D" uid="uid://dhua1unj408wr" path="res://UI/relationship panels ui mockup 1.png" id="2_rjyb7"]
 [ext_resource type="Texture2D" uid="uid://fmlpcd4jks0i" path="res://UI/relationship panels ui mockup 2.png" id="3_vf665"]

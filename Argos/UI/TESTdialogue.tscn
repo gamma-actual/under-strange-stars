@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://map3f4f5gkuw"]
 
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="1_3uv8p"]
-[ext_resource type="Script" path="res://UI/TESTdialogue.gd" id="1_x2odq"]
+[ext_resource type="Script" uid="uid://bm5bdq3mbe58g" path="res://UI/TESTdialogue.gd" id="1_x2odq"]
 
 [node name="DialogueUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 1287.0
-offset_top = 73.0
+offset_top = 36.0
 offset_right = 1887.0
-offset_bottom = 973.0
-scale = Vector2(1, 0.976402)
+offset_bottom = 936.0
+scale = Vector2(1.01187, 1.11921)
 script = ExtResource("1_x2odq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -93,6 +93,9 @@ text = "choice 2"
 [node name="Button3" type="Button" parent="PanelContainer/VBoxContainer2"]
 layout_mode = 2
 text = "choice 3"
+
+[node name="HSeparator2" type="HSeparator" parent="PanelContainer/VBoxContainer2"]
+layout_mode = 2
 
 [node name="Container" type="Container" parent="PanelContainer/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 100)
