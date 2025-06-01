@@ -64,11 +64,9 @@ func cycle_glasses(number: int):
 	glassesindex = (glassesindex + number) % glasses.size()
 	$Glasses.texture = load(glasses[glassesindex])
 func cycle_cloth(number: int):
-	clothes = bodytype[bodyindex]
 	clothingindex = (clothingindex + number) % clothes.size()
 	$Clothing.texture = load(clothes[clothingindex])
 func cycle_skin(number: int):
-	skin = skintype[bodyindex]
 	skinindex = (skinindex + number) % skin.size()
 	$Skin.texture = load(skin[skinindex])
 func cycle_head(number: int):

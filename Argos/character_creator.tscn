@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://noahpbuqtybl"]
 
 [ext_resource type="Script" uid="uid://v2sone0mxp7h" path="res://CharacterCreator.gd" id="1_qcdru"]
-[ext_resource type="Script" uid="uid://c6m8sdx6odjvg" path="res://PlayerPortrait.gd" id="2_vjtv5"]
+[ext_resource type="Script" uid="uid://c6m8sdx6odjvg" path="res://PlayerPortrait.gd" id="2_vcmal"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_ipgkk"]
 
@@ -10,7 +10,7 @@ script = ExtResource("1_qcdru")
 
 [node name="PlayerPortrait" type="Node2D" parent="."]
 position = Vector2(926, 252)
-script = ExtResource("2_vjtv5")
+script = ExtResource("2_vcmal")
 
 [node name="Body" type="Node2D" parent="PlayerPortrait"]
 position = Vector2(-926, -252)
@@ -110,24 +110,24 @@ offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Hair" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Mouth" type="Sprite2D" parent="PlayerPortrait"]
 
-[node name="Hair" type="Button" parent="PlayerPortrait/Hair"]
+[node name="Mouth" type="Button" parent="PlayerPortrait/Mouth"]
 offset_left = -419.0
-offset_top = -62.0
-offset_right = -337.0
-offset_bottom = -31.0
-text = "Hair
+offset_top = 31.0
+offset_right = -332.0
+offset_bottom = 62.0
+text = "Mouth
 "
 
-[node name="HairDown" type="Button" parent="PlayerPortrait/Hair/Hair"]
+[node name="MouthDown" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="HairUp" type="Button" parent="PlayerPortrait/Hair/Hair"]
+[node name="MouthUp" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
@@ -156,6 +156,54 @@ offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
+[node name="Glasses" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Accesory" type="Button" parent="PlayerPortrait/Glasses"]
+offset_left = -419.0
+offset_top = -124.0
+offset_right = -337.0
+offset_bottom = -93.0
+text = "Accesoriy
+"
+
+[node name="AccessoryDown" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="AccessoryUp" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
+[node name="Hair" type="Sprite2D" parent="PlayerPortrait"]
+
+[node name="Hair" type="Button" parent="PlayerPortrait/Hair"]
+offset_left = -419.0
+offset_top = -62.0
+offset_right = -337.0
+offset_bottom = -31.0
+text = "Hair
+"
+
+[node name="HairDown" type="Button" parent="PlayerPortrait/Hair/Hair"]
+layout_mode = 0
+offset_left = -55.0
+offset_right = -37.0
+offset_bottom = 31.0
+text = "<"
+
+[node name="HairUp" type="Button" parent="PlayerPortrait/Hair/Hair"]
+layout_mode = 0
+offset_left = 85.0
+offset_right = 103.0
+offset_bottom = 31.0
+text = ">"
+
 [node name="Nose" type="Sprite2D" parent="PlayerPortrait"]
 
 [node name="Nose" type="Button" parent="PlayerPortrait/Nose"]
@@ -172,30 +220,6 @@ offset_bottom = 31.0
 text = "<"
 
 [node name="NoseUP" type="Button" parent="PlayerPortrait/Nose/Nose"]
-layout_mode = 0
-offset_left = 85.0
-offset_right = 103.0
-offset_bottom = 31.0
-text = ">"
-
-[node name="Mouth" type="Sprite2D" parent="PlayerPortrait"]
-
-[node name="Mouth" type="Button" parent="PlayerPortrait/Mouth"]
-offset_left = -419.0
-offset_top = 31.0
-offset_right = -332.0
-offset_bottom = 62.0
-text = "Mouth
-"
-
-[node name="MouthDown" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
-layout_mode = 0
-offset_left = -55.0
-offset_right = -37.0
-offset_bottom = 31.0
-text = "<"
-
-[node name="MouthUp" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
@@ -248,29 +272,7 @@ offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Glasses" type="Sprite2D" parent="PlayerPortrait"]
-
-[node name="Accesory" type="Button" parent="PlayerPortrait/Glasses"]
-offset_left = -419.0
-offset_top = -124.0
-offset_right = -337.0
-offset_bottom = -93.0
-text = "Accesoriy
-"
-
-[node name="AccessoryDown" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
-layout_mode = 0
-offset_left = -55.0
-offset_right = -37.0
-offset_bottom = 31.0
-text = "<"
-
-[node name="AccessoryUp" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
-layout_mode = 0
-offset_left = 85.0
-offset_right = 103.0
-offset_bottom = 31.0
-text = ">"
+[node name="SubViewport" type="SubViewport" parent="."]
 
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodydown" to="PlayerPortrait" method="_on_bodydown_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodyup" to="PlayerPortrait" method="_on_bodyup_pressed"]
@@ -280,17 +282,17 @@ text = ">"
 [connection signal="pressed" from="PlayerPortrait/Clothing/Clothing/ClothingDown" to="PlayerPortrait" method="_on_clothing_down_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Head/Head/HeadDown" to="PlayerPortrait" method="_on_head_down_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Head/Head/HeadUp" to="PlayerPortrait" method="_on_head_up_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairDown" to="PlayerPortrait" method="_on_hair_down_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairUp" to="PlayerPortrait" method="_on_hair_up_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardDown" to="PlayerPortrait" method="_on_beard_down_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardUp" to="PlayerPortrait" method="_on_beard_up_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseDown" to="PlayerPortrait" method="_on_nose_down_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseUP" to="PlayerPortrait" method="_on_nose_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Mouth/Mouth/MouthDown" to="PlayerPortrait" method="_on_mouth_down_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Mouth/Mouth/MouthUp" to="PlayerPortrait" method="_on_mouth_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardDown" to="PlayerPortrait" method="_on_beard_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Beard/Beard/BeardUp" to="PlayerPortrait" method="_on_beard_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryDown" to="PlayerPortrait" method="_on_glasses_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryUp" to="PlayerPortrait" method="_on_glasses_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairDown" to="PlayerPortrait" method="_on_hair_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Hair/Hair/HairUp" to="PlayerPortrait" method="_on_hair_up_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseDown" to="PlayerPortrait" method="_on_nose_down_pressed"]
+[connection signal="pressed" from="PlayerPortrait/Nose/Nose/NoseUP" to="PlayerPortrait" method="_on_nose_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Eyes/Eyes/EyesDown" to="PlayerPortrait" method="_on_eyes_down_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Eyes/Eyes/EyesUp" to="PlayerPortrait" method="_on_eyes_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsUp" to="PlayerPortrait" method="_on_brows_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsDown" to="PlayerPortrait" method="_on_brows_down_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryDown" to="PlayerPortrait" method="_on_glasses_down_pressed"]
-[connection signal="pressed" from="PlayerPortrait/Glasses/Accesory/AccessoryUp" to="PlayerPortrait" method="_on_glasses_up_pressed"]
