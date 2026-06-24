@@ -96,7 +96,7 @@ resource_name = "new_animation"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2534l"]
 _data = {
-"new_animation": SubResource("Animation_vh4re")
+&"new_animation": SubResource("Animation_vh4re")
 }
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ct2lg"]

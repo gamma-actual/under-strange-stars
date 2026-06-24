@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cobogjs744ebj"]
 
-[ext_resource type="Script" path="res://TESTING/EventTemplate.gd" id="1_ry4d6"]
+[ext_resource type="Script" uid="uid://huac5xx75hoh" path="res://TESTING/EventTemplate.gd" id="1_ry4d6"]
 
 [node name="EventTemplate" type="Control"]
 layout_mode = 3

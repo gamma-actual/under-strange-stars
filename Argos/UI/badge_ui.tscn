@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://det7ovoh6c42h"]
 
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="1_5d137"]
-[ext_resource type="Script" path="res://UI/badge_ui.gd" id="1_67krq"]
+[ext_resource type="Script" uid="uid://c27kdby6pwjoc" path="res://UI/badge_ui.gd" id="1_67krq"]
 
 [node name="BadgeUI" type="Control"]
 layout_mode = 3

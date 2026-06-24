@@ -1,100 +1,100 @@
-[gd_scene load_steps=3 format=3 uid="uid://map3f4f5gkuw"]
+[gd_scene format=3 uid="uid://map3f4f5gkuw"]
 
 [ext_resource type="Texture2D" uid="uid://bn2j7tpn1snim" path="res://Characters/Chesa/sprite_test_1.png" id="1_3uv8p"]
-[ext_resource type="Script" path="res://UI/TESTdialogue.gd" id="1_x2odq"]
+[ext_resource type="Script" uid="uid://cpeqf75g5p70c" path="res://UI/TESTdialogue.gd" id="1_x2odq"]
 
-[node name="DialogueUI" type="Control"]
+[node name="DialogueUI" type="Control" unique_id=1253211941]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 1287.0
 offset_top = 73.0
 offset_right = 1887.0
-offset_bottom = 973.0
+offset_bottom = 973.244
 scale = Vector2(1, 0.976402)
 script = ExtResource("1_x2odq")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1485870522]
+layout_mode = 0
 offset_right = 100.0
 offset_bottom = 900.0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1078995994]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer" unique_id=105773085]
 layout_mode = 2
 texture_normal = ExtResource("1_3uv8p")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer" unique_id=497533653]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer2"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer2" unique_id=1696707817]
 layout_mode = 2
 texture_normal = ExtResource("1_3uv8p")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer"]
+[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer" unique_id=1715095434]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer3"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer3" unique_id=1465611321]
 layout_mode = 2
 texture_normal = ExtResource("1_3uv8p")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="PanelContainer4" type="PanelContainer" parent="VBoxContainer"]
+[node name="PanelContainer4" type="PanelContainer" parent="VBoxContainer" unique_id=469902573]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer4"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer4" unique_id=1545389983]
 layout_mode = 2
 texture_normal = ExtResource("1_3uv8p")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-layout_mode = 2
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1961113396]
+layout_mode = 0
 offset_left = 104.0
 offset_right = 596.0
 offset_bottom = 900.0
 size_flags_horizontal = 3
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer" unique_id=5011348]
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer2"]
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer2" unique_id=2009390204]
 custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
 size_flags_vertical = 3
 visible_characters = 0
 visible_ratio = 0.5
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/VBoxContainer2"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/VBoxContainer2" unique_id=664111703]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="HSeparator" type="HSeparator" parent="PanelContainer/VBoxContainer2"]
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/VBoxContainer2" unique_id=136704403]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer2"]
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer2" unique_id=1256866477]
 layout_mode = 2
 text = "choice1"
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer2"]
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer2" unique_id=1322224073]
 layout_mode = 2
 text = "choice 2"
 
-[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer2"]
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer2" unique_id=1866022086]
 layout_mode = 2
 text = "choice 3"
 
-[node name="Container" type="Container" parent="PanelContainer/VBoxContainer2"]
+[node name="Container" type="Container" parent="PanelContainer/VBoxContainer2" unique_id=760363667]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 

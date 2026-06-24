@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bmuygx64b1uiw"]
 
-[ext_resource type="Script" path="res://MovingStars.gd" id="1_yjy63"]
+[ext_resource type="Script" uid="uid://dwt1tpqb2aqhp" path="res://MovingStars.gd" id="1_yjy63"]
 [ext_resource type="Texture2D" uid="uid://cp62l46lxylei" path="res://Main Menu/start screen mockup 2_005.png" id="2_eapt2"]
 
 [sub_resource type="Animation" id="Animation_ytpn3"]
@@ -45,7 +45,7 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jd7e8"]
 _data = {
-"MovingStars": SubResource("Animation_ytpn3")
+&"MovingStars": SubResource("Animation_ytpn3")
 }
 
 [node name="MovingStars" type="Node2D"]

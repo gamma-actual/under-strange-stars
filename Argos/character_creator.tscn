@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://noahpbuqtybl"]
 
-[ext_resource type="Script" path="res://CharacterCreator.gd" id="1_qcdru"]
-[ext_resource type="Script" path="res://PlayerPortrait.gd" id="2_vjtv5"]
+[ext_resource type="Script" uid="uid://dw2a5s7slmhc4" path="res://CharacterCreator.gd" id="1_qcdru"]
+[ext_resource type="Script" uid="uid://18ork4jp5thh" path="res://PlayerPortrait.gd" id="2_vjtv5"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_ipgkk"]
 
