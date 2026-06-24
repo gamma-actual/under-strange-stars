@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c6t6xwtl3nqo1"]
+[gd_scene format=3 uid="uid://c6t6xwtl3nqo1"]
 
 [ext_resource type="Script" uid="uid://csyakv1gg5u8w" path="res://UI/character_menu.gd" id="1_xi724"]
 [ext_resource type="Texture2D" uid="uid://6prtkhndhs3p" path="res://UI/Panels/character_panel_chesa_unselected.png" id="2_0cw0b"]
@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://ciunfrvrcy6ue" path="res://UI/Panels/character_panel_ai_selected.png" id="23_82k25"]
 [ext_resource type="Texture2D" uid="uid://dhryo0f2hf7e8" path="res://UI/Panels/character_panel_ai_ejected.png" id="24_52o41"]
 
-[node name="Character Menu" type="Control"]
+[node name="Character Menu" type="Control" unique_id=301513830]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1920.0
@@ -37,7 +37,7 @@ script = ExtResource("1_xi724")
 move_speed = 80.0
 breathing_rate = 0.1
 
-[node name="Panel" type="MarginContainer" parent="."]
+[node name="Panel" type="MarginContainer" parent="." unique_id=1616980921]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
@@ -46,36 +46,39 @@ theme_override_constants/margin_top = 110
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 110
 
-[node name="UIPanel1" type="Sprite2D" parent="Panel"]
+[node name="UIPanel1" type="Sprite2D" parent="Panel" unique_id=765842029]
+visible = false
 modulate = Color(1, 1, 1, 0.666667)
 position = Vector2(975.142, 525)
 scale = Vector2(0.96, 0.96)
 texture = ExtResource("2_rjyb7")
 
-[node name="UIPanel2" type="Sprite2D" parent="Panel"]
+[node name="UIPanel2" type="Sprite2D" parent="Panel" unique_id=1036499899]
+visible = false
 modulate = Color(1, 1, 1, 0.588235)
 position = Vector2(972.144, 534)
 scale = Vector2(0.96, 0.96)
 texture = ExtResource("3_vf665")
 
-[node name="UIPanel3" type="Sprite2D" parent="Panel"]
+[node name="UIPanel3" type="Sprite2D" parent="Panel" unique_id=290010615]
+visible = false
 modulate = Color(1, 1, 1, 0.392157)
 position = Vector2(973.144, 523)
 scale = Vector2(0.96, 0.96)
 texture = ExtResource("4_pnfw2")
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=439760188]
 layout_mode = 2
 theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 50
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer" unique_id=608545778]
 layout_mode = 2
 theme_override_constants/separation = 4
 
-[node name="Officer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Officer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=1504837169]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("15_de0nw")
@@ -84,7 +87,7 @@ texture_hover = ExtResource("16_dt415")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Officer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Officer" unique_id=1450939124]
 visible = false
 layout_mode = 0
 offset_left = -7.06419
@@ -97,7 +100,7 @@ text = "Flor"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Cook" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Cook" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=1758255821]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("17_7ctun")
@@ -106,7 +109,7 @@ texture_hover = ExtResource("18_o228t")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Cook"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Cook" unique_id=1968417492]
 visible = false
 layout_mode = 0
 offset_left = -4.22157
@@ -119,7 +122,7 @@ text = "Mak"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Scientist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Scientist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=307676651]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("5_snsgi")
@@ -128,7 +131,7 @@ texture_hover = ExtResource("6_1r8aq")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scientist"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scientist" unique_id=1453275920]
 visible = false
 layout_mode = 0
 offset_left = -4.37631
@@ -141,7 +144,7 @@ text = "Seb"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Scout" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Scout" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=38217335]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("7_jrndw")
@@ -150,7 +153,7 @@ texture_hover = ExtResource("8_6uy68")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scout"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Scout" unique_id=451195878]
 visible = false
 layout_mode = 0
 offset_left = -8.52838
@@ -163,7 +166,7 @@ text = "Cordie"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Security" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Security" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=1196943079]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("9_3cdkq")
@@ -172,7 +175,7 @@ texture_hover = ExtResource("10_m51nm")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Security"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Security" unique_id=431825387]
 visible = false
 layout_mode = 0
 offset_left = -15.677
@@ -185,7 +188,7 @@ text = "Jules"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Doctor" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Doctor" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=1493799408]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("11_qdmyw")
@@ -194,7 +197,7 @@ texture_hover = ExtResource("12_yoewf")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Doctor"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Doctor" unique_id=792470798]
 visible = false
 layout_mode = 0
 offset_left = -6.83968
@@ -207,7 +210,7 @@ text = "Devan"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Colonist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Colonist" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=929871701]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("13_8ycne")
@@ -216,7 +219,7 @@ texture_hover = ExtResource("14_v341y")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Colonist"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Colonist" unique_id=1757225875]
 visible = false
 layout_mode = 0
 offset_left = -6.99531
@@ -229,7 +232,7 @@ text = "Abby"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Engineer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Engineer" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=998041754]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("2_0cw0b")
@@ -238,7 +241,7 @@ texture_hover = ExtResource("3_xc46m")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Engineer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Engineer" unique_id=330898984]
 visible = false
 layout_mode = 0
 offset_left = -9.14827
@@ -251,7 +254,7 @@ text = "Chesa"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Rogue" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="Rogue" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=311812254]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
@@ -262,7 +265,7 @@ texture_disabled = ExtResource("21_r76ki")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Rogue"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/Rogue" unique_id=39903604]
 visible = false
 layout_mode = 0
 offset_left = -7.30571
@@ -275,7 +278,7 @@ text = "Matteo"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="AI" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer"]
+[node name="AI" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer" unique_id=1335432957]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
@@ -286,7 +289,7 @@ texture_disabled = ExtResource("24_52o41")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/AI"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/AI" unique_id=2114146517]
 visible = false
 layout_mode = 0
 offset_left = -11.457

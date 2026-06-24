@@ -1,21 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://noahpbuqtybl"]
+[gd_scene format=3 uid="uid://noahpbuqtybl"]
 
 [ext_resource type="Script" uid="uid://v2sone0mxp7h" path="res://CharacterCreator.gd" id="1_qcdru"]
 [ext_resource type="Script" uid="uid://c6m8sdx6odjvg" path="res://PlayerPortrait.gd" id="2_vcmal"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_ipgkk"]
 
-[node name="CharacterCreator" type="Node2D"]
+[node name="CharacterCreator" type="Node2D" unique_id=876774223]
 script = ExtResource("1_qcdru")
 
-[node name="PlayerPortrait" type="Node2D" parent="."]
+[node name="PlayerPortrait" type="Node2D" parent="." unique_id=57984137]
 position = Vector2(926, 252)
 script = ExtResource("2_vcmal")
 
-[node name="Body" type="Node2D" parent="PlayerPortrait"]
+[node name="Body" type="Node2D" parent="PlayerPortrait" unique_id=1877611446]
 position = Vector2(-926, -252)
 
-[node name="Body" type="Button" parent="PlayerPortrait/Body"]
+[node name="Body" type="Button" parent="PlayerPortrait/Body" unique_id=1301936519]
 offset_left = 507.0
 offset_top = 35.0
 offset_right = 554.0
@@ -23,23 +23,23 @@ offset_bottom = 66.0
 text = "Body
 "
 
-[node name="Bodydown" type="Button" parent="PlayerPortrait/Body/Body"]
+[node name="Bodydown" type="Button" parent="PlayerPortrait/Body/Body" unique_id=382192483]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="Bodyup" type="Button" parent="PlayerPortrait/Body/Body"]
+[node name="Bodyup" type="Button" parent="PlayerPortrait/Body/Body" unique_id=1504086065]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Skin" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Skin" type="Sprite2D" parent="PlayerPortrait" unique_id=912287366]
 
-[node name="Skin" type="Button" parent="PlayerPortrait/Skin"]
+[node name="Skin" type="Button" parent="PlayerPortrait/Skin" unique_id=721186113]
 offset_left = -419.0
 offset_top = -186.0
 offset_right = -372.0
@@ -47,24 +47,24 @@ offset_bottom = -155.0
 text = "Skin
 "
 
-[node name="Skindown" type="Button" parent="PlayerPortrait/Skin/Skin"]
+[node name="Skindown" type="Button" parent="PlayerPortrait/Skin/Skin" unique_id=1633597598]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="SkinUp" type="Button" parent="PlayerPortrait/Skin/Skin"]
+[node name="SkinUp" type="Button" parent="PlayerPortrait/Skin/Skin" unique_id=1497903185]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Clothing" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Clothing" type="Sprite2D" parent="PlayerPortrait" unique_id=1543397688]
 texture = SubResource("ImageTexture_ipgkk")
 
-[node name="Clothing" type="Button" parent="PlayerPortrait/Clothing"]
+[node name="Clothing" type="Button" parent="PlayerPortrait/Clothing" unique_id=1162152750]
 offset_left = -419.0
 offset_top = -155.0
 offset_right = -346.0
@@ -72,23 +72,23 @@ offset_bottom = -124.0
 text = "Clothing
 "
 
-[node name="ClothingUp" type="Button" parent="PlayerPortrait/Clothing/Clothing"]
+[node name="ClothingUp" type="Button" parent="PlayerPortrait/Clothing/Clothing" unique_id=412839864]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="ClothingDown" type="Button" parent="PlayerPortrait/Clothing/Clothing"]
+[node name="ClothingDown" type="Button" parent="PlayerPortrait/Clothing/Clothing" unique_id=2033002102]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Head" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Head" type="Sprite2D" parent="PlayerPortrait" unique_id=1437567816]
 
-[node name="Head" type="Button" parent="PlayerPortrait/Head"]
+[node name="Head" type="Button" parent="PlayerPortrait/Head" unique_id=957199144]
 offset_left = -419.0
 offset_top = -93.0
 offset_right = -332.0
@@ -96,23 +96,23 @@ offset_bottom = -62.0
 text = "Head
 "
 
-[node name="HeadDown" type="Button" parent="PlayerPortrait/Head/Head"]
+[node name="HeadDown" type="Button" parent="PlayerPortrait/Head/Head" unique_id=1673138580]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="HeadUp" type="Button" parent="PlayerPortrait/Head/Head"]
+[node name="HeadUp" type="Button" parent="PlayerPortrait/Head/Head" unique_id=1353337603]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Mouth" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Mouth" type="Sprite2D" parent="PlayerPortrait" unique_id=1478109115]
 
-[node name="Mouth" type="Button" parent="PlayerPortrait/Mouth"]
+[node name="Mouth" type="Button" parent="PlayerPortrait/Mouth" unique_id=1115672425]
 offset_left = -419.0
 offset_top = 31.0
 offset_right = -332.0
@@ -120,45 +120,45 @@ offset_bottom = 62.0
 text = "Mouth
 "
 
-[node name="MouthDown" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
+[node name="MouthDown" type="Button" parent="PlayerPortrait/Mouth/Mouth" unique_id=1240843832]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="MouthUp" type="Button" parent="PlayerPortrait/Mouth/Mouth"]
+[node name="MouthUp" type="Button" parent="PlayerPortrait/Mouth/Mouth" unique_id=1843435770]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Beard" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Beard" type="Sprite2D" parent="PlayerPortrait" unique_id=727221249]
 
-[node name="Beard" type="Button" parent="PlayerPortrait/Beard"]
+[node name="Beard" type="Button" parent="PlayerPortrait/Beard" unique_id=615576404]
 offset_left = -419.0
 offset_top = -31.0
 offset_right = -332.0
 text = "Facial hair"
 
-[node name="BeardDown" type="Button" parent="PlayerPortrait/Beard/Beard"]
+[node name="BeardDown" type="Button" parent="PlayerPortrait/Beard/Beard" unique_id=1959341508]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="BeardUp" type="Button" parent="PlayerPortrait/Beard/Beard"]
+[node name="BeardUp" type="Button" parent="PlayerPortrait/Beard/Beard" unique_id=289028203]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Glasses" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Glasses" type="Sprite2D" parent="PlayerPortrait" unique_id=1298806442]
 
-[node name="Accesory" type="Button" parent="PlayerPortrait/Glasses"]
+[node name="Accesory" type="Button" parent="PlayerPortrait/Glasses" unique_id=422750144]
 offset_left = -419.0
 offset_top = -124.0
 offset_right = -337.0
@@ -166,23 +166,23 @@ offset_bottom = -93.0
 text = "Accesoriy
 "
 
-[node name="AccessoryDown" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+[node name="AccessoryDown" type="Button" parent="PlayerPortrait/Glasses/Accesory" unique_id=547799135]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="AccessoryUp" type="Button" parent="PlayerPortrait/Glasses/Accesory"]
+[node name="AccessoryUp" type="Button" parent="PlayerPortrait/Glasses/Accesory" unique_id=1944448632]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Hair" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Hair" type="Sprite2D" parent="PlayerPortrait" unique_id=1107221297]
 
-[node name="Hair" type="Button" parent="PlayerPortrait/Hair"]
+[node name="Hair" type="Button" parent="PlayerPortrait/Hair" unique_id=931434746]
 offset_left = -419.0
 offset_top = -62.0
 offset_right = -337.0
@@ -190,89 +190,89 @@ offset_bottom = -31.0
 text = "Hair
 "
 
-[node name="HairDown" type="Button" parent="PlayerPortrait/Hair/Hair"]
+[node name="HairDown" type="Button" parent="PlayerPortrait/Hair/Hair" unique_id=120917055]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="HairUp" type="Button" parent="PlayerPortrait/Hair/Hair"]
+[node name="HairUp" type="Button" parent="PlayerPortrait/Hair/Hair" unique_id=619914544]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Nose" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Nose" type="Sprite2D" parent="PlayerPortrait" unique_id=2034507650]
 
-[node name="Nose" type="Button" parent="PlayerPortrait/Nose"]
+[node name="Nose" type="Button" parent="PlayerPortrait/Nose" unique_id=1082013945]
 offset_left = -419.0
 offset_right = -332.0
 offset_bottom = 31.0
 text = "Nose"
 
-[node name="NoseDown" type="Button" parent="PlayerPortrait/Nose/Nose"]
+[node name="NoseDown" type="Button" parent="PlayerPortrait/Nose/Nose" unique_id=891953270]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="NoseUP" type="Button" parent="PlayerPortrait/Nose/Nose"]
+[node name="NoseUP" type="Button" parent="PlayerPortrait/Nose/Nose" unique_id=1031587062]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Eyes" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Eyes" type="Sprite2D" parent="PlayerPortrait" unique_id=289159757]
 
-[node name="Eyes" type="Button" parent="PlayerPortrait/Eyes"]
+[node name="Eyes" type="Button" parent="PlayerPortrait/Eyes" unique_id=521921567]
 offset_left = -419.0
 offset_top = 62.0
 offset_right = -332.0
 offset_bottom = 93.0
 text = "Eyes"
 
-[node name="EyesDown" type="Button" parent="PlayerPortrait/Eyes/Eyes"]
+[node name="EyesDown" type="Button" parent="PlayerPortrait/Eyes/Eyes" unique_id=732476931]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="EyesUp" type="Button" parent="PlayerPortrait/Eyes/Eyes"]
+[node name="EyesUp" type="Button" parent="PlayerPortrait/Eyes/Eyes" unique_id=391514748]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="Brows" type="Sprite2D" parent="PlayerPortrait"]
+[node name="Brows" type="Sprite2D" parent="PlayerPortrait" unique_id=1233843426]
 
-[node name="Eyebrows" type="Button" parent="PlayerPortrait/Brows"]
+[node name="Eyebrows" type="Button" parent="PlayerPortrait/Brows" unique_id=1168480736]
 offset_left = -419.0
 offset_top = 93.0
 offset_right = -332.0
 offset_bottom = 124.0
 text = "Eyebrows"
 
-[node name="BrowsUp" type="Button" parent="PlayerPortrait/Brows/Eyebrows"]
+[node name="BrowsUp" type="Button" parent="PlayerPortrait/Brows/Eyebrows" unique_id=1556496824]
 layout_mode = 0
 offset_left = -55.0
 offset_right = -37.0
 offset_bottom = 31.0
 text = "<"
 
-[node name="BrowsDown" type="Button" parent="PlayerPortrait/Brows/Eyebrows"]
+[node name="BrowsDown" type="Button" parent="PlayerPortrait/Brows/Eyebrows" unique_id=1564708588]
 layout_mode = 0
 offset_left = 85.0
 offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="SubViewport" type="SubViewport" parent="."]
+[node name="SubViewport" type="SubViewport" parent="." unique_id=751682824]
 
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodydown" to="PlayerPortrait" method="_on_bodydown_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodyup" to="PlayerPortrait" method="_on_bodyup_pressed"]
