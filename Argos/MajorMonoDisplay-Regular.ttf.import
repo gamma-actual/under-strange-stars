@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bfavhpqn1vjhq"
+uid="uid://dvbx3oyivabbr"
 path="res://.godot/imported/MajorMonoDisplay-Regular.ttf-9f405640d94db0db90af743b0d6c8165.fontdata"
 
 [deps]
@@ -21,8 +21,9 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-hinting=1
-subpixel_positioning=1
+modulate_color_glyphs=false
+hinting=3
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

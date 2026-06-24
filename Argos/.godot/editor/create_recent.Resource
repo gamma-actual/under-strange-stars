@@ -1,3 +1,0 @@
-PackedScene
-GDScript
-Resource

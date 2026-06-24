@@ -1,0 +1,17 @@
+[gd_resource type="Theme" format=3 uid="uid://boi3jnrv7et08"]
+
+[ext_resource type="FontFile" uid="uid://27nf3pwrkfgx" path="res://Abel-Regular.ttf" id="1_5xycx"]
+[ext_resource type="FontFile" uid="uid://bfavhpqn1vjhq" path="res://MajorMonoDisplay-Regular.ttf" id="2_5xycx"]
+
+[resource]
+ButtonLabels/base_type = &"Label"
+ButtonLabels/font_sizes/font_size = 50
+ButtonLabels/fonts/font = ExtResource("1_5xycx")
+MenuTitles/base_type = &"Label"
+MenuTitles/colors/font_color = Color(1, 0.7176471, 0.105882354, 1)
+MenuTitles/font_sizes/font_size = 70
+MenuTitles/fonts/font = ExtResource("2_5xycx")
+SerialCodeTheme/base_type = &"Label"
+SerialCodeTheme/colors/font_color = Color(1, 0.7176471, 0.105882354, 1)
+SerialCodeTheme/font_sizes/font_size = 22
+SerialCodeTheme/fonts/font = ExtResource("1_5xycx")
