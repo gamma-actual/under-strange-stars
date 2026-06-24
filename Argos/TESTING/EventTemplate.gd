@@ -22,4 +22,3 @@ func event_pass_check ():
 #Come back when you're less retarded (the idea is to add a check in case you have the miner background etc the event auto succeeds)
 func auto_pass_check():
 	pass
-

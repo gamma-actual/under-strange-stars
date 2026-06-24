@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmuygx64b1uiw"]
+[gd_scene format=3 uid="uid://bmuygx64b1uiw"]
 
 [ext_resource type="Script" uid="uid://bc8s6qheg065d" path="res://MovingStars.gd" id="1_yjy63"]
 [ext_resource type="Texture2D" uid="uid://cp62l46lxylei" path="res://Main Menu/start screen mockup 2_005.png" id="2_eapt2"]
@@ -48,33 +48,31 @@ _data = {
 &"MovingStars": SubResource("Animation_ytpn3")
 }
 
-[node name="MovingStars" type="Node2D"]
+[node name="MovingStars" type="Node2D" unique_id=2044317353]
 script = ExtResource("1_yjy63")
 
-[node name="StartScreenMockup2005" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2005" type="Sprite2D" parent="." unique_id=1553406222]
 modulate = Color(0, 0, 0, 0.588235)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_eapt2")
 
-[node name="StartScreenMockup2006" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2006" type="Sprite2D" parent="." unique_id=568717918]
 modulate = Color(0, 0, 0, 0.278431)
 rotation = -0.811578
 texture = ExtResource("2_eapt2")
 
-[node name="StartScreenMockup2007" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2007" type="Sprite2D" parent="." unique_id=1579413271]
 visible = false
 modulate = Color(0, 0, 0, 0.4)
 scale = Vector2(2, 2)
 texture = ExtResource("2_eapt2")
 flip_h = true
 
-[node name="StartScreenMockup2008" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2008" type="Sprite2D" parent="." unique_id=146606217]
 modulate = Color(0, 0, 0, 0.219608)
 rotation = 0.708604
 texture = ExtResource("2_eapt2")
 flip_h = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_jd7e8")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=897975310]
+libraries/ = SubResource("AnimationLibrary_jd7e8")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c624p7x76kmy4"]
+[gd_scene format=3 uid="uid://c624p7x76kmy4"]
 
 [ext_resource type="Texture2D" uid="uid://lklvuunmw808" path="res://ui_test_5.png" id="1_egdde"]
 [ext_resource type="Script" uid="uid://fhf638eai50x" path="res://UI/UIanimations/Vertical Menu/VerticalMenu.gd" id="2_cfsly"]
@@ -16,216 +16,216 @@
 [ext_resource type="PackedScene" uid="uid://bmuygx64b1uiw" path="res://moving_stars.tscn" id="15_3waku"]
 [ext_resource type="Texture2D" uid="uid://dx2fj0i4k0b0g" path="res://Main Menu/start screen mockup 2_006.png" id="15_fusrg"]
 
-[node name="ShipMap" type="Node2D"]
+[node name="ShipMap" type="Node2D" unique_id=1096926038]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1204182927]
 visible = false
 position = Vector2(962, 559)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_egdde")
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2016440552]
 
-[node name="UIVert" type="Node2D" parent="CanvasLayer2"]
+[node name="UIVert" type="Node2D" parent="CanvasLayer2" unique_id=950348740]
 position = Vector2(1674, 502)
 script = ExtResource("2_cfsly")
 
-[node name="SplotchTest1" type="Sprite2D" parent="CanvasLayer2/UIVert"]
+[node name="SplotchTest1" type="Sprite2D" parent="CanvasLayer2/UIVert" unique_id=1215651774]
 texture_filter = 2
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_35rsm")
 
-[node name="SplotchTest2" type="Sprite2D" parent="CanvasLayer2/UIVert"]
+[node name="SplotchTest2" type="Sprite2D" parent="CanvasLayer2/UIVert" unique_id=176584216]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_gmt4i")
 
-[node name="SplotchTest3" type="Sprite2D" parent="CanvasLayer2/UIVert"]
+[node name="SplotchTest3" type="Sprite2D" parent="CanvasLayer2/UIVert" unique_id=288473303]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_v6vqi")
 
-[node name="SplotchTest4" type="Sprite2D" parent="CanvasLayer2/UIVert"]
+[node name="SplotchTest4" type="Sprite2D" parent="CanvasLayer2/UIVert" unique_id=283232106]
 texture_filter = 2
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_2m4a5")
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer2"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer2" unique_id=235511484]
 offset_left = 1552.0
 offset_top = 229.0
 offset_right = 1817.0
 offset_bottom = 773.0
 
-[node name="MapBox" type="MarginContainer" parent="CanvasLayer2/PanelContainer"]
+[node name="MapBox" type="MarginContainer" parent="CanvasLayer2/PanelContainer" unique_id=118228081]
 layout_mode = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox" unique_id=751771904]
 layout_mode = 2
 
-[node name="Sector 1" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="Sector 1" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=1425524956]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1" unique_id=1010131513]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer" unique_id=1410677799]
 layout_mode = 2
 text = "LSS Dorian"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer" unique_id=653933903]
 layout_mode = 2
 
-[node name="S1B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer"]
+[node name="S1B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=1252504496]
 layout_mode = 2
 text = "Bridge"
 
-[node name="S1B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer"]
+[node name="S1B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=250201118]
 layout_mode = 2
 text = "Server Room"
 
-[node name="S1B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer"]
+[node name="S1B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=172695277]
 layout_mode = 2
 text = "Crew Quarters"
 
-[node name="HSeparator" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=747100009]
 layout_mode = 2
 
-[node name="Sector 2" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="Sector 2" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=1324362720]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2" unique_id=1445163568]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer" unique_id=1650978915]
 layout_mode = 2
 text = "DSS Valiant"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer" unique_id=499196872]
 layout_mode = 2
 
-[node name="S2B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer"]
+[node name="S2B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer" unique_id=648419466]
 layout_mode = 2
 text = "Reactor"
 
-[node name="S2B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer"]
+[node name="S2B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer" unique_id=1073670720]
 layout_mode = 2
 text = "Cryo Cells"
 
-[node name="HSeparator3" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="HSeparator3" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=1004559992]
 layout_mode = 2
 
-[node name="Sector 3" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="Sector 3" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=1818547016]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3" unique_id=763570735]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer" unique_id=642051655]
 layout_mode = 2
 text = "MHS Heisenberg"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer" unique_id=19627557]
 layout_mode = 2
 
-[node name="S3B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer"]
+[node name="S3B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=551411609]
 layout_mode = 2
 text = "Clean Room"
 
-[node name="S3B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer"]
+[node name="S3B2" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=2135424138]
 layout_mode = 2
 text = "Med-Bay"
 
-[node name="S3B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer"]
+[node name="S3B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=1542424659]
 layout_mode = 2
 text = "Mess Hall
 "
 
-[node name="HSeparator2" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="HSeparator2" type="HSeparator" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=9209609]
 layout_mode = 2
 
-[node name="Sector 4" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer"]
+[node name="Sector 4" type="PanelContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer" unique_id=1230928290]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4" unique_id=159518298]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer" unique_id=834871933]
 layout_mode = 2
 text = "OPS Tanaka"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer" unique_id=1041976284]
 layout_mode = 2
 
-[node name="S4B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer"]
+[node name="S4B1" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer" unique_id=1649960018]
 layout_mode = 2
 text = "Sleeper Cells"
 
-[node name="S4B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer"]
+[node name="S4B3" type="Button" parent="CanvasLayer2/PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer" unique_id=972720818]
 layout_mode = 2
 text = "Shuttle Bay
 "
 
-[node name="StaticRustTest" parent="CanvasLayer2" instance=ExtResource("7_83ppd")]
+[node name="StaticRustTest" parent="CanvasLayer2" unique_id=847475156 instance=ExtResource("7_83ppd")]
 position = Vector2(457, 428)
 
-[node name="Button" type="Button" parent="CanvasLayer2/StaticRustTest"]
+[node name="Button" type="Button" parent="CanvasLayer2/StaticRustTest" unique_id=1765891752]
 offset_left = -80.0
 offset_top = -12.0
 offset_right = 91.0
 offset_bottom = 19.0
 text = "UH OH its an event"
 
-[node name="BadgeUI" parent="CanvasLayer2" instance=ExtResource("8_1fx46")]
+[node name="BadgeUI" parent="CanvasLayer2" unique_id=1859544848 instance=ExtResource("8_1fx46")]
 offset_top = 15.0
 offset_right = 0.0
 offset_bottom = 15.0
 
-[node name="StartScreenMockup2001" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2001" type="Sprite2D" parent="." unique_id=1910446237]
 modulate = Color(0.862745, 0.862745, 0.862745, 1)
 position = Vector2(-30, -11)
 scale = Vector2(0.49, 0.4)
 texture = ExtResource("10_v82kw")
 centered = false
 
-[node name="StartScreenMockup2004" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2004" type="Sprite2D" parent="." unique_id=7683048]
 position = Vector2(-30, -11)
 scale = Vector2(0.49, 0.4)
 texture = ExtResource("13_4f6lu")
 centered = false
 
-[node name="StartScreenMockup2003" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2003" type="Sprite2D" parent="." unique_id=693820816]
 position = Vector2(-30, -11)
 scale = Vector2(0.49, 0.4)
 texture = ExtResource("12_8h8pc")
 centered = false
 
-[node name="StartScreenMockup2002" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2002" type="Sprite2D" parent="." unique_id=1046126738]
 position = Vector2(-30, -11)
 scale = Vector2(0.49, 0.4)
 texture = ExtResource("11_4tlk1")
 centered = false
 
-[node name="StartScreenMockup2006" type="Sprite2D" parent="."]
+[node name="StartScreenMockup2006" type="Sprite2D" parent="." unique_id=690720464]
 visible = false
 position = Vector2(3706, 678)
 texture = ExtResource("15_fusrg")
 centered = false
 flip_h = true
 
-[node name="MovingStars" parent="." instance=ExtResource("15_3waku")]
+[node name="MovingStars" parent="." unique_id=1362159200 instance=ExtResource("15_3waku")]
 position = Vector2(884, 955)
 
-[node name="ShipAnimation" parent="." instance=ExtResource("9_neiro")]
+[node name="ShipAnimation" parent="." unique_id=116396651 instance=ExtResource("9_neiro")]
 position = Vector2(757, 565)
 
 [connection signal="pressed" from="CanvasLayer2/StaticRustTest/Button" to="CanvasLayer2/StaticRustTest" method="_on_button_pressed"]

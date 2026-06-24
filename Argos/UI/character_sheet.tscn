@@ -14,7 +14,7 @@ script = ExtResource("1_gscus")
 move_speed = 80.0
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
-layout_mode = 2
+layout_mode = 0
 offset_right = 746.0
 offset_bottom = 460.0
 
@@ -143,7 +143,7 @@ layout_mode = 2
 text = "perk4 Blurbo"
 
 [node name="Button" type="Button" parent="."]
-layout_mode = 2
+layout_mode = 0
 offset_left = 726.0
 offset_right = 744.0
 offset_bottom = 31.0
