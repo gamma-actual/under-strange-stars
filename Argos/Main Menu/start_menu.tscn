@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://ei4hqdrand2l"]
+
+[ext_resource type="PackedScene" uid="uid://vif3p2lh36wy" path="res://close.tscn" id="2_fbifm"]
+[ext_resource type="AudioStream" uid="uid://c3765j3hg838r" path="res://UI/sounds_ui/casette_open.mp3" id="3_uju02"]
+[ext_resource type="AudioStream" uid="uid://fxn5a4loxj61" path="res://UI/sounds_ui/casette_eject.mp3" id="4_wdivt"]
+[ext_resource type="AudioStream" uid="uid://doerniu6570pf" path="res://UI/sounds_ui/casette_insert.mp3" id="5_xb0pr"]
+[ext_resource type="Texture2D" uid="uid://m78utuglne1o" path="res://UI/UI Elements Final/pause screen BASE.png" id="6_d85g3"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="7_jbgrm"]
+[ext_resource type="PackedScene" uid="uid://cicm8b6pmhkc4" path="res://UI/main_ui/pause_menu_button.tscn" id="8_3c5ic"]
+[ext_resource type="Script" uid="uid://byrwaid8e8ev6" path="res://UI/main_ui/pause_menu_button.gd" id="8_uwr4x"]
+
+[node name="PauseMenu" type="Control" unique_id=34669964]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -485.0
+offset_top = 58.0
+offset_right = -485.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Close" parent="." unique_id=2041571294 instance=ExtResource("2_fbifm")]
+
+[node name="Open" type="AudioStreamPlayer" parent="." unique_id=1759509649]
+stream = ExtResource("3_uju02")
+
+[node name="Eject" type="AudioStreamPlayer" parent="." unique_id=789529326]
+stream = ExtResource("4_wdivt")
+
+[node name="Insert" type="AudioStreamPlayer" parent="." unique_id=709212003]
+stream = ExtResource("5_xb0pr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1688985468]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = -511.0
+offset_right = 321.0
+offset_bottom = 335.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_d85g3")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=589022831]
+layout_mode = 0
+offset_left = 32.857147
+offset_top = -60.426056
+offset_right = 343.85715
+offset_bottom = 9.573944
+theme = ExtResource("7_jbgrm")
+theme_type_variation = &"MenuTitles"
+text = "Under Strange Stars"
+
+[node name="PauseMenuVBox" type="VBoxContainer" parent="TextureRect" unique_id=1945312501]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.64285
+offset_top = -330.9309
+offset_right = 546.3572
+offset_bottom = 568.0691
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.74, 0.74)
+theme = ExtResource("7_jbgrm")
+theme_override_constants/separation = 40
+
+[node name="NewGame" parent="TextureRect/PauseMenuVBox" unique_id=1534274305 instance=ExtResource("8_3c5ic")]
+layout_mode = 2
+script = ExtResource("8_uwr4x")
+label_text = "NEW GAME"
+serial_code_text = "4E455747414D4531"
+
+[node name="Continue" parent="TextureRect/PauseMenuVBox" unique_id=1933328402 instance=ExtResource("8_3c5ic")]
+layout_mode = 2
+script = ExtResource("8_uwr4x")
+label_text = "CONTINUE"
+serial_code_text = "436F6E74696E7565"
+
+[node name="Options" parent="TextureRect/PauseMenuVBox" unique_id=847766106 instance=ExtResource("8_3c5ic")]
+layout_mode = 2
+script = ExtResource("8_uwr4x")
+label_text = "OPTIONS"
+serial_code_text = "4F5054494F4E5333"
+
+[node name="Exit" parent="TextureRect/PauseMenuVBox" unique_id=601127059 instance=ExtResource("8_3c5ic")]
+layout_mode = 2
+script = ExtResource("8_uwr4x")
+label_text = "EXIT"
+serial_code_text = "4558495447414D45"
+
+[connection signal="pressed" from="TextureRect/PauseMenuVBox/NewGame" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="TextureRect/PauseMenuVBox/Continue" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="TextureRect/PauseMenuVBox/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="TextureRect/PauseMenuVBox/Exit" to="." method="_on_main_menu_pressed"]

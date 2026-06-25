@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://det7ovoh6c42h"]
+
+[ext_resource type="Script" uid="uid://h7lfwde12ni3" path="res://UI/main_ui/badge_ui.gd" id="1_67krq"]
+[ext_resource type="Script" uid="uid://dm1p37ju5pewr" path="res://UI/main_ui/player_portrait.gd" id="2_aj234"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_5ttpn"]
+
+[node name="BadgeUI" type="Control" unique_id=1040146033]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+script = ExtResource("1_67krq")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1040254216]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 15.0
+offset_right = 144.0
+offset_bottom = 116.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=2101009148]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1139897509]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_aj234")
+
+[node name="Body" type="Node2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=542575380]
+position = Vector2(-816, -15)
+
+[node name="Skin" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1441044579]
+position = Vector2(110, 239)
+
+[node name="Clothing" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1999971505]
+position = Vector2(110, 239)
+texture = SubResource("ImageTexture_5ttpn")
+
+[node name="Head" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1727768081]
+position = Vector2(110, 239)
+
+[node name="Mouth" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1275492115]
+position = Vector2(110, 239)
+
+[node name="Beard" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=367552622]
+position = Vector2(110, 239)
+
+[node name="Glasses" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=131070090]
+position = Vector2(110, 239)
+
+[node name="Hair" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=749695885]
+position = Vector2(110, 239)
+
+[node name="Nose" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=525836904]
+position = Vector2(110, 239)
+
+[node name="Eyes" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=703798463]
+position = Vector2(110, 239)
+
+[node name="Brows" type="Sprite2D" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=926726500]
+position = Vector2(110, 239)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1957397203]
+layout_mode = 2
+alignment = 1
+
+[node name="Clocks" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=2099151263]
+layout_mode = 2
+text = "A"
+
+[node name="Hearts" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=880454757]
+layout_mode = 2
+text = "B"
+
+[node name="Supplies" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=30288341]
+layout_mode = 2
+text = "C"
+
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Hearts" to="." method="_on_hearts_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Hearts" to="." method="_on_hearts_pressed"]

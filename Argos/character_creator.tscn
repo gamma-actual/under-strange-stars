@@ -9,11 +9,11 @@
 script = ExtResource("1_qcdru")
 
 [node name="PlayerPortrait" type="Node2D" parent="." unique_id=57984137]
-position = Vector2(926, 252)
+position = Vector2(926, 253)
 script = ExtResource("2_vcmal")
 
 [node name="Body" type="Node2D" parent="PlayerPortrait" unique_id=1877611446]
-position = Vector2(-926, -252)
+position = Vector2(-926, -254)
 
 [node name="Body" type="Button" parent="PlayerPortrait/Body" unique_id=1301936519]
 offset_left = 507.0
@@ -272,7 +272,20 @@ offset_right = 103.0
 offset_bottom = 31.0
 text = ">"
 
-[node name="SubViewport" type="SubViewport" parent="." unique_id=751682824]
+[node name="SAVE" type="Button" parent="." unique_id=483044749]
+offset_left = 685.0
+offset_top = 450.0
+offset_right = 732.0
+offset_bottom = 481.0
+text = "SAVE APPERANCE"
+
+[node name="CONTINUE" type="Button" parent="." unique_id=603401213]
+offset_left = 841.0
+offset_top = 450.0
+offset_right = 932.0
+offset_bottom = 481.0
+text = "CONTINUE
+"
 
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodydown" to="PlayerPortrait" method="_on_bodydown_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Body/Body/Bodyup" to="PlayerPortrait" method="_on_bodyup_pressed"]
@@ -296,3 +309,5 @@ text = ">"
 [connection signal="pressed" from="PlayerPortrait/Eyes/Eyes/EyesUp" to="PlayerPortrait" method="_on_eyes_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsUp" to="PlayerPortrait" method="_on_brows_up_pressed"]
 [connection signal="pressed" from="PlayerPortrait/Brows/Eyebrows/BrowsDown" to="PlayerPortrait" method="_on_brows_down_pressed"]
+[connection signal="pressed" from="SAVE" to="PlayerPortrait" method="_on_save_pressed"]
+[connection signal="pressed" from="CONTINUE" to="PlayerPortrait" method="_on_continue_pressed"]

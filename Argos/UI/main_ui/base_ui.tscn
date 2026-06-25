@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://ct2axwr5r6bea"]
+
+[ext_resource type="PackedScene" uid="uid://det7ovoh6c42h" path="res://UI/main_ui/badge_ui.tscn" id="2_uv6iv"]
+[ext_resource type="Script" uid="uid://fhf638eai50x" path="res://UI/UIanimations/Vertical Menu/VerticalMenu.gd" id="3_1jxep"]
+[ext_resource type="Texture2D" uid="uid://xs5g64yv7faw" path="res://UI/UIanimations/Vertical Menu/splotch_test_1.png" id="4_1tm54"]
+[ext_resource type="Texture2D" uid="uid://cl3utyqutk41l" path="res://UI/UIanimations/Vertical Menu/splotch_test_2.png" id="5_yyagk"]
+[ext_resource type="Texture2D" uid="uid://d16eet0si5prd" path="res://UI/UIanimations/Vertical Menu/splotch_test_3.png" id="6_uv7wr"]
+[ext_resource type="Texture2D" uid="uid://bptpfid73xeyy" path="res://UI/UIanimations/Vertical Menu/splotch_test_4.png" id="7_41s7g"]
+[ext_resource type="PackedScene" uid="uid://c832w0nm6w3wv" path="res://UI/UIanimations/static_rust_test.tscn" id="8_5us3p"]
+
+[node name="CanvasLayer2" type="CanvasLayer" unique_id=1632169477]
+
+[node name="MainUI" type="Control" parent="." unique_id=656190120]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BadgeUI" parent="MainUI" unique_id=1040146033 instance=ExtResource("2_uv6iv")]
+layout_mode = 1
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="UIVert" type="Node2D" parent="." unique_id=232823930]
+visible = false
+position = Vector2(1674, 502)
+script = ExtResource("3_1jxep")
+
+[node name="SplotchTest1" type="Sprite2D" parent="UIVert" unique_id=384296065]
+texture_filter = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_1tm54")
+
+[node name="SplotchTest2" type="Sprite2D" parent="UIVert" unique_id=787537840]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_yyagk")
+
+[node name="SplotchTest3" type="Sprite2D" parent="UIVert" unique_id=1106653787]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_uv7wr")
+
+[node name="SplotchTest4" type="Sprite2D" parent="UIVert" unique_id=2032969954]
+texture_filter = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_41s7g")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1552299657]
+visible = false
+offset_left = 1552.0
+offset_top = 229.0
+offset_right = 1817.0
+offset_bottom = 773.0
+
+[node name="MapBox" type="MarginContainer" parent="PanelContainer" unique_id=1296079687]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox" unique_id=1880706426]
+layout_mode = 2
+
+[node name="Sector 1" type="PanelContainer" parent="PanelContainer/MapBox/VBoxContainer" unique_id=1907681550]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 1" unique_id=1201213185]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer" unique_id=703596248]
+layout_mode = 2
+text = "LSS Dorian"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer" unique_id=1430285197]
+layout_mode = 2
+
+[node name="S1B1" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=1318682081]
+layout_mode = 2
+text = "Bridge"
+
+[node name="S1B2" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=576018826]
+layout_mode = 2
+text = "Server Room"
+
+[node name="S1B3" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 1/VBoxContainer/VBoxContainer" unique_id=783101703]
+layout_mode = 2
+text = "Crew Quarters"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/MapBox/VBoxContainer" unique_id=1190170974]
+layout_mode = 2
+
+[node name="Sector 2" type="PanelContainer" parent="PanelContainer/MapBox/VBoxContainer" unique_id=58181573]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 2" unique_id=789165259]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer" unique_id=665007779]
+layout_mode = 2
+text = "DSS Valiant"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer" unique_id=469288684]
+layout_mode = 2
+
+[node name="S2B1" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer" unique_id=1717693902]
+layout_mode = 2
+text = "Reactor"
+
+[node name="S2B2" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 2/VBoxContainer/VBoxContainer" unique_id=1483929427]
+layout_mode = 2
+text = "Cryo Cells"
+
+[node name="HSeparator3" type="HSeparator" parent="PanelContainer/MapBox/VBoxContainer" unique_id=243234443]
+layout_mode = 2
+
+[node name="Sector 3" type="PanelContainer" parent="PanelContainer/MapBox/VBoxContainer" unique_id=1474006284]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 3" unique_id=1733869749]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer" unique_id=107434011]
+layout_mode = 2
+text = "MHS Heisenberg"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer" unique_id=1267936179]
+layout_mode = 2
+
+[node name="S3B1" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=1230988484]
+layout_mode = 2
+text = "Clean Room"
+
+[node name="S3B2" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=502856400]
+layout_mode = 2
+text = "Med-Bay"
+
+[node name="S3B3" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 3/VBoxContainer/VBoxContainer" unique_id=1267352116]
+layout_mode = 2
+text = "Mess Hall
+"
+
+[node name="HSeparator2" type="HSeparator" parent="PanelContainer/MapBox/VBoxContainer" unique_id=688527351]
+layout_mode = 2
+
+[node name="Sector 4" type="PanelContainer" parent="PanelContainer/MapBox/VBoxContainer" unique_id=299918950]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 4" unique_id=76317802]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer" unique_id=992398094]
+layout_mode = 2
+text = "OPS Tanaka"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer" unique_id=114203334]
+layout_mode = 2
+
+[node name="S4B1" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer" unique_id=1153538560]
+layout_mode = 2
+text = "Sleeper Cells"
+
+[node name="S4B3" type="Button" parent="PanelContainer/MapBox/VBoxContainer/Sector 4/VBoxContainer/VBoxContainer" unique_id=1683925731]
+layout_mode = 2
+text = "Shuttle Bay
+"
+
+[node name="StaticRustTest" parent="." unique_id=887608142 instance=ExtResource("8_5us3p")]
+visible = false
+position = Vector2(457, 428)
+
+[node name="Button" type="Button" parent="StaticRustTest" unique_id=652133370]
+offset_left = -80.0
+offset_top = -12.0
+offset_right = 91.0
+offset_bottom = 19.0
+text = "UH OH its an event"
+
+[connection signal="pressed" from="StaticRustTest/Button" to="StaticRustTest" method="_on_button_pressed"]

@@ -41,5 +41,5 @@ func _process(delta):
 	explode()
 
 
-func _on_button_pressed():
+func _on_new_game_pressed() -> void:
 	on = false

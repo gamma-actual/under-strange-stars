@@ -5,17 +5,23 @@
 [ext_resource type="Texture2D" uid="uid://dpv62ygy055k2" path="res://Main Menu/start_screen_mockup_2.png" id="4_c8634"]
 [ext_resource type="Texture2D" uid="uid://d0ay6p74tl0ci" path="res://Main Menu/asteroids/asteroid1.png" id="5_5xyqh"]
 [ext_resource type="Texture2D" uid="uid://c8ogknkhtji8n" path="res://Main Menu/start_screen_mockup_5.png" id="6_klc17"]
-[ext_resource type="Texture2D" uid="uid://0l4vt6aiyufh" path="res://Main Menu/start_screen_mockup_6.png" id="7_td11n"]
 [ext_resource type="Script" uid="uid://dh1udvteshr4i" path="res://Main Menu/Asteroid.gd" id="8_qaotp"]
+[ext_resource type="PackedScene" uid="uid://vif3p2lh36wy" path="res://close.tscn" id="9_7bomo"]
 [ext_resource type="Texture2D" uid="uid://bl3ogqnh7nwaa" path="res://Main Menu/asteroids/asteroid8.png" id="9_bijrj"]
 [ext_resource type="Texture2D" uid="uid://cf2hkbtxqwwgn" path="res://Main Menu/asteroids/asteroid2.png" id="10_g8888"]
+[ext_resource type="AudioStream" uid="uid://c3765j3hg838r" path="res://UI/sounds_ui/casette_open.mp3" id="10_h7fdd"]
+[ext_resource type="AudioStream" uid="uid://fxn5a4loxj61" path="res://UI/sounds_ui/casette_eject.mp3" id="11_kssy1"]
 [ext_resource type="Texture2D" uid="uid://ckpp61e0psxtx" path="res://Main Menu/asteroids/asteroid3.png" id="11_o70gm"]
 [ext_resource type="Texture2D" uid="uid://do5x57civpj1p" path="res://Main Menu/asteroids/asteroid4.png" id="12_8bb64"]
+[ext_resource type="AudioStream" uid="uid://doerniu6570pf" path="res://UI/sounds_ui/casette_insert.mp3" id="12_rxsfg"]
+[ext_resource type="Texture2D" uid="uid://m78utuglne1o" path="res://UI/UI Elements Final/pause screen BASE.png" id="13_q2bli"]
 [ext_resource type="Texture2D" uid="uid://dloss8s3ur1jl" path="res://Main Menu/asteroids/asteroid7.png" id="13_rdu54"]
 [ext_resource type="Texture2D" uid="uid://bdcdgg5scgxdr" path="res://Main Menu/asteroids/asteroid6.png" id="14_34jqi"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="14_w66sh"]
 [ext_resource type="Texture2D" uid="uid://bjbcllltjwnpw" path="res://Main Menu/start screen mockup 2_001.png" id="15_10i35"]
+[ext_resource type="PackedScene" uid="uid://cicm8b6pmhkc4" path="res://UI/main_ui/pause_menu_button.tscn" id="15_34lao"]
 [ext_resource type="Texture2D" uid="uid://kv1loycgew40" path="res://Main Menu/asteroids/asteroid5.png" id="15_fn822"]
-[ext_resource type="Texture2D" uid="uid://cfih2nyfr40hc" path="res://Main Menu/start screen mockup 2_002.png" id="16_uu1wa"]
+[ext_resource type="Script" uid="uid://byrwaid8e8ev6" path="res://UI/main_ui/pause_menu_button.gd" id="16_lf8hv"]
 [ext_resource type="Texture2D" uid="uid://uj6mkiypwktn" path="res://Main Menu/start screen mockup 2_003.png" id="17_qphn4"]
 [ext_resource type="Texture2D" uid="uid://n804x54sevpn" path="res://Main Menu/start screen mockup 2_004.png" id="18_x80sd"]
 [ext_resource type="Texture2D" uid="uid://cp62l46lxylei" path="res://Main Menu/start screen mockup 2_005.png" id="19_m0uhe"]
@@ -45,11 +51,6 @@ texture = ExtResource("18_x80sd")
 position = Vector2(-2, 2)
 texture = ExtResource("20_8tsbj")
 
-[node name="StartScreenMockup2002" type="Sprite2D" parent="." unique_id=647562358]
-position = Vector2(1029, 397)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("16_uu1wa")
-
 [node name="StartScreenMockup3" type="Sprite2D" parent="." unique_id=1133040103]
 position = Vector2(1726, 244)
 scale = Vector2(0.4, 0.4)
@@ -60,24 +61,106 @@ position = Vector2(1136, 103)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("4_c8634")
 
-[node name="StartScreenMockup4" type="Sprite2D" parent="." unique_id=739603254]
-visible = false
-position = Vector2(1403, 727)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("5_5xyqh")
+[node name="StartMenu" type="Control" parent="." unique_id=34669964]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -485.0
+offset_top = 58.0
+offset_right = -485.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Close" parent="StartMenu" unique_id=2041571294 instance=ExtResource("9_7bomo")]
+
+[node name="Open" type="AudioStreamPlayer" parent="StartMenu" unique_id=1759509649]
+stream = ExtResource("10_h7fdd")
+
+[node name="Eject" type="AudioStreamPlayer" parent="StartMenu" unique_id=789529326]
+stream = ExtResource("11_kssy1")
+
+[node name="Insert" type="AudioStreamPlayer" parent="StartMenu" unique_id=709212003]
+stream = ExtResource("12_rxsfg")
+
+[node name="TextureRect" type="TextureRect" parent="StartMenu" unique_id=1688985468]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = -511.0
+offset_right = 321.0
+offset_bottom = 335.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_q2bli")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="StartMenu/TextureRect" unique_id=589022831]
+layout_mode = 0
+offset_left = 32.857147
+offset_top = -60.426056
+offset_right = 343.85715
+offset_bottom = 9.573944
+theme = ExtResource("14_w66sh")
+theme_type_variation = &"MenuTitles"
+text = "Under Strange Stars"
+
+[node name="PauseMenuVBox" type="VBoxContainer" parent="StartMenu/TextureRect" unique_id=1945312501]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.64285
+offset_top = -330.9309
+offset_right = 546.3572
+offset_bottom = 568.0691
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.74, 0.74)
+theme = ExtResource("14_w66sh")
+theme_override_constants/separation = 40
+
+[node name="NewGame" parent="StartMenu/TextureRect/PauseMenuVBox" unique_id=1534274305 instance=ExtResource("15_34lao")]
+layout_mode = 2
+script = ExtResource("16_lf8hv")
+label_text = "NEW GAME"
+serial_code_text = "4E455747414D4531"
+
+[node name="Continue" parent="StartMenu/TextureRect/PauseMenuVBox" unique_id=1933328402 instance=ExtResource("15_34lao")]
+layout_mode = 2
+script = ExtResource("16_lf8hv")
+label_text = "CONTINUE"
+serial_code_text = "436F6E74696E7565"
+
+[node name="Options" parent="StartMenu/TextureRect/PauseMenuVBox" unique_id=847766106 instance=ExtResource("15_34lao")]
+layout_mode = 2
+script = ExtResource("16_lf8hv")
+label_text = "OPTIONS"
+serial_code_text = "4F5054494F4E5333"
+
+[node name="Exit" parent="StartMenu/TextureRect/PauseMenuVBox" unique_id=601127059 instance=ExtResource("15_34lao")]
+layout_mode = 2
+script = ExtResource("16_lf8hv")
+label_text = "EXIT"
+serial_code_text = "4558495447414D45"
 
 [node name="StartScreenMockup5" type="Sprite2D" parent="." unique_id=665438805]
-position = Vector2(1194, 657)
+position = Vector2(1354, 759)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_klc17")
 
-[node name="StartScreenMockup6" type="Sprite2D" parent="." unique_id=1498216691]
-position = Vector2(248, 520)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("7_td11n")
-
 [node name="Asteroid" type="Sprite2D" parent="." unique_id=376052226]
-position = Vector2(1239, 652)
+position = Vector2(1412, 759)
 script = ExtResource("8_qaotp")
 
 [node name="Asteroid8" type="Sprite2D" parent="Asteroid" unique_id=1922073452]
@@ -112,12 +195,5 @@ texture = ExtResource("14_34jqi")
 position = Vector2(114, -111)
 texture = ExtResource("15_fn822")
 
-[node name="Button" type="Button" parent="." unique_id=591054407]
-offset_left = 202.0
-offset_top = 371.0
-offset_right = 248.0
-offset_bottom = 402.0
-text = "Start"
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button" to="Asteroid" method="_on_button_pressed"]
+[connection signal="pressed" from="StartMenu/TextureRect/PauseMenuVBox/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="StartMenu/TextureRect/PauseMenuVBox/NewGame" to="Asteroid" method="_on_new_game_pressed"]

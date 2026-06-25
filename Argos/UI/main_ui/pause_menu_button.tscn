@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://sr3ep8f0bvno" path="res://UI/UI Elements Final/pause menu 2.1.png" id="1_db1ww"]
 [ext_resource type="Texture2D" uid="uid://cw7trt615ctx2" path="res://UI/UI Elements Final/pause menu 2.3.png" id="2_ia331"]
 [ext_resource type="Texture2D" uid="uid://kvx08g0cly6c" path="res://UI/UI Elements Final/pause menu 2.2.png" id="3_w7mjg"]
-[ext_resource type="Script" uid="uid://v02ug8f7b8ga" path="res://pause_menu_button.gd" id="4_uhsfy"]
 [ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="5_vui58"]
 
 [node name="PauseMenuButton" type="TextureButton" unique_id=1534274305]
@@ -15,9 +14,6 @@ texture_normal = ExtResource("1_db1ww")
 texture_pressed = ExtResource("2_ia331")
 texture_hover = ExtResource("3_w7mjg")
 stretch_mode = 3
-script = ExtResource("4_uhsfy")
-label_text = "Something"
-serial_code_text = "00000000000"
 
 [node name="Label" type="Label" parent="." unique_id=1371652900]
 layout_mode = 0
@@ -34,27 +30,30 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -16.0
-offset_top = 10.0
-offset_right = 154.0
-offset_bottom = 39.0
+offset_left = -15.0
+offset_top = 5.0
+offset_right = 166.0
+offset_bottom = 34.0
 grow_horizontal = 0
 rotation = 1.5707964
 theme = ExtResource("5_vui58")
 theme_type_variation = &"SerialCodeTheme"
-text = "000000000000000"
-horizontal_alignment = 2
+theme_override_font_sizes/font_size = 20
+text = "0000000000000000"
+horizontal_alignment = 1
 
 [node name="SerialCodeSelected" type="Label" parent="." unique_id=2045372213]
 layout_mode = 0
 offset_left = 749.0
 offset_top = -10.0
-offset_right = 953.0
+offset_right = 954.0
 offset_bottom = 19.0
 rotation = 1.5707964
 theme = ExtResource("5_vui58")
 theme_type_variation = &"SerialCodeTheme"
-text = "000000000000000000"
+theme_override_font_sizes/font_size = 21
+text = "0000000000000000000"
+horizontal_alignment = 1
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

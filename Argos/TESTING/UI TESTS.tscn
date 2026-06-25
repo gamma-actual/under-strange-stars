@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjhblhj4j0hxx"]
+[gd_scene format=3 uid="uid://bjhblhj4j0hxx"]
 
-[ext_resource type="PackedScene" uid="uid://c6t6xwtl3nqo1" path="res://UI/character_menu.tscn" id="1_p2aeg"]
-[ext_resource type="PackedScene" uid="uid://bi5wm16t03p4u" path="res://UI/character_sheet.tscn" id="2_2fcby"]
+[ext_resource type="PackedScene" uid="uid://c6t6xwtl3nqo1" path="res://UI/main_ui/character_menu.tscn" id="1_p2aeg"]
+[ext_resource type="PackedScene" uid="uid://bi5wm16t03p4u" path="res://UI/main_ui/character_sheet.tscn" id="2_2fcby"]
 
 [node name="CharacterMenu" type="Control"]
 layout_mode = 3

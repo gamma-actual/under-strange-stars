@@ -1,6 +1,6 @@
 extends Control
 
-var character_menu = preload("res://UI/character_menu.tscn")
+var character_menu = preload("res://UI/main_ui/character_menu.tscn")
 @onready var hearts_button = $MarginContainer/HBoxContainer/VBoxContainer/Hearts
 # Called when the node enters the scene tree for the first time.
 func _ready():

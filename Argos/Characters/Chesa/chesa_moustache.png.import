@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c04m80ml2xqsl"
-path="res://.godot/imported/chesa_moustache.png-cb76ad2d7034f9baacb8b9864f7378e6.ctex"
+path="res://.godot/imported/chesa_moustache.png-e2558da8796676d115c82d90b918e5b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/chesa_moustache.png"
-dest_files=["res://.godot/imported/chesa_moustache.png-cb76ad2d7034f9baacb8b9864f7378e6.ctex"]
+source_file="res://Characters/Chesa/chesa_moustache.png"
+dest_files=["res://.godot/imported/chesa_moustache.png-e2558da8796676d115c82d90b918e5b4.ctex"]
 
 [params]
 

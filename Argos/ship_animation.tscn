@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bildqwetta28f"]
+[gd_scene format=3 uid="uid://bildqwetta28f"]
 
 [ext_resource type="Script" uid="uid://bxhh8nokv6mry" path="res://ShipNodes.gd" id="1_6o0q0"]
 [ext_resource type="Texture2D" uid="uid://c6n0qj871gqp0" path="res://SHIP ASSETS/ship assets final 4.1.png" id="2_da2a5"]
@@ -81,19 +81,20 @@ _data = {
 &"Ship Jump": SubResource("Animation_simbf")
 }
 
-[node name="ShipAnimation" type="Node2D"]
+[node name="ShipAnimation" type="Node2D" unique_id=254934088]
 script = ExtResource("1_6o0q0")
 
-[node name="four" type="Sprite2D" parent="."]
+[node name="four" type="Sprite2D" parent="." unique_id=1944333778]
+scale = Vector2(1.3, 1.3)
 
-[node name="TextureButton" type="TextureButton" parent="four"]
+[node name="TextureButton" type="TextureButton" parent="four" unique_id=1630965130]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
 offset_bottom = 640.0
 texture_normal = ExtResource("2_da2a5")
 
-[node name="TextureButton2" type="TextureButton" parent="four"]
+[node name="TextureButton2" type="TextureButton" parent="four" unique_id=1358464786]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -102,12 +103,13 @@ texture_normal = ExtResource("3_iy0wb")
 texture_hover = ExtResource("4_dv1ti")
 texture_click_mask = ExtResource("5_qp6x8")
 
-[node name="three" type="Sprite2D" parent="."]
+[node name="three" type="Sprite2D" parent="." unique_id=1513890614]
+scale = Vector2(0.65, 0.65)
 
-[node name="TextureButton" type="Sprite2D" parent="three"]
+[node name="TextureButton" type="Sprite2D" parent="three" unique_id=2053398752]
 texture = ExtResource("6_56es0")
 
-[node name="TextureButton2" type="TextureButton" parent="three"]
+[node name="TextureButton2" type="TextureButton" parent="three" unique_id=1024325921]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -116,7 +118,7 @@ texture_normal = ExtResource("7_dmy18")
 texture_hover = ExtResource("8_ff51c")
 texture_click_mask = ExtResource("9_q4jpg")
 
-[node name="TextureButton3" type="TextureButton" parent="three"]
+[node name="TextureButton3" type="TextureButton" parent="three" unique_id=505713230]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -125,7 +127,7 @@ texture_normal = ExtResource("10_baj7y")
 texture_hover = ExtResource("11_6nume")
 texture_click_mask = ExtResource("12_1e5fq")
 
-[node name="TextureButton4" type="TextureButton" parent="three"]
+[node name="TextureButton4" type="TextureButton" parent="three" unique_id=1957855473]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -134,7 +136,7 @@ texture_normal = ExtResource("13_3btpr")
 texture_hover = ExtResource("14_0x7mu")
 texture_click_mask = ExtResource("15_jrxyj")
 
-[node name="TextureButton5" type="TextureButton" parent="three"]
+[node name="TextureButton5" type="TextureButton" parent="three" unique_id=2134082179]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -143,7 +145,7 @@ texture_normal = ExtResource("16_wbsue")
 texture_hover = ExtResource("17_tei01")
 texture_click_mask = ExtResource("18_egad7")
 
-[node name="TextureButton6" type="TextureButton" parent="three"]
+[node name="TextureButton6" type="TextureButton" parent="three" unique_id=20645228]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -152,7 +154,7 @@ texture_normal = ExtResource("19_qa6ua")
 texture_hover = ExtResource("20_mvqs2")
 texture_click_mask = ExtResource("21_02ten")
 
-[node name="TextureButton7" type="TextureButton" parent="three"]
+[node name="TextureButton7" type="TextureButton" parent="three" unique_id=1439428901]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -161,7 +163,7 @@ texture_normal = ExtResource("22_vheh7")
 texture_hover = ExtResource("23_5617n")
 texture_click_mask = ExtResource("24_2bg4b")
 
-[node name="TextureButton8" type="TextureButton" parent="three"]
+[node name="TextureButton8" type="TextureButton" parent="three" unique_id=1417982892]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -170,9 +172,10 @@ texture_normal = ExtResource("25_1tjnd")
 texture_hover = ExtResource("26_do2eu")
 texture_click_mask = ExtResource("27_pay6l")
 
-[node name="two" type="Sprite2D" parent="."]
+[node name="two" type="Sprite2D" parent="." unique_id=2094756547]
+scale = Vector2(1.3, 1.3)
 
-[node name="TextureButton" type="TextureButton" parent="two"]
+[node name="TextureButton" type="TextureButton" parent="two" unique_id=2100648462]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -181,9 +184,9 @@ texture_normal = ExtResource("12_n3gab")
 texture_hover = ExtResource("13_hc0m2")
 texture_click_mask = ExtResource("30_32lmo")
 
-[node name="one" type="Sprite2D" parent="."]
+[node name="one" type="Sprite2D" parent="." unique_id=1281492133]
 
-[node name="TextureButton" type="TextureButton" parent="one"]
+[node name="TextureButton" type="TextureButton" parent="one" unique_id=1635096376]
 offset_left = -640.0
 offset_top = -640.0
 offset_right = 640.0
@@ -193,9 +196,7 @@ texture_normal = ExtResource("13_y5rcv")
 texture_hover = ExtResource("14_ogsqi")
 texture_click_mask = ExtResource("16_31eiq")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_jftwc")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=936939567]
+libraries/ = SubResource("AnimationLibrary_jftwc")
 
 [connection signal="mouse_entered" from="one/TextureButton" to="." method="_on_texture_button_mouse_entered"]
