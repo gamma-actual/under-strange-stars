@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://5b330rs7t0fw"]
+
+[ext_resource type="Texture2D" uid="uid://o0tlkhbhsedc" path="res://UI/UI Elements Final/FILE SELECT base.png" id="1_ja0on"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="2_grkeh"]
+[ext_resource type="PackedScene" uid="uid://bspc4pdi8qfc6" path="res://UI/main_ui/file_select_button.tscn" id="3_e0ls1"]
+
+[node name="Control" type="Control" unique_id=1640086928]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1835121785]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -554.0
+offset_top = -454.0
+offset_right = 853.0
+offset_bottom = 788.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("1_ja0on")
+stretch_mode = 3
+
+[node name="TitleLabel" type="Label" parent="TextureRect" unique_id=579758061]
+layout_mode = 0
+offset_left = 434.89938
+offset_top = -24.161076
+offset_right = 1053.8994
+offset_bottom = 52.838924
+theme = ExtResource("2_grkeh")
+theme_type_variation = &"MenuTitles"
+theme_override_font_sizes/font_size = 76
+text = "File Select"
+
+[node name="SerialCodeLabel" type="Label" parent="TextureRect" unique_id=559723263]
+layout_mode = 0
+offset_left = 1438.9261
+offset_top = 801.3423
+offset_right = 1841.9261
+offset_bottom = 830.3423
+rotation = 1.5707964
+theme = ExtResource("2_grkeh")
+theme_type_variation = &"SerialCodeTheme"
+text = "66696C652073656C6563742073797374656D"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect" unique_id=2106486779]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -494.104
+offset_top = -531.06714
+offset_right = 561.896
+offset_bottom = 589.93286
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+
+[node name="NewGameButton1" parent="TextureRect/VBoxContainer" unique_id=938220399 instance=ExtResource("3_e0ls1")]
+layout_mode = 2
+
+[node name="NewGameButton2" parent="TextureRect/VBoxContainer" unique_id=1455192983 instance=ExtResource("3_e0ls1")]
+layout_mode = 2
+
+[node name="NewGameButton3" parent="TextureRect/VBoxContainer" unique_id=1090549461 instance=ExtResource("3_e0ls1")]
+layout_mode = 2
+
+[node name="NewGameButton4" parent="TextureRect/VBoxContainer" unique_id=824706458 instance=ExtResource("3_e0ls1")]
+layout_mode = 2

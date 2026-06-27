@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://o7tb5g7f5ycm"]
+
+[ext_resource type="Texture2D" uid="uid://m78utuglne1o" path="res://UI/UI Elements Final/pause screen BASE.png" id="1_05uyy"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="2_p81d2"]
+[ext_resource type="PackedScene" uid="uid://cicm8b6pmhkc4" path="res://pause_menu_button.tscn" id="3_2nc7s"]
+
+[node name="Pause Menu" type="Control" unique_id=34669964]
+layout_mode = 3
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = 110.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pause Menu" type="TextureRect" parent="." unique_id=1688985468]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -486.0
+offset_top = -511.0
+offset_right = 329.0
+offset_bottom = 349.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_05uyy")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="Pause Menu" unique_id=589022831]
+layout_mode = 0
+offset_left = 32.857147
+offset_top = -60.426056
+offset_right = 343.85715
+offset_bottom = 9.573944
+theme = ExtResource("2_p81d2")
+theme_type_variation = &"MenuTitles"
+text = "Paused"
+
+[node name="PauseMenuVBox" type="VBoxContainer" parent="Pause Menu" unique_id=1945312501]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.64285
+offset_top = -330.9309
+offset_right = 546.3572
+offset_bottom = 568.0691
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.74, 0.74)
+theme = ExtResource("2_p81d2")
+theme_override_constants/separation = 40
+
+[node name="PauseMenuButton" parent="Pause Menu/PauseMenuVBox" unique_id=1534274305 instance=ExtResource("3_2nc7s")]
+layout_mode = 2
+label_text = "CONTINUE"
+serial_code_text = "455689256479890"
+
+[node name="PauseMenuButton2" parent="Pause Menu/PauseMenuVBox" unique_id=1933328402 instance=ExtResource("3_2nc7s")]
+layout_mode = 2
+label_text = "SAVE"
+serial_code_text = "098765398623980"
+
+[node name="PauseMenuButton3" parent="Pause Menu/PauseMenuVBox" unique_id=847766106 instance=ExtResource("3_2nc7s")]
+layout_mode = 2
+label_text = "OPTIONS"
+serial_code_text = "240975601006543"
+
+[node name="PauseMenuButton4" parent="Pause Menu/PauseMenuVBox" unique_id=601127059 instance=ExtResource("3_2nc7s")]
+layout_mode = 2
+label_text = "MAIN MENU"
+serial_code_text = "206765756432132"

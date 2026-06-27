@@ -1,5 +1,6 @@
 extends Node
 
+var player_name = "Captain Standin"
 var body = 0
 var skin = 0
 var clothing = 0

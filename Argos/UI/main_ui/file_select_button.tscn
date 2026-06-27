@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bspc4pdi8qfc6"]
+
+[ext_resource type="Texture2D" uid="uid://ctmewxx5vhyu4" path="res://UI/UI Elements Final/FILE SELECT button unselected.png" id="1_j0t3c"]
+[ext_resource type="Texture2D" uid="uid://b7njccq2jega8" path="res://UI/UI Elements Final/FILE SELECT button on click.png" id="2_pojjr"]
+[ext_resource type="Texture2D" uid="uid://0klnqy5tyjki" path="res://UI/UI Elements Final/FILE SELECT button selected.png" id="3_u0wu7"]
+[ext_resource type="Script" uid="uid://dhl6vmcbibfl1" path="res://UI/main_ui/file_select_button.gd" id="4_u0wu7"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="5_gpu68"]
+
+[node name="TextureButton" type="TextureButton" unique_id=938220399]
+offset_left = 140.0
+offset_top = 150.0
+offset_right = 1196.0
+offset_bottom = 404.0
+theme = ExtResource("5_gpu68")
+texture_normal = ExtResource("1_j0t3c")
+texture_pressed = ExtResource("2_pojjr")
+texture_hover = ExtResource("3_u0wu7")
+stretch_mode = 3
+script = ExtResource("4_u0wu7")
+label_text = "New Game"
+player_name = "Captain Standin"
+time_played = "2hr 3m"
+player_location = "Red Eye Galaxy"
+
+[node name="NewGameLabel" type="Label" parent="." unique_id=410102365]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = -32.0
+offset_right = 101.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("5_gpu68")
+theme_type_variation = &"ButtonLabels"
+theme_override_font_sizes/font_size = 50
+text = "Preview"
+horizontal_alignment = 1
+
+[node name="PlayerNameLabel" type="Label" parent="." unique_id=982194221]
+layout_mode = 1
+offset_left = 72.0
+offset_top = 51.0
+offset_right = 308.0
+offset_bottom = 115.0
+theme = ExtResource("5_gpu68")
+theme_type_variation = &"ButtonLabels"
+theme_override_font_sizes/font_size = 40
+text = "Player Name"
+
+[node name="TimePlayedLabel" type="Label" parent="." unique_id=378786639]
+layout_mode = 0
+offset_left = 774.0
+offset_top = 53.0
+offset_right = 1001.0
+offset_bottom = 117.0
+theme = ExtResource("5_gpu68")
+theme_type_variation = &"ButtonLabels"
+theme_override_font_sizes/font_size = 40
+text = "Time Played"
+
+[node name="PlayerLocationLabel" type="Label" parent="." unique_id=1853976288]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 75.0
+offset_top = -113.0
+offset_right = 365.0
+offset_bottom = -49.0
+grow_vertical = 0
+theme = ExtResource("5_gpu68")
+theme_type_variation = &"ButtonLabels"
+theme_override_font_sizes/font_size = 40
+text = "Player Location"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
