@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bbu0r67eriruh"]
+
+[ext_resource type="Texture2D" uid="uid://bwne4w7g1r48o" path="res://UI/UI Elements Final/badge button.png" id="1_galv1"]
+[ext_resource type="Script" uid="uid://juboiad11ijl" path="res://UI/main_ui/badge_button.gd" id="2_uylm5"]
+[ext_resource type="Texture2D" uid="uid://cm0s07xlkqm47" path="res://UI/UI Elements Final/badge icon journal.png" id="3_6s1eu"]
+
+[node name="TabButton" type="TextureButton" unique_id=2119842696]
+offset_right = 186.0
+offset_bottom = 90.0
+scale = Vector2(0.27, 0.27)
+texture_normal = ExtResource("1_galv1")
+script = ExtResource("2_uylm5")
+
+[node name="Icon" type="TextureButton" parent="." unique_id=459576226]
+layout_mode = 0
+offset_left = 81.48148
+offset_top = 14.814815
+offset_right = 162.48148
+offset_bottom = 77.81481
+texture_normal = ExtResource("3_6s1eu")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cj7iebuw3gxyi"]
+
+[ext_resource type="Texture2D" uid="uid://buui6f0014ukf" path="res://UI/UI Elements Final/badge base1.png" id="1_6palx"]
+[ext_resource type="Texture2D" uid="uid://bsxety2eehcyh" path="res://UI/UI Elements Final/badge base2.png" id="2_pw53x"]
+[ext_resource type="PackedScene" uid="uid://bbu0r67eriruh" path="res://UI/main_ui/badge_button.tscn" id="3_sx4ob"]
+[ext_resource type="Texture2D" uid="uid://cm0s07xlkqm47" path="res://UI/UI Elements Final/badge icon journal.png" id="4_4pu13"]
+[ext_resource type="Texture2D" uid="uid://b0m7qfea7psbn" path="res://UI/UI Elements Final/badge icon id.png" id="5_b8unw"]
+[ext_resource type="Texture2D" uid="uid://cww77hmnw0ikk" path="res://UI/UI Elements Final/badge icon gear.png" id="6_8eua4"]
+
+[node name="Control" type="Control" unique_id=104050344]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=868450234]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1395484812]
+layout_mode = 2
+texture = ExtResource("1_6palx")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/TextureRect" unique_id=758411892]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_pw53x")
+
+[node name="BadgeTabs" type="VBoxContainer" parent="HBoxContainer" unique_id=52512157]
+show_behind_parent = true
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 1.975)
+theme_override_constants/separation = 6
+
+[node name="JournalButton" parent="HBoxContainer/BadgeTabs" unique_id=2119842696 instance=ExtResource("3_sx4ob")]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-80.295, 0)
+texture_icon = ExtResource("4_4pu13")
+
+[node name="IDButton" parent="HBoxContainer/BadgeTabs" unique_id=1939616274 instance=ExtResource("3_sx4ob")]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-80.295, 0)
+texture_icon = ExtResource("5_b8unw")
+
+[node name="GearButton" parent="HBoxContainer/BadgeTabs" unique_id=1977518778 instance=ExtResource("3_sx4ob")]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-80.295, 0)
+texture_icon = ExtResource("6_8eua4")
+
+[connection signal="mouse_entered" from="HBoxContainer/BadgeTabs" to="HBoxContainer/BadgeTabs" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/BadgeTabs" to="HBoxContainer/BadgeTabs" method="_on_mouse_exited"]
