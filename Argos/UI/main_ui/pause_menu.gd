@@ -1,5 +1,5 @@
 extends Control
- 
+var save_menu = preload("res://UI/main_ui/file_select.tscn")
 
 func _ready() -> void:
 	MenuManager.add_listener(self)
@@ -16,7 +16,9 @@ func _on_continue_pressed() -> void:
 
 
 func _on_save_pressed() -> void:
-	$Insert.play()
+	Eject.play()
+	get_tree().current_scene.add_child(save_menu.instantiate())
+	handle_escape()
 
 
 func _on_options_pressed() -> void:

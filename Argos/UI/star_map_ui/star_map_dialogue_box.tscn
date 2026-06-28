@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds8iqn2uwclcf"]
 
-[ext_resource type="Script" uid="uid://bxmdh3jgxp2xn" path="res://star_map/star_map_dialogue.gd" id="1_j0uob"]
+[ext_resource type="Script" uid="uid://bxmdh3jgxp2xn" path="res://UI/star_map_ui/star_map_dialogue.gd" id="1_j0uob"]
 
 [node name="PanelContainer" type="PanelContainer" unique_id=1448354102]
 offset_left = 549.0

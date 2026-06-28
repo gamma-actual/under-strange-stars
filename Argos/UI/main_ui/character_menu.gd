@@ -18,10 +18,10 @@ func handle_escape():
 	MenuManager.remove_listener(self)
 	Close.play()
 	self.queue_free()
-#func move_up (node, move_speed):
-	#if node.position > Vector2(0,0):
-		#node.position -= Vector2(0,1) * move_speed
-		#
+func move_up (node, move_speed):
+	if node.position > Vector2(0,0):
+		node.position -= Vector2(0,1) * move_speed
+
 #func move_down (node, move_speed):
 	#pass
 	#while node.position >= Vector2(0,0):
@@ -46,7 +46,7 @@ func handle_escape():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	#move_up($Panel , move_speed)
+	move_up($Panel , move_speed)
 	#breathe($Panel/UIPanel1 , 0.003 * delta)
 	#breathe($Panel/UIPanel2 , 0.002 * delta)
 	#breathe($Panel/UIPanel3 , 0.003 * delta)

@@ -32,7 +32,7 @@ func handle_escape():
 		#lovebutton.disabled = false
 
 func _on_button_pressed():
-	self.queue_free()
+	handle_escape()
 
 
 func _on_button_2_pressed():

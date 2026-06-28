@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Argos"
-run/main_scene="uid://c624p7x76kmy4"
+run/main_scene="uid://ducurx86be5ao"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 

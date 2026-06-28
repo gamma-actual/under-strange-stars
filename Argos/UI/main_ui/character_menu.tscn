@@ -39,8 +39,9 @@ breathing_rate = 0.1
 
 [node name="Panel" type="MarginContainer" parent="." unique_id=1616980921]
 layout_mode = 0
+offset_top = 2000.0
 offset_right = 1920.0
-offset_bottom = 1080.0
+offset_bottom = 3080.0
 theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 110
 theme_override_constants/margin_right = 40

@@ -17,6 +17,7 @@ func handle_escape():
 		var node = escape_listeners.back()
 		node.handle_escape()
 	else:
+		Eject.play()
 		get_tree().current_scene.add_child(escape_menu.instantiate())
 
 func add_listener(node: Node):
