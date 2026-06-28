@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cvp0tjaryi4gx"]
+
+[ext_resource type="AudioStream" uid="uid://fxn5a4loxj61" path="res://UI/sounds_ui/casette_eject.mp3" id="1_6utmc"]
+
+[node name="Eject" type="AudioStreamPlayer" unique_id=913063020]
+stream = ExtResource("1_6utmc")

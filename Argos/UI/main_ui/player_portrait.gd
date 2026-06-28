@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 var clothesone = ["res://Character_Portrait_Assets/Clothes_01/body_01_egghead.png", "res://Character_Portrait_Assets/Clothes_01/body_01_miner.png", "res://Character_Portrait_Assets/Clothes_01/body_01_overseer.png", "res://Character_Portrait_Assets/Clothes_01/body_01_starchild.png"]
 var clothestwo = ["res://Character_Portrait_Assets/Clothes_02/body_02_egghead.png", "res://Character_Portrait_Assets/Clothes_02/body_02_miner.png", "res://Character_Portrait_Assets/Clothes_02/body_02_overseer.png", "res://Character_Portrait_Assets/Clothes_02/body_02_starchild.png"]

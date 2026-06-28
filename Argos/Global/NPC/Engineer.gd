@@ -11,7 +11,6 @@ var perk_level3:bool = false
 var perk_level5:bool = false
 var perk_level6:bool = false
 var perk_buff:float = 0.05
-var exp:int = 0
 var exp_tolvl:int = 4
 
 #perk level 1 for the engineer is going to reduce the amount of materials needed to fix the ship
@@ -21,15 +20,15 @@ var exp_tolvl:int = 4
 
 
 
-func give_exp(amount): #give exp and check for level up
-	exp += amount
-	if exp >= exp_tolvl:
-		level += 1
-		perk_buff += 0.05
-	if level >= 3:
-		perk_level3 = true
-	if level >=5:
-		perk_level5 = true
+#func give_exp(amount): #give exp and check for level up
+	#exp += amount
+	#if exp >= exp_tolvl:
+		#level += 1
+		#perk_buff += 0.05
+	#if level >= 3:
+		#perk_level3 = true
+	#if level >=5:
+		#perk_level5 = true
 
 func level_relationship(): #increase relationship
 	relationship += 1

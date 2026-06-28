@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ds8iqn2uwclcf"]
+
+[ext_resource type="Script" uid="uid://bxmdh3jgxp2xn" path="res://star_map/star_map_dialogue.gd" id="1_j0uob"]
+
+[node name="PanelContainer" type="PanelContainer" unique_id=1448354102]
+offset_left = 549.0
+offset_top = 134.0
+offset_right = 1389.0
+offset_bottom = 963.0
+size_flags_horizontal = 3
+script = ExtResource("1_j0uob")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1989193265]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer2" unique_id=2004859745]
+layout_mode = 2
+text = "event name"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer2" unique_id=1400850602]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_vertical = 3
+visible_characters = 0
+visible_ratio = 0.5
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer2" unique_id=2012701200]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer2" unique_id=1861068565]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer2" unique_id=352720936]
+layout_mode = 2
+text = "choice1"
+
+[node name="Button2" type="Button" parent="VBoxContainer2" unique_id=73998518]
+layout_mode = 2
+text = "choice 2"
+
+[node name="Button3" type="Button" parent="VBoxContainer2" unique_id=1377539013]
+layout_mode = 2
+text = "choice 3"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer2" unique_id=929675978]
+layout_mode = 2
+
+[node name="Container" type="Container" parent="VBoxContainer2" unique_id=924094938]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2

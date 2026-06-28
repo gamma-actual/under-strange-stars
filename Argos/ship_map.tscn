@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dbrgpg2dw4rrp" path="res://ui_test_5.png" id="1_egdde"]
 [ext_resource type="PackedScene" uid="uid://ct2axwr5r6bea" path="res://UI/main_ui/base_ui.tscn" id="2_0hnsp"]
 [ext_resource type="PackedScene" uid="uid://bildqwetta28f" path="res://ship_animation.tscn" id="9_neiro"]
+[ext_resource type="PackedScene" uid="uid://befgtb1fc8w7k" path="res://UI/ship_pop_up.tscn" id="10_o1i5r"]
 [ext_resource type="Texture2D" uid="uid://bjbcllltjwnpw" path="res://Main Menu/start screen mockup 2_001.png" id="10_v82kw"]
 [ext_resource type="Texture2D" uid="uid://cfih2nyfr40hc" path="res://Main Menu/start screen mockup 2_002.png" id="11_4tlk1"]
 [ext_resource type="Texture2D" uid="uid://uj6mkiypwktn" path="res://Main Menu/start screen mockup 2_003.png" id="12_8h8pc"]
@@ -13,7 +14,6 @@
 [node name="ShipMap" type="Node2D" unique_id=1096926038]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1204182927]
-visible = false
 position = Vector2(962, 559)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_egdde")
@@ -46,7 +46,6 @@ texture = ExtResource("11_4tlk1")
 centered = false
 
 [node name="StartScreenMockup2006" type="Sprite2D" parent="." unique_id=690720464]
-visible = false
 position = Vector2(3706, 678)
 texture = ExtResource("15_fusrg")
 centered = false
@@ -57,3 +56,9 @@ position = Vector2(884, 955)
 
 [node name="ShipAnimation" parent="." unique_id=116396651 instance=ExtResource("9_neiro")]
 position = Vector2(757, 565)
+
+[node name="ShipPopUp" parent="." unique_id=1207049235 instance=ExtResource("10_o1i5r")]
+offset_left = 1123.0
+offset_top = 314.0
+offset_right = 1389.0
+offset_bottom = 397.0

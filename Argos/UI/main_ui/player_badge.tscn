@@ -1,59 +1,95 @@
 [gd_scene format=3 uid="uid://cj7iebuw3gxyi"]
 
 [ext_resource type="Texture2D" uid="uid://buui6f0014ukf" path="res://UI/UI Elements Final/badge base1.png" id="1_6palx"]
+[ext_resource type="Script" uid="uid://dy625qwlyf5qj" path="res://UI/main_ui/player_badge.gd" id="1_sx4ob"]
 [ext_resource type="Texture2D" uid="uid://bsxety2eehcyh" path="res://UI/UI Elements Final/badge base2.png" id="2_pw53x"]
 [ext_resource type="PackedScene" uid="uid://bbu0r67eriruh" path="res://UI/main_ui/badge_button.tscn" id="3_sx4ob"]
 [ext_resource type="Texture2D" uid="uid://cm0s07xlkqm47" path="res://UI/UI Elements Final/badge icon journal.png" id="4_4pu13"]
 [ext_resource type="Texture2D" uid="uid://b0m7qfea7psbn" path="res://UI/UI Elements Final/badge icon id.png" id="5_b8unw"]
 [ext_resource type="Texture2D" uid="uid://cww77hmnw0ikk" path="res://UI/UI Elements Final/badge icon gear.png" id="6_8eua4"]
+[ext_resource type="Script" uid="uid://dm1p37ju5pewr" path="res://UI/main_ui/player_portrait.gd" id="7_pw53x"]
 
-[node name="Control" type="Control" unique_id=104050344]
+[sub_resource type="ImageTexture" id="ImageTexture_sx4ob"]
+
+[node name="PlayerBadge" type="Control" unique_id=104050344]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sx4ob")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=868450234]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1395484812]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1395484812]
-layout_mode = 2
+offset_right = 285.0
+offset_bottom = 285.0
 texture = ExtResource("1_6palx")
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/TextureRect" unique_id=758411892]
+[node name="PanelContainer" type="Node2D" parent="TextureRect" unique_id=954502920]
+position = Vector2(142, 133)
+scale = Vector2(0.8, 0.8)
+script = ExtResource("7_pw53x")
+
+[node name="Body" type="Node2D" parent="TextureRect/PanelContainer" unique_id=1785047414]
+
+[node name="Skin" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=1563334061]
+
+[node name="Clothing" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=616893801]
+texture = SubResource("ImageTexture_sx4ob")
+
+[node name="Head" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=1632576239]
+
+[node name="Mouth" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=1041742174]
+
+[node name="Beard" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=564242583]
+
+[node name="Glasses" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=155960765]
+
+[node name="Hair" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=228069170]
+
+[node name="Nose" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=1653728617]
+
+[node name="Eyes" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=875442179]
+
+[node name="Brows" type="Sprite2D" parent="TextureRect/PanelContainer" unique_id=1931009202]
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=758411892]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_pw53x")
 
-[node name="BadgeTabs" type="VBoxContainer" parent="HBoxContainer" unique_id=52512157]
+[node name="BadgeTabs" type="VBoxContainer" parent="." unique_id=52512157]
 show_behind_parent = true
-layout_mode = 2
+layout_mode = 0
+offset_left = 282.0
+offset_top = 3.0
+offset_right = 468.0
+offset_bottom = 288.0
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, 1.975)
-theme_override_constants/separation = 6
+theme_override_constants/separation = 4
 
-[node name="JournalButton" parent="HBoxContainer/BadgeTabs" unique_id=2119842696 instance=ExtResource("3_sx4ob")]
+[node name="JournalButton" parent="BadgeTabs" unique_id=2119842696 instance=ExtResource("3_sx4ob")]
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(-80.295, 0)
 texture_icon = ExtResource("4_4pu13")
 
-[node name="IDButton" parent="HBoxContainer/BadgeTabs" unique_id=1939616274 instance=ExtResource("3_sx4ob")]
+[node name="IDButton" parent="BadgeTabs" unique_id=1939616274 instance=ExtResource("3_sx4ob")]
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(-80.295, 0)
 texture_icon = ExtResource("5_b8unw")
 
-[node name="GearButton" parent="HBoxContainer/BadgeTabs" unique_id=1977518778 instance=ExtResource("3_sx4ob")]
+[node name="GearButton" parent="BadgeTabs" unique_id=1977518778 instance=ExtResource("3_sx4ob")]
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(-80.295, 0)
 texture_icon = ExtResource("6_8eua4")
 
-[connection signal="mouse_entered" from="HBoxContainer/BadgeTabs" to="HBoxContainer/BadgeTabs" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="HBoxContainer/BadgeTabs" to="HBoxContainer/BadgeTabs" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="BadgeTabs" to="BadgeTabs" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BadgeTabs" to="BadgeTabs" method="_on_mouse_exited"]
+[connection signal="pressed" from="BadgeTabs/JournalButton" to="." method="_on_journal_button_pressed"]
+[connection signal="pressed" from="BadgeTabs/IDButton" to="." method="_on_id_button_pressed"]
+[connection signal="pressed" from="BadgeTabs/GearButton" to="." method="_on_gear_button_pressed"]

@@ -25,6 +25,8 @@ Engineer="*res://Global/NPC/Engineer.gd"
 Close="*uid://vif3p2lh36wy"
 MenuManager="*uid://bkihvhd6ql3pw"
 PlayerStats="*uid://m5whk8rfpfy6"
+ShipStats="*uid://b8k8p5mt8lkpa"
+Eject="*uid://cvp0tjaryi4gx"
 
 [dialogic]
 
