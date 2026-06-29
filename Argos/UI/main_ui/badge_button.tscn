@@ -13,7 +13,8 @@ stretch_mode = 0
 script = ExtResource("2_uylm5")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1829476312]
-position = Vector2(125.92593, 44.444443)
+position = Vector2(122.2222, 44.444443)
+scale = Vector2(0.94, 0.94)
 texture = ExtResource("3_6s1eu")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

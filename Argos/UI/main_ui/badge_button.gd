@@ -1,6 +1,6 @@
 extends TextureButton
 @export var texture_icon: Texture2D
-var button_offset: Vector2 = Vector2(-80.295, 0)
+var button_offset: Vector2 = Vector2(-80, 0)
 #var shake_it = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 
 
 func _on_mouse_entered() -> void:
-	offset_transform_position = Vector2(0, 0)
+	offset_transform_position = Vector2(-10, 0)
 #	shake_it = true
 
 

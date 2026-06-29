@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dyhpfjorcuxfs"]
+
+[ext_resource type="Texture2D" uid="uid://wl8cnpi06hfh" path="res://UI/UI Elements Final/generic button normal.png" id="1_35ypp"]
+[ext_resource type="Texture2D" uid="uid://d23x8bwlarca3" path="res://UI/UI Elements Final/generic button clicked.png" id="2_upd22"]
+[ext_resource type="Texture2D" uid="uid://dln5h801sqpvt" path="res://UI/UI Elements Final/generic button on hover.png" id="3_ogftf"]
+[ext_resource type="Script" uid="uid://w1c0di32fd80" path="res://UI/main_ui/generic_button.gd" id="4_qq4ub"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="4_v6qca"]
+
+[node name="GenericButton" type="TextureButton" unique_id=1424978289]
+offset_left = 142.0
+offset_top = 142.0
+offset_right = 502.0
+offset_bottom = 228.0
+texture_normal = ExtResource("1_35ypp")
+texture_pressed = ExtResource("2_upd22")
+texture_hover = ExtResource("3_ogftf")
+stretch_mode = 3
+script = ExtResource("4_qq4ub")
+label_text = "PREVIEW"
+
+[node name="ButtonLabel" type="Label" parent="." unique_id=1804024180]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_v6qca")
+theme_type_variation = &"ButtonLabels"
+theme_override_font_sizes/font_size = 40
+text = "Preview"
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

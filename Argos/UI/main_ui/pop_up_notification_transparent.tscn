@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cl0ey5g27gy23"]
+
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="1_oasfk"]
+[ext_resource type="Texture2D" uid="uid://biht3rv4t88w2" path="res://UI/UI Elements Final/pop up base transparent.png" id="2_oasfk"]
+[ext_resource type="PackedScene" uid="uid://bch8p7534n0x7" path="res://UI/main_ui/generic_button_transparent.tscn" id="3_eedn6"]
+
+[node name="Control" type="Control" unique_id=189315566]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NoticeLabel" type="Label" parent="." unique_id=1136482107]
+layout_mode = 0
+offset_left = 817.0
+offset_top = 94.0
+offset_right = 1128.0
+offset_bottom = 164.0
+theme = ExtResource("1_oasfk")
+theme_type_variation = &"MenuTitles"
+theme_override_font_sizes/font_size = 60
+text = "Notice!"
+
+[node name="ItemObtainedLabel" type="Label" parent="." unique_id=1486175936]
+visible = false
+layout_mode = 0
+offset_left = 761.0
+offset_top = 110.0
+offset_right = 1176.0
+offset_bottom = 154.0
+theme = ExtResource("1_oasfk")
+theme_type_variation = &"MenuTitles"
+theme_override_font_sizes/font_size = 43
+text = "Item Obtained"
+
+[node name="PopUpBase" type="TextureRect" parent="." unique_id=612620179]
+layout_mode = 0
+offset_left = 653.0
+offset_top = 127.0
+offset_right = 1437.0
+offset_bottom = 1189.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_oasfk")
+
+[node name="GenericButtonTransparent" parent="PopUpBase" unique_id=1424978289 instance=ExtResource("3_eedn6")]
+layout_mode = 0
+offset_left = 213.75003
+offset_top = 955.0
+offset_right = 573.75
+offset_bottom = 1041.0
+
+[node name="NoticeSerialCode" type="Label" parent="." unique_id=1935257238]
+layout_mode = 0
+offset_left = 1249.0
+offset_top = 486.0
+offset_right = 1517.0
+offset_bottom = 515.0
+rotation = 1.5707964
+theme = ExtResource("1_oasfk")
+theme_type_variation = &"SerialCodeTheme"
+text = "6E6F746963656E6F746963"
