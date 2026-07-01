@@ -12,7 +12,7 @@ position = Vector2(954, 537)
 texture = ExtResource("2_7iup0")
 
 [node name="Ship2" type="Sprite2D" parent="." unique_id=921091567]
-position = Vector2(150, 624)
+position = Vector2(604, 1045)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_7is1y")
 flip_h = true
@@ -88,7 +88,6 @@ position = Vector2(749, 987)
 [node name="Event1Button" type="Button" parent="Event1" unique_id=546372767]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event1
 "
 
@@ -98,7 +97,6 @@ position = Vector2(446, 730)
 [node name="Event21Button" type="Button" parent="Event21" unique_id=120218827]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event2.1"
 
 [node name="Event22" type="Node2D" parent="." unique_id=734088485]
@@ -108,7 +106,6 @@ position = Vector2(920, 814)
 offset_top = -2.0
 offset_right = 75.0
 offset_bottom = 29.0
-disabled = true
 text = "event2.2
 "
 
@@ -118,7 +115,6 @@ position = Vector2(326, 490)
 [node name="Event31Button" type="Button" parent="Event31" unique_id=1815004035]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event3.1
 "
 
@@ -128,7 +124,6 @@ position = Vector2(590, 633)
 [node name="Event32Button" type="Button" parent="Event32" unique_id=922429094]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event3.2
 
 "
@@ -139,7 +134,6 @@ position = Vector2(962, 599)
 [node name="Event33Button" type="Button" parent="Event33" unique_id=1470573826]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event3.3
 
 "
@@ -150,7 +144,6 @@ position = Vector2(1188, 650)
 [node name="Event34Button" type="Button" parent="Event34" unique_id=728604310]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event3.4
 "
 
@@ -160,28 +153,34 @@ position = Vector2(175, 428)
 [node name="Event41Button" type="Button" parent="Event41" unique_id=1078532975]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event4.1
 "
 
 [node name="Event42" type="Node2D" parent="." unique_id=268322596]
-position = Vector2(885, 526)
+position = Vector2(525, 588)
 
 [node name="Event42Button" type="Button" parent="Event42" unique_id=1895973166]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event4.2
 "
 
 [node name="Event43" type="Node2D" parent="." unique_id=1458195464]
-position = Vector2(1085, 524)
+position = Vector2(890, 528)
 
 [node name="Event43Button" type="Button" parent="Event43" unique_id=1776782537]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event4.3
+"
+
+[node name="Event44" type="Node2D" parent="." unique_id=358215862]
+position = Vector2(1071, 518)
+
+[node name="Event44Button" type="Button" parent="Event44" unique_id=2005386158]
+offset_right = 65.0
+offset_bottom = 31.0
+text = "event4.4
 "
 
 [node name="Event51" type="Node2D" parent="." unique_id=1150265042]
@@ -190,7 +189,6 @@ position = Vector2(270, 292)
 [node name="Event51Button" type="Button" parent="Event51" unique_id=935458495]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event5.1
 "
 
@@ -200,7 +198,6 @@ position = Vector2(1074, 334)
 [node name="Event52Button" type="Button" parent="Event52" unique_id=1605579770]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event5.2
 "
 
@@ -210,7 +207,6 @@ position = Vector2(467, 271)
 [node name="Event61Button" type="Button" parent="Event61" unique_id=1833926111]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
 text = "event6.1
 "
 
@@ -221,20 +217,33 @@ position = Vector2(935, 277)
 offset_top = 4.0
 offset_right = 75.0
 offset_bottom = 35.0
-disabled = true
 text = "event6.2
 "
 
 [node name="Event7" type="Node2D" parent="." unique_id=655514552]
 position = Vector2(756, 158)
 
-[node name="Event61Button" type="Button" parent="Event7" unique_id=1160976560]
+[node name="Event7Button" type="Button" parent="Event7" unique_id=1160976560]
 offset_right = 65.0
 offset_bottom = 31.0
-disabled = true
-text = "event6.1
+text = "event7
 "
 
 [connection signal="pressed" from="Repair" to="." method="_on_repair_pressed"]
 [connection signal="pressed" from="Start/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Event1/Event1Button" to="." method="_on_event_1_button_pressed"]
+[connection signal="pressed" from="Event21/Event21Button" to="." method="_on_event_21_button_pressed"]
+[connection signal="pressed" from="Event22/Event22Button" to="." method="_on_event_22_button_pressed"]
+[connection signal="pressed" from="Event31/Event31Button" to="." method="_on_event_31_button_pressed"]
+[connection signal="pressed" from="Event32/Event32Button" to="." method="_on_event_32_button_pressed"]
+[connection signal="pressed" from="Event33/Event33Button" to="." method="_on_event_33_button_pressed"]
+[connection signal="pressed" from="Event34/Event34Button" to="." method="_on_event_34_button_pressed"]
+[connection signal="pressed" from="Event41/Event41Button" to="." method="_on_event_41_button_pressed"]
+[connection signal="pressed" from="Event42/Event42Button" to="." method="_on_event_42_button_pressed"]
+[connection signal="pressed" from="Event43/Event43Button" to="." method="_on_event_43_button_pressed"]
+[connection signal="pressed" from="Event44/Event44Button" to="." method="_on_event_44_button_pressed"]
+[connection signal="pressed" from="Event51/Event51Button" to="." method="_on_event_51_button_pressed"]
+[connection signal="pressed" from="Event52/Event52Button" to="." method="_on_event_52_button_pressed"]
+[connection signal="pressed" from="Event61/Event61Button" to="." method="_on_event_61_button_pressed"]
+[connection signal="pressed" from="Event62/Event62Button" to="." method="_on_event_62_button_pressed"]
+[connection signal="pressed" from="Event7/Event7Button" to="." method="_on_event_7_button_pressed"]
