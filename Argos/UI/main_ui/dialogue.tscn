@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dugxdqeer05r1"]
+
+[ext_resource type="Texture2D" uid="uid://cpm0obdlcx2hi" path="res://UI/UI Elements Final/dialogue box.png" id="1_6fju5"]
+[ext_resource type="Texture2D" uid="uid://dfyv6jk1p8tnv" path="res://UI/UI Elements Final/dialogue box icon.png" id="2_8frgc"]
+
+[node name="Control" type="Control" unique_id=36894765]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogueBox" type="TextureRect" parent="." unique_id=745714728]
+layout_mode = 0
+offset_left = 1327.0
+offset_right = 2101.0
+offset_bottom = 1440.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_6fju5")
+
+[node name="DialogueBoxIcon" type="TextureRect" parent="." unique_id=145236304]
+layout_mode = 0
+offset_left = 1216.0
+offset_top = 56.000004
+offset_right = 1423.0
+offset_bottom = 278.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_8frgc")

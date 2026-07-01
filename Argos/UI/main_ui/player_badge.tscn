@@ -24,6 +24,7 @@ script = ExtResource("1_sx4ob")
 layout_mode = 0
 offset_right = 285.0
 offset_bottom = 285.0
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_6palx")
 
 [node name="PanelContainer" type="Node2D" parent="TextureRect" unique_id=954502920]
@@ -63,10 +64,11 @@ texture = ExtResource("2_pw53x")
 [node name="BadgeTabs" type="VBoxContainer" parent="." unique_id=52512157]
 show_behind_parent = true
 layout_mode = 0
-offset_left = 282.0
+offset_left = 213.0
 offset_top = 2.0
-offset_right = 468.0
+offset_right = 399.0
 offset_bottom = 287.0
+scale = Vector2(0.75, 0.75)
 offset_transform_enabled = true
 theme_override_constants/separation = 6
 

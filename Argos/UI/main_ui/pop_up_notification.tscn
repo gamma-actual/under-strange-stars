@@ -35,17 +35,6 @@ theme_type_variation = &"MenuTitles"
 theme_override_font_sizes/font_size = 43
 text = "Item Obtained"
 
-[node name="NoticeSerialCode" type="Label" parent="." unique_id=1935257238]
-layout_mode = 0
-offset_left = 1249.0
-offset_top = 486.0
-offset_right = 1517.0
-offset_bottom = 515.0
-rotation = 1.5707964
-theme = ExtResource("3_01mx8")
-theme_type_variation = &"SerialCodeTheme"
-text = "6E6F746963656E6F746963"
-
 [node name="PopUpBase" type="TextureRect" parent="." unique_id=612620179]
 layout_mode = 0
 offset_left = 653.0
@@ -62,3 +51,15 @@ offset_top = 955.0
 offset_right = 572.5
 offset_bottom = 1041.0
 label_text = "CONTINUE"
+
+[node name="NoticeSerialCode" type="Label" parent="PopUpBase" unique_id=1935257238]
+layout_mode = 0
+offset_left = 743.7499
+offset_top = 451.25
+offset_right = 1045.75
+offset_bottom = 486.25
+rotation = 1.5707964
+theme = ExtResource("3_01mx8")
+theme_type_variation = &"SerialCodeTheme"
+theme_override_font_sizes/font_size = 27
+text = "6E6F746963656E6F746963"
