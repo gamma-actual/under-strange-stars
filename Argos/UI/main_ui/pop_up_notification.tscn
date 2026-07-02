@@ -1,16 +1,20 @@
 [gd_scene format=3 uid="uid://2wfoio66e2wb"]
 
 [ext_resource type="Texture2D" uid="uid://dagqgn4t3t747" path="res://UI/UI Elements Final/pop up base.png" id="1_2c4wd"]
+[ext_resource type="Script" uid="uid://nssychcql2sh" path="res://UI/main_ui/pop_up_notification.gd" id="2_01mx8"]
 [ext_resource type="PackedScene" uid="uid://dyhpfjorcuxfs" path="res://UI/main_ui/generic_button.tscn" id="2_gjndv"]
 [ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="3_01mx8"]
+[ext_resource type="FontFile" uid="uid://gpf00mrdfkvg" path="res://Abel-Regular.ttf" id="4_gjndv"]
 
-[node name="Control" type="Control" unique_id=189315566]
+[node name="PopUpEvent" type="Control" unique_id=189315566]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_01mx8")
+script = ExtResource("2_01mx8")
 
 [node name="NoticeLabel" type="Label" parent="." unique_id=1136482107]
 layout_mode = 0
@@ -36,6 +40,8 @@ theme_override_font_sizes/font_size = 43
 text = "Item Obtained"
 
 [node name="PopUpBase" type="TextureRect" parent="." unique_id=612620179]
+<<<<<<< Updated upstream
+=======
 layout_mode = 0
 offset_left = 653.0
 offset_top = 127.0
@@ -44,6 +50,69 @@ offset_bottom = 1189.0
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_2c4wd")
 
+[node name="ContinueButton" parent="PopUpBase" unique_id=1424978289 instance=ExtResource("2_gjndv")]
+layout_mode = 0
+offset_left = 212.50003
+offset_top = 955.0
+offset_right = 572.5
+offset_bottom = 1041.0
+label_text = "CONTINUE"
+
+[node name="NoticeSerialCode" type="Label" parent="." unique_id=1935257238]
+layout_mode = 0
+offset_left = 1249.0
+offset_top = 486.0
+offset_right = 1517.0
+offset_bottom = 515.0
+rotation = 1.5707964
+theme = ExtResource("3_01mx8")
+theme_type_variation = &"SerialCodeTheme"
+text = "6E6F746963656E6F746963"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=74479256]
+>>>>>>> Stashed changes
+layout_mode = 0
+offset_left = 720.0
+offset_top = 212.0
+offset_right = 1212.0
+offset_bottom = 819.0
+theme = ExtResource("3_01mx8")
+theme_override_fonts/normal_font = ExtResource("4_gjndv")
+theme_override_font_sizes/normal_font_size = 20
+text = "NARRATOR:
+(Black screen with text; The sound of buzzing bees can be heard)
+According to all known laws
+of aviation,
+ :
+there is no way a bee
+should be able to fly.
+ :
+Its wings are too small to get
+its fat little body off the ground.
+ :
+The bee, of course, flies anyway
+ :
+because bees don't care
+what humans think is impossible.
+BARRY BENSON:
+(Barry is picking out a shirt)
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+ :
+Ooh, black and yellow!
+Let's shake it up a little.
+JANET BENSON:
+Barry! Breakfast is ready!
+BARRY:
+Coming!
+ :
+Hang on a second.
+(Barry uses his antenna like a phone)
+ :
+Hello?
+ADAM FLAYMAN:
+
+<<<<<<< Updated upstream
 [node name="GenericButton" parent="PopUpBase" unique_id=1424978289 instance=ExtResource("2_gjndv")]
 layout_mode = 0
 offset_left = 212.50003
@@ -63,3 +132,38 @@ theme = ExtResource("3_01mx8")
 theme_type_variation = &"SerialCodeTheme"
 theme_override_font_sizes/font_size = 27
 text = "6E6F746963656E6F746963"
+=======
+(Through phone)
+- Barry?
+BARRY:
+- Adam?
+ADAM:
+- Can you believe this is happening?
+BARRY:
+- I can't. I'll pick you up.
+(Barry flies down the stairs)
+ :
+MARTIN BENSON:
+Looking sharp.
+JANET:
+Use the stairs. Your father
+paid good money for those.
+BARRY:
+Sorry. I'm excited.
+MARTIN:
+Here's the graduate.
+We're very proud of you, son.
+ :
+A perfect report card, all B's.
+JANET:
+Very proud.
+(Rubs Barry's hair)
+BARRY=
+Ma! I got a thing going here.
+JANET:
+- You got lint on your fuzz.
+BARRY:
+- Ow! That's me!"
+
+[connection signal="pressed" from="PopUpBase/ContinueButton" to="." method="_on_continue_button_pressed"]
+>>>>>>> Stashed changes
