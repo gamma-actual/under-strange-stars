@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bvpepgawmh8u4"]
+
+[ext_resource type="Texture2D" uid="uid://centacfg2a3h5" path="res://UI/UI Elements Final/codex base.png" id="1_nrl67"]
+[ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="2_e4wm4"]
+
+[node name="Codex" type="Control" unique_id=1356873260]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CodexBase" type="TextureRect" parent="." unique_id=1523814587]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_nrl67")
+
+[node name="CodexLabel" type="Label" parent="." unique_id=1880779668]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -4.0
+offset_right = 282.0
+offset_bottom = 66.0
+theme = ExtResource("2_e4wm4")
+theme_type_variation = &"MenuTitles"
+text = "Codex"

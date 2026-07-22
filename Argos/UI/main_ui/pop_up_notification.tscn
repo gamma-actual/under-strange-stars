@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dyhpfjorcuxfs" path="res://UI/main_ui/generic_button.tscn" id="2_gjndv"]
 [ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="3_01mx8"]
 
-[node name="Control" type="Control" unique_id=189315566]
+[node name="PopUpNotification" type="Control" unique_id=189315566]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

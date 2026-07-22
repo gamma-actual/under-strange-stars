@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dfyv6jk1p8tnv" path="res://UI/UI Elements Final/dialogue box icon.png" id="2_8frgc"]
 [ext_resource type="Texture2D" uid="uid://bvb5rwg1kdcbj" path="res://Characters/Chesa/chesa_neutral_v2.png" id="3_4uxy3"]
 
-[node name="Control" type="Control" unique_id=36894765]
+[node name="Dialogue" type="Control" unique_id=36894765]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
