@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://centacfg2a3h5" path="res://UI/UI Elements Final/codex base.png" id="1_nrl67"]
 [ext_resource type="Theme" uid="uid://boi3jnrv7et08" path="res://UIthemehopefully.tres" id="2_e4wm4"]
+[ext_resource type="Texture2D" uid="uid://bg6p400b0kf01" path="res://UI/UI Elements Final/codex button normal.png" id="2_y2vtk"]
+[ext_resource type="Texture2D" uid="uid://cdh4wtjt0s1xk" path="res://UI/UI Elements Final/codex button on click.png" id="3_4vqcw"]
+[ext_resource type="Texture2D" uid="uid://chldxx4cgcowt" path="res://UI/UI Elements Final/codex button hover.png" id="4_j8f5t"]
 
 [node name="Codex" type="Control" unique_id=1356873260]
 layout_mode = 3
@@ -17,6 +20,36 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_nrl67")
+
+[node name="VScrollBar" type="VScrollBar" parent="CodexBase" unique_id=359561159]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 65.33333
+offset_top = -541.3334
+offset_right = 660.0
+offset_bottom = -373.33334
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CodexBase/VScrollBar" unique_id=320855831]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="CodexBase/VScrollBar/VBoxContainer" unique_id=1413129621]
+layout_mode = 2
+texture_normal = ExtResource("2_y2vtk")
+texture_pressed = ExtResource("3_4vqcw")
+texture_hover = ExtResource("4_j8f5t")
+stretch_mode = 3
+
+[node name="TextureButton2" type="TextureButton" parent="CodexBase/VScrollBar/VBoxContainer" unique_id=747994186]
+layout_mode = 2
+texture_normal = ExtResource("2_y2vtk")
+texture_pressed = ExtResource("3_4vqcw")
+texture_hover = ExtResource("4_j8f5t")
+stretch_mode = 3
 
 [node name="CodexLabel" type="Label" parent="." unique_id=1880779668]
 layout_mode = 0
