@@ -24,6 +24,11 @@ var _reveal_timer: Timer
 var _reveal_started := false
 var _i := 0
 
+func handle_escape():
+	MenuManager.remove_listener(self)
+	Close.play()
+	self.queue_free()
+
 func position_down() -> void:
 	$Background/PanelBox.position = Vector2(1070, 3000)
 
@@ -48,6 +53,7 @@ func _reveal_step() -> void:
 		_reveal_timer.stop()
 
 func _ready() -> void:
+	MenuManager.add_listener(self)
 	position_down()
 
 	# Start hidden
