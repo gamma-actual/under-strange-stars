@@ -1,28 +1,30 @@
 extends TextureButton
+
 @export var texture_icon: Texture2D
-var button_offset: Vector2 = Vector2(-80, 0)
-#var shake_it = false
-# Called when the node enters the scene tree for the first time.
+@export var speed := 10 # higher = faster 
+
+@export var button_in: Vector2 = Vector2(-80, 0)
+@export var button_out: Vector2 = Vector2(-10, 0)
+
+@onready var button_location: Vector2 = offset_transform_position
+var button_destination: Vector2
+
 func _ready() -> void:
 	$Icon.texture = texture_icon
+	button_destination = button_in
+	button_location = button_in
+	offset_transform_position = button_location
 
-#function to shake the lil icon needs fixing
-#func shake() :
-	#if shake_it == true:
-		#$Icon.position += Vector2(randf_range(-0.2 , 0.2), 0)
-	#elif $Icon.position < Vector2(-0.3 , 0) or $Icon.position > Vector2(0.3 , 0):
-		#$Icon.position = Vector2(0 , 0)
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-#	shake()
-	pass
-
+	# Smoothly move toward destination
+	button_location = button_location.lerp(button_destination, 1.0 - exp(-speed * delta))
+	offset_transform_position = button_location
 
 func _on_mouse_entered() -> void:
-	offset_transform_position = Vector2(-10, 0)
-#	shake_it = true
+	button_destination = button_out
 
+func _on_pressed() -> void:
+	button_destination = button_in
 
 func _on_mouse_exited() -> void:
-	offset_transform_position = button_offset
-#	shake_it = false
+	button_destination = button_in

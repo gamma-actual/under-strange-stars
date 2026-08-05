@@ -8,6 +8,7 @@
 offset_right = 192.59259
 offset_bottom = 90.0
 scale = Vector2(0.27, 0.27)
+offset_transform_enabled = true
 texture_normal = ExtResource("1_galv1")
 stretch_mode = 0
 script = ExtResource("2_uylm5")
@@ -19,3 +20,4 @@ texture = ExtResource("3_6s1eu")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

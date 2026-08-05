@@ -1,17 +1,23 @@
 [gd_scene format=3 uid="uid://wohu403k3kvh"]
 
+[ext_resource type="Script" uid="uid://cd8oxprl4yi08" path="res://UI/main_ui/character_select.gd" id="1_aqqtg"]
 [ext_resource type="Texture2D" uid="uid://c76h64unp65cq" path="res://UI/UI Elements Final/character select background.png" id="1_b55v6"]
 [ext_resource type="Texture2D" uid="uid://bv02nkmicqjjf" path="res://UI/UI Elements Final/character select button PLACEHOLDER.png" id="2_t8hob"]
 [ext_resource type="Texture2D" uid="uid://b125w7skedhn0" path="res://UI/UI Elements Final/character select sidebar left.png" id="3_aqqtg"]
+[ext_resource type="Texture2D" uid="uid://6prtkhndhs3p" path="res://UI/Panels/character_panel_chesa_unselected.png" id="3_t8hob"]
 [ext_resource type="Texture2D" uid="uid://bspskbyik8nxa" path="res://UI/UI Elements Final/character select sidebar right.png" id="4_qmlrx"]
+[ext_resource type="Texture2D" uid="uid://dw75nljf4lpgw" path="res://UI/Panels/character_pane_chesa_selected.png" id="6_qmlrx"]
 
 [node name="CharacterSelect" type="Control" unique_id=1603827461]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 1.705
+offset_bottom = 1.704956
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_aqqtg")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1814831969]
 layout_mode = 0
@@ -20,82 +26,97 @@ offset_bottom = 1440.0
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_b55v6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Background" unique_id=1417408654]
+[node name="PanelBox" type="HBoxContainer" parent="Background" unique_id=362683888]
+propagate_maximum_size = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -144.0
-offset_top = -713.0
-offset_right = 144.0
-offset_bottom = 713.0
+offset_left = -210.0
+offset_top = -713.0022
+offset_right = 210.0
+offset_bottom = 713.0022
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TopRow" type="HBoxContainer" parent="Background/VBoxContainer" unique_id=676896184]
+[node name="SidebarLeft" type="TextureRect" parent="Background/PanelBox" unique_id=28802026]
 layout_mode = 2
-
-[node name="ChesaButton" type="TextureButton" parent="Background/VBoxContainer/TopRow" unique_id=884662612]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="SebastienButton" type="TextureButton" parent="Background/VBoxContainer/TopRow" unique_id=58392832]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="CordieButton" type="TextureButton" parent="Background/VBoxContainer/TopRow" unique_id=84888703]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="GiuliaButton" type="TextureButton" parent="Background/VBoxContainer/TopRow" unique_id=901128856]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="GrigoryButton" type="TextureButton" parent="Background/VBoxContainer/TopRow" unique_id=107461716]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="BottomRow" type="HBoxContainer" parent="Background/VBoxContainer" unique_id=546232693]
-layout_mode = 2
-
-[node name="AbbyButton" type="TextureButton" parent="Background/VBoxContainer/BottomRow" unique_id=260090925]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="FlorButton" type="TextureButton" parent="Background/VBoxContainer/BottomRow" unique_id=589914186]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="MakoaButton" type="TextureButton" parent="Background/VBoxContainer/BottomRow" unique_id=1081164069]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="MateoButton" type="TextureButton" parent="Background/VBoxContainer/BottomRow" unique_id=848497469]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="ISANButton" type="TextureButton" parent="Background/VBoxContainer/BottomRow" unique_id=1684024600]
-layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
-
-[node name="SidebarLeft" type="TextureRect" parent="Background" unique_id=28802026]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 340.0
-offset_top = -713.0
-offset_right = 546.0
-offset_bottom = 713.0
-grow_vertical = 2
 texture = ExtResource("3_aqqtg")
 
-[node name="SidebarRight" type="TextureRect" parent="Background" unique_id=1445001855]
-layout_mode = 0
-offset_left = 2015.0
-offset_top = 7.0
-offset_right = 2221.004
-offset_bottom = 1433.0
+[node name="CharacterBoxes" type="VBoxContainer" parent="Background/PanelBox" unique_id=1417408654]
+propagate_maximum_size = false
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="Background/PanelBox/CharacterBoxes" unique_id=676896184]
+layout_mode = 2
+
+[node name="ChesaButton" type="TextureRect" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=1759096920]
+visible = false
+layout_mode = 2
+texture = ExtResource("2_t8hob")
+
+[node name="TextureButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow/ChesaButton" unique_id=884822407]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_t8hob")
+texture_hover = ExtResource("6_qmlrx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SebastienButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=58392832]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="CordieButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=84888703]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="GiuliaButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=901128856]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="GrigoryButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=107461716]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="BottomRow" type="HBoxContainer" parent="Background/PanelBox/CharacterBoxes" unique_id=546232693]
+layout_mode = 2
+
+[node name="AbbyButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=260090925]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="FlorButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=589914186]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="MakoaButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=1081164069]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="MateoButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=848497469]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="ISANButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=1684024600]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("2_t8hob")
+
+[node name="SidebarRight" type="TextureRect" parent="Background/PanelBox" unique_id=1445001855]
+layout_mode = 2
 texture = ExtResource("4_qmlrx")

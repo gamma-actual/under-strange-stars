@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ct2axwr5r6bea"]
 
 [ext_resource type="PackedScene" uid="uid://cj7iebuw3gxyi" path="res://UI/main_ui/player_badge.tscn" id="1_o1l1o"]
+[ext_resource type="PackedScene" uid="uid://wohu403k3kvh" path="res://UI/main_ui/character_select.tscn" id="2_m5cwb"]
 [ext_resource type="Script" uid="uid://fhf638eai50x" path="res://UI/UIanimations/Vertical Menu/VerticalMenu.gd" id="3_1jxep"]
 [ext_resource type="Texture2D" uid="uid://xs5g64yv7faw" path="res://UI/UIanimations/Vertical Menu/splotch_test_1.png" id="4_1tm54"]
 [ext_resource type="Texture2D" uid="uid://cl3utyqutk41l" path="res://UI/UIanimations/Vertical Menu/splotch_test_2.png" id="5_yyagk"]
@@ -25,7 +26,17 @@ offset_top = 10.0
 offset_right = 10.0
 offset_bottom = 10.0
 
+[node name="CharacterSelect" parent="MainUI" unique_id=1603827461 instance=ExtResource("2_m5cwb")]
+visible = false
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
 [node name="UIVert" type="Node2D" parent="." unique_id=232823930]
+visible = false
 position = Vector2(1674, 502)
 script = ExtResource("3_1jxep")
 
@@ -48,6 +59,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_41s7g")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1552299657]
+visible = false
 offset_left = 1552.0
 offset_top = 229.0
 offset_right = 1817.0
