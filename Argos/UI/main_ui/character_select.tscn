@@ -9,6 +9,18 @@
 [ext_resource type="Texture2D" uid="uid://ct13qnlo3a28c" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_click.png" id="6_g22cq"]
 [ext_resource type="Texture2D" uid="uid://dvtvk82pm8v1r" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_hover.png" id="7_tjr6f"]
 [ext_resource type="Texture2D" uid="uid://cuv1rjkluuk63" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_unavailable.png" id="8_tpjc7"]
+[ext_resource type="Texture2D" uid="uid://b27jtfmaawl32" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_normal.png" id="9_8fai7"]
+[ext_resource type="Texture2D" uid="uid://4gd0jycohap" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_click.png" id="10_joqcp"]
+[ext_resource type="Texture2D" uid="uid://k4hc6u3b3fqg" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_hover.png" id="11_trd1k"]
+[ext_resource type="Texture2D" uid="uid://b72i557jygc6c" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_unavailable.png" id="12_ta0ry"]
+[ext_resource type="Texture2D" uid="uid://db4rvss3lp68h" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_normal.png" id="13_au6li"]
+[ext_resource type="Texture2D" uid="uid://cppg6voolgki1" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_click.png" id="14_qfl82"]
+[ext_resource type="Texture2D" uid="uid://ckqojgb1musva" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_hover.png" id="15_0txbm"]
+[ext_resource type="Texture2D" uid="uid://cqxhp81ay8qog" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_unavailable.png" id="16_82uj6"]
+[ext_resource type="Texture2D" uid="uid://ft3512v4wjnn" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_normal.png" id="17_gjrvh"]
+[ext_resource type="Texture2D" uid="uid://bsybl8tyl6mkl" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_click.png" id="18_bkt8l"]
+[ext_resource type="Texture2D" uid="uid://dvv11efxbwoxp" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_hover.png" id="19_lmfib"]
+[ext_resource type="Texture2D" uid="uid://c25h37fddteio" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_unavailable.png" id="20_167hk"]
 
 [node name="CharacterSelect" type="Control" unique_id=1603827461]
 layout_mode = 3
@@ -74,15 +86,24 @@ stretch_mode = 0
 
 [node name="SebastienButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=58392832]
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("9_8fai7")
+texture_pressed = ExtResource("10_joqcp")
+texture_hover = ExtResource("11_trd1k")
+texture_disabled = ExtResource("12_ta0ry")
 
 [node name="CordieButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=84888703]
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("13_au6li")
+texture_pressed = ExtResource("14_qfl82")
+texture_hover = ExtResource("15_0txbm")
+texture_disabled = ExtResource("16_82uj6")
 
 [node name="GiuliaButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=901128856]
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("17_gjrvh")
+texture_pressed = ExtResource("18_bkt8l")
+texture_hover = ExtResource("19_lmfib")
+texture_disabled = ExtResource("20_167hk")
 
 [node name="GrigoryButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=107461716]
 layout_mode = 2
