@@ -8,3 +8,7 @@ func handle_escape():
 	Close.play()
 	self.queue_free()
 	
+
+
+func _on_generic_button_pressed() -> void:
+	handle_escape()

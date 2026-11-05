@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bspc4pdi8qfc6" path="res://UI/main_ui/file_select_button.tscn" id="3_e0ls1"]
 [ext_resource type="PackedScene" uid="uid://dyhpfjorcuxfs" path="res://UI/main_ui/generic_button.tscn" id="5_e0ls1"]
 
-[node name="Control" type="Control" unique_id=1640086928]
+[node name="FileSelect" type="Control" unique_id=1640086928]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -89,3 +89,5 @@ offset_top = 1236.2416
 offset_right = 904.9665
 offset_bottom = 1322.2416
 label_text = "BACK"
+
+[connection signal="pressed" from="TextureRect/GenericButton" to="." method="_on_generic_button_pressed"]

@@ -4,9 +4,47 @@
 [ext_resource type="Texture2D" uid="uid://c76h64unp65cq" path="res://UI/UI Elements Final/character select background.png" id="1_b55v6"]
 [ext_resource type="Texture2D" uid="uid://bv02nkmicqjjf" path="res://UI/UI Elements Final/character select button PLACEHOLDER.png" id="2_t8hob"]
 [ext_resource type="Texture2D" uid="uid://b125w7skedhn0" path="res://UI/UI Elements Final/character select sidebar left.png" id="3_aqqtg"]
-[ext_resource type="Texture2D" uid="uid://6prtkhndhs3p" path="res://UI/Panels/character_panel_chesa_unselected.png" id="3_t8hob"]
 [ext_resource type="Texture2D" uid="uid://bspskbyik8nxa" path="res://UI/UI Elements Final/character select sidebar right.png" id="4_qmlrx"]
-[ext_resource type="Texture2D" uid="uid://dw75nljf4lpgw" path="res://UI/Panels/character_pane_chesa_selected.png" id="6_qmlrx"]
+[ext_resource type="Texture2D" uid="uid://b5y6v6wv6urv2" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_normal.png" id="5_ri43l"]
+[ext_resource type="Texture2D" uid="uid://ct13qnlo3a28c" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_click.png" id="6_g22cq"]
+[ext_resource type="Texture2D" uid="uid://dvtvk82pm8v1r" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_hover.png" id="7_tjr6f"]
+[ext_resource type="Texture2D" uid="uid://cuv1rjkluuk63" path="res://UI/UI Elements Final/character_panels/characterpanels_chesa_unavailable.png" id="8_tpjc7"]
+[ext_resource type="Texture2D" uid="uid://b27jtfmaawl32" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_normal.png" id="9_8fai7"]
+[ext_resource type="Texture2D" uid="uid://4gd0jycohap" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_click.png" id="10_joqcp"]
+[ext_resource type="Texture2D" uid="uid://k4hc6u3b3fqg" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_hover.png" id="11_trd1k"]
+[ext_resource type="Texture2D" uid="uid://b72i557jygc6c" path="res://UI/UI Elements Final/character_panels/characterpanels_seb_unavailable.png" id="12_ta0ry"]
+[ext_resource type="Texture2D" uid="uid://db4rvss3lp68h" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_normal.png" id="13_au6li"]
+[ext_resource type="Texture2D" uid="uid://cppg6voolgki1" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_click.png" id="14_qfl82"]
+[ext_resource type="Texture2D" uid="uid://ckqojgb1musva" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_hover.png" id="15_0txbm"]
+[ext_resource type="Texture2D" uid="uid://cqxhp81ay8qog" path="res://UI/UI Elements Final/character_panels/characterpanels_cordie_unavailable.png" id="16_82uj6"]
+[ext_resource type="Texture2D" uid="uid://ft3512v4wjnn" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_normal.png" id="17_gjrvh"]
+[ext_resource type="Texture2D" uid="uid://bsybl8tyl6mkl" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_click.png" id="18_bkt8l"]
+[ext_resource type="Texture2D" uid="uid://dvv11efxbwoxp" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_hover.png" id="19_lmfib"]
+[ext_resource type="Texture2D" uid="uid://c25h37fddteio" path="res://UI/UI Elements Final/character_panels/characterpanels_giulia_unavailable.png" id="20_167hk"]
+[ext_resource type="Texture2D" uid="uid://ccnqxytfaijrp" path="res://UI/UI Elements Final/character_panels/characterpanels_grisha_normal.png" id="21_xtkxw"]
+[ext_resource type="Texture2D" uid="uid://dcgsktqrc1dgx" path="res://UI/UI Elements Final/character_panels/characterpanels_grisha_click.png" id="22_ro7wo"]
+[ext_resource type="Texture2D" uid="uid://bppju3vwx3qw7" path="res://UI/UI Elements Final/character_panels/characterpanels_grisha_hover.png" id="23_2er8r"]
+[ext_resource type="Texture2D" uid="uid://cugjq2i7ottch" path="res://UI/UI Elements Final/character_panels/characterpanels_grisha_unavailable.png" id="24_05jr0"]
+[ext_resource type="Texture2D" uid="uid://ylikmy74r7e3" path="res://UI/UI Elements Final/character_panels/characterpanels_abby_normal.png" id="25_d3bmi"]
+[ext_resource type="Texture2D" uid="uid://cv623xeof86ba" path="res://UI/UI Elements Final/character_panels/characterpanels_abby_click.png" id="26_v42fq"]
+[ext_resource type="Texture2D" uid="uid://c47vwxb1gtwd8" path="res://UI/UI Elements Final/character_panels/characterpanels_abby_hover.png" id="27_cji3j"]
+[ext_resource type="Texture2D" uid="uid://qgyttnm8t3bj" path="res://UI/UI Elements Final/character_panels/characterpanels_abby_unavailable.png" id="28_bm0ru"]
+[ext_resource type="Texture2D" uid="uid://bay1w0vwkw5k0" path="res://UI/UI Elements Final/character_panels/characterpanels_flor_normal.png" id="29_ru8uf"]
+[ext_resource type="Texture2D" uid="uid://bp3jnh4sr6sxj" path="res://UI/UI Elements Final/character_panels/characterpanels_flor_click.png" id="30_npb7h"]
+[ext_resource type="Texture2D" uid="uid://bjvy0rjdemuyn" path="res://UI/UI Elements Final/character_panels/characterpanels_flor_hover.png" id="31_h4sog"]
+[ext_resource type="Texture2D" uid="uid://bh4p5fsm7v660" path="res://UI/UI Elements Final/character_panels/characterpanels_flor_unavailable.png" id="32_f1ows"]
+[ext_resource type="Texture2D" uid="uid://wrr8wmxxtaqu" path="res://UI/UI Elements Final/character_panels/characterpanels_makoa_normal.png" id="33_1dx6p"]
+[ext_resource type="Texture2D" uid="uid://c3nkt82sj5r20" path="res://UI/UI Elements Final/character_panels/characterpanels_makoa_click.png" id="34_isssh"]
+[ext_resource type="Texture2D" uid="uid://drjw385kjnoog" path="res://UI/UI Elements Final/character_panels/characterpanels_makoa_hover.png" id="35_7snqt"]
+[ext_resource type="Texture2D" uid="uid://boc3ae8fq5o57" path="res://UI/UI Elements Final/character_panels/characterpanels_makoa_unavailable.png" id="36_8n458"]
+[ext_resource type="Texture2D" uid="uid://c1cq03bsrv6im" path="res://UI/UI Elements Final/character_panels/characterpanels_mateo_normal.png" id="37_2tjiu"]
+[ext_resource type="Texture2D" uid="uid://dtfk1cxaxtyxc" path="res://UI/UI Elements Final/character_panels/characterpanels_mateo_click.png" id="38_7kob0"]
+[ext_resource type="Texture2D" uid="uid://dqe0laekmv0po" path="res://UI/UI Elements Final/character_panels/characterpanels_mateo_hover.png" id="39_dtpxq"]
+[ext_resource type="Texture2D" uid="uid://bfqdg5a5nwo7r" path="res://UI/UI Elements Final/character_panels/characterpanels_mateo_unavailable.png" id="40_2txjm"]
+[ext_resource type="Texture2D" uid="uid://b4vt00s1lbfbq" path="res://UI/UI Elements Final/character_panels/characterpanels_f_isan_normal.png" id="41_2iy46"]
+[ext_resource type="Texture2D" uid="uid://caawflvbb1x0f" path="res://UI/UI Elements Final/character_panels/characterpanels_f_isan_click.png" id="42_78g2m"]
+[ext_resource type="Texture2D" uid="uid://bmx4bec3cqard" path="res://UI/UI Elements Final/character_panels/characterpanels_f_isan_hover.png" id="43_8ls84"]
+[ext_resource type="Texture2D" uid="uid://do1b1iydk25v2" path="res://UI/UI Elements Final/character_panels/characterpanels_f_isan_unavailable.png" id="44_aaa77"]
 
 [node name="CharacterSelect" type="Control" unique_id=1603827461]
 layout_mode = 3
@@ -47,7 +85,6 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="ChesaButton" type="TextureRect" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=1759096920]
-visible = false
 layout_mode = 2
 texture = ExtResource("2_t8hob")
 
@@ -58,58 +95,78 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("3_t8hob")
-texture_hover = ExtResource("6_qmlrx")
+texture_normal = ExtResource("5_ri43l")
+texture_pressed = ExtResource("6_g22cq")
+texture_hover = ExtResource("7_tjr6f")
+texture_disabled = ExtResource("8_tpjc7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="SebastienButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=58392832]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("9_8fai7")
+texture_pressed = ExtResource("10_joqcp")
+texture_hover = ExtResource("11_trd1k")
+texture_disabled = ExtResource("12_ta0ry")
 
 [node name="CordieButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=84888703]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("13_au6li")
+texture_pressed = ExtResource("14_qfl82")
+texture_hover = ExtResource("15_0txbm")
+texture_disabled = ExtResource("16_82uj6")
 
 [node name="GiuliaButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=901128856]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("17_gjrvh")
+texture_pressed = ExtResource("18_bkt8l")
+texture_hover = ExtResource("19_lmfib")
+texture_disabled = ExtResource("20_167hk")
 
 [node name="GrigoryButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/TopRow" unique_id=107461716]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("21_xtkxw")
+texture_pressed = ExtResource("22_ro7wo")
+texture_hover = ExtResource("23_2er8r")
+texture_disabled = ExtResource("24_05jr0")
 
 [node name="BottomRow" type="HBoxContainer" parent="Background/PanelBox/CharacterBoxes" unique_id=546232693]
 layout_mode = 2
 
 [node name="AbbyButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=260090925]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("25_d3bmi")
+texture_pressed = ExtResource("26_v42fq")
+texture_hover = ExtResource("27_cji3j")
+texture_disabled = ExtResource("28_bm0ru")
 
 [node name="FlorButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=589914186]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("29_ru8uf")
+texture_pressed = ExtResource("30_npb7h")
+texture_hover = ExtResource("31_h4sog")
+texture_disabled = ExtResource("32_f1ows")
 
 [node name="MakoaButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=1081164069]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("33_1dx6p")
+texture_pressed = ExtResource("34_isssh")
+texture_hover = ExtResource("35_7snqt")
+texture_disabled = ExtResource("36_8n458")
 
 [node name="MateoButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=848497469]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("37_2tjiu")
+texture_pressed = ExtResource("38_7kob0")
+texture_hover = ExtResource("39_dtpxq")
+texture_disabled = ExtResource("40_2txjm")
 
 [node name="ISANButton" type="TextureButton" parent="Background/PanelBox/CharacterBoxes/BottomRow" unique_id=1684024600]
-visible = false
 layout_mode = 2
-texture_normal = ExtResource("2_t8hob")
+texture_normal = ExtResource("41_2iy46")
+texture_pressed = ExtResource("42_78g2m")
+texture_hover = ExtResource("43_8ls84")
+texture_disabled = ExtResource("44_aaa77")
 
 [node name="SidebarRight" type="TextureRect" parent="Background/PanelBox" unique_id=1445001855]
 layout_mode = 2
